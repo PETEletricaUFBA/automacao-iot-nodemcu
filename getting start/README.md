@@ -40,6 +40,8 @@ Para testar se está tudo OK, nananam nananam.. bla bla bla..
 
 Explicação genérica do circuito aqui... bla bla bla falar que a pinagem pode ser diferente, mostrar exemplo
 
+FALAR PINAGEM SOBRE GPIO e DX pra consultar tabela
+
 ![Pinout](assets/pinoutv3.png)
 
 ### Hora do código!
@@ -49,3 +51,6 @@ Use o código que está em [code](code)
 Tente carregar e nananam...
 
 Se você fez tudo certo a LED vai acender e apagar a cada segundo, isto significa que você configurou certo e ta tudo funcionando e está pronto para aprender mais coisa.
+
+
+![Real Circuit](assets/realcircuit.gif)
