@@ -44,7 +44,7 @@ Explicação genérica do circuito aqui... bla bla bla falar que a pinagem pode 
 
 ### Hora do código!
 
-Use o código que está em [code](../code)
+Use o código que está em [code](code)
 
 Tente carregar e nananam...
 
