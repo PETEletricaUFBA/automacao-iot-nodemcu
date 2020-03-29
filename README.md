@@ -1,4 +1,4 @@
-# IoT
+# Internet of Things (IoT)
 
 Esboço inicial para manual de automação:
 
