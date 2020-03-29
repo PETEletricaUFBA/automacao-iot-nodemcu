@@ -1,9 +1,9 @@
 # Internet of Things (IoT)
 
-Esboço inicial para manual de automação:
+## Esboço inicial para manual de automação:
 
 _____________________________________________________
-## Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
+### Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
 	
 Descrição: Aqui se trata de conhecer o kit de desenvolvimento, saber programar a placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
 
