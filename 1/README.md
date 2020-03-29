@@ -1,4 +1,4 @@
-# Getting Start
+# Começando 
 
 Para começar vamos começar com um programa para testar se tá tudo ok com o processo de compilação, de usar a IDE do arduino, e começar a se familiarizar com os pinos. [essa nao é a versão definitiva.. ainda falta melhorar kk]
 
