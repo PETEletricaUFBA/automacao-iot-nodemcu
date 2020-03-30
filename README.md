@@ -7,6 +7,8 @@ _____________________________________________________
 	
 Descrição: Aqui se trata de conhecer o kit de desenvolvimento, saber programar a placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
 
+Pastas relacionadas: 1, 2
+
 1. Conhecer a placa de desenvolvimento (os Microcontroladores, as GIPOs, Pinout, Nível de tensão, entre outros);
 2. Saber o BÁSICO de alguma linguagem de programação como C, Lua, Python para programar o microcontrolador
 3. Saber como upar um código para a placa usando alguma IDE (ou não)
