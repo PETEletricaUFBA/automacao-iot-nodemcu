@@ -1,6 +1,6 @@
 # Começando 
 
-Para começar vamos utilizar um programa para testar se está tudo OK com o processo de compilação. Iremos usar também a IDE do arduino e começar a se familiarizar com a pinagem do NodeMCU.
+Para começar vamos utilizar um programa para testar se está tudo OK com o processo de compilação. Para fins de simplificação, iremos usar também a IDE do arduino e começar a se familiarizar com a pinagem do NodeMCU.
 
 ## Configurando a IDE do Arduino para programar o NodeMCU 
 
