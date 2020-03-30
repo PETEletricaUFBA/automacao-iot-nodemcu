@@ -38,6 +38,10 @@ Para testar se está tudo OK, nananam nananam.. bla bla bla..
 
 ![Circuito](assets/protoboard.png)
 
+A aplicação elucidada através da imagem acima permite ligar e desligar a luz do led e é conhecida também como "Pisca-LED" ou "Blinking". Apesar de extremamente simples, aplicações como essas nos permite criar conhecimentos e estratégias interessantes para acionamentos de outros dispositivos como lâmpadas, motores ou qualquer elemento que represente uma saída no seu circuito. Para viabilizar a montagem correta do circuito é necessário apresentar um LED de (qualquer cor), um resistor com um valor próximo a 1KΩ, esse último, será responsável por limitar a corrente que circula no circuito, evitando que ultrapasse a corrente de operação do LED e o queime. 
+
+Além de resistor e LED, é preciso que se conheça a pinagem do NODEMCU8266 e é importante salientar que a posição dos pinos modificam conforme a versão do NODEMCU8266 que o usuário apresente. No entanto, para a nossa felicidade, apesar de se encontrar em posições diferentes, a aplicabilidade dos pinos é universal, ou seja, ao encontrarmos o GPIO16 em um NODEMCU v1.1 e identificarmos o GPIO16 em uma outra posição em um outro NODEMCU8266, este pino apresentará as mesmas especificações e aplicabilidade no kit de desenvolvimento aterior.
+
 Explicação genérica do circuito aqui... bla bla bla falar que a pinagem pode ser diferente, mostrar exemplo
 
 FALAR PINAGEM SOBRE GPIO e DX pra consultar tabela
