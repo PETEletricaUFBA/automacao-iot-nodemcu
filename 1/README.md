@@ -10,7 +10,7 @@ Para fazer isso, na IDE do Arduino, clique em:
 
 ```Arquivo -> Preferências```
 
-E cole o seguinte link no lugar a seguir
+E cole o seguinte link no local indicado na imagem abaixo.
 
 ```http://arduino.esp8266.com/stable/package_esp8266com_index.json```
 
@@ -32,36 +32,72 @@ Pronto, sua IDE está preparada para programar um ESP!
 
 ## Compilando o circuito Blinking
 
-Para testar se está tudo OK, nananam nananam.. bla bla bla..
 
 ### Monte o circuito como mostra abaixo:
 
 ![Circuito](assets/protoboard.png)
 
-A aplicação elucidada através da imagem acima permite ligar e desligar a luz do led e é conhecida também como "Pisca-LED" ou "Blinking". Apesar de extremamente simples, aplicações como essas nos permite criar conhecimentos e estratégias interessantes para acionamentos de outros dispositivos como lâmpadas, motores ou qualquer elemento que represente uma saída no seu circuito. Para viabilizar a montagem correta do circuito é necessário apresentar um LED de (qualquer cor), um resistor com um valor próximo a 1KΩ, esse último, será responsável por limitar a corrente que circula no circuito, evitando que ultrapasse a corrente de operação do LED e o queime. 
+A aplicação elucidada através da imagem acima permite ligar e desligar a luz do LED e é conhecida também como "Pisca-LED" ou "Blinking". Apesar de extremamente simples, aplicações como essas nos permite criar conhecimentos e estratégias interessantes para acionamentos de outros dispositivos como lâmpadas, motores ou qualquer elemento que represente uma saída no seu circuito. Para viabilizar a montagem correta do circuito é necessário ter em mãos um LED (de qualquer cor), um resistor com um valor próximo a 1KΩ, que será responsável por limitar a corrente que circula no circuito, evitando que ultrapasse a corrente nominal de operação do LED e o queime. 
 
-Além de resistor e LED, é preciso que se conheça a pinagem do NODEMCU8266 e é importante salientar que a posição dos pinos modificam conforme a versão do NODEMCU8266 que o usuário apresente. No entanto, para a nossa felicidade, apesar de se encontrar em posições diferentes, a aplicabilidade dos pinos é universal, ou seja, ao encontrarmos o GPIO16 em um NODEMCU v1.1 e identificarmos o GPIO16 em uma outra posição em um outro NODEMCU8266, este pino apresentará as mesmas especificações e aplicabilidade no kit de desenvolvimento aterior.
+Além de resistor e LED, é preciso que se conheça a pinagem do NODEMCU8266 e é importante salientar que a posição dos pinos modificam conforme a versão e modelo do NODEMCU8266 que o usuário possua. No entanto, para a nossa felicidade, apesar de se encontrar em posições diferentes, a aplicabilidade dos pinos é universal, ou seja, ao encontrarmos o General Purpose Input/Output 16 (GPIO16) em um NODEMCU8266 v1.1 e identificarmos o GPIO16 em uma outra posição em um outro NODEMCU8266, este pino apresentará as mesmas especificações e aplicabilidades no kit de desenvolvimento anterior.
 
-Explicação genérica do circuito aqui... bla bla bla falar que a pinagem pode ser diferente, mostrar exemplo
+#### PINAGEM DO KIT DE DESENVOLVIMENTO ESP 12-E
 
-FALAR PINAGEM SOBRE GPIO e DX pra consultar tabela
+Abaixo é possível visualizar a identificação dos pinos da placa:
 
 ![Pinout](assets/pinoutv3.png)
+
+
+| Pino | Descrição |
+| -------- | -------- |
+| VIN  | Pino de alimentação externa (recomenda-se 5,0V / 1A). Não use-o se estiver usando a USB.     |
+| GND  | Esse é o terra da placa. Não se esqueça de conectá-lo ao terra de outros dispositivos.   |
+| RST     | Reset do módulo ESP-12. Nível LOW(0V) dá um reboot na placa.    | 
+| EN    | (Enable) ativa o módulo ESP-12 quando o nível for HIGH(3,3V).     | 
+| 3.3V     | 3.3V – saída do regulador interno 3,3V – Para alimentar outro dispositivo, não use mais do que 500 mA de corrente. | 
+| SD0 | interface SPI (master in serial out) – pino MISO (GPIO_7) |
+| CMD | interface SPI (chip select) – pino CS (GPIO_11) |
+| SD1 |  interface SPI (master out serial in) – pino MOSI (GPIO_8) |
+| SD2 | pino GPIO_9 pode ser usado também para comunicação com SD Card (SDD2) |
+| SD3 | pino GIPO_10 – pode ser usado também para comunicação com SD Card (SDD3) |
+| ADC0 | pino de entrada do conversor analógico digital ADC de 10 bits. Tensão máxima de 1,1V (variação do valor digital – 0 a 1024).|
+|D0 | pino GIPO_16 pode ser usado para acordar (WAKE UP) o ESP8266 em modo sono profundo (Deep sleep mode).|
+| D1 | pino GPIO_5 – entrada ou saída.|
+|   D2 | pino GIPO_4 – entrada ou saída.|
+|  D3 | pino GPIO_0 é usado também para controlar o upload do programa na memória Flash. Esta conectado no botão FLASH.|
+| D4 | pino GPIO_2 – UART_TXD1 quando carregando o programa na memória FLASH|
+|D5 | pino GPIO_14  pode ser usado em SPI de alta velocidade (HSPI-SCLK)|
+| D6 | pino GPIO_12  pode ser usado em SPI de alta velocidade (HSPI-MISO)|
+| D7 | pino GPIO_13  pode ser usado em SPI de alta velocidade (HSPI-MOSI) ou UART0_CTS.|
+| D8 | pino GPIO_15  pode ser usado em SPI de alta velocidade (HSPI-CS) ou UART0_RTS.|
+| RX |pino GPIO_3 – U0RXD quando carregando o programa na memória FLASH.|
+| TX | pino GIPO_1 – U0TXD quando carregando o programa na memória FLASH.|
 
 ### Hora do código!
 
 Use o código que está em [code](code) ou copie o código abaixo:
 
 ```
-print('code example')
-print('code example')
-print('code example')
-print('code example')
+const int led=16;
+
+void setup() {
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led, LOW);
+  delay(1000);                 
+}
 ```
+É importante entender que no código acima, utilizados a correlação entre as entradas/saídas e as constantes pré-definidas:
 
-Tente carregar e nananam...
+![Relação entre os terminais e seus valores](assets/11.png)
 
-Se você fez tudo certo a LED vai acender e apagar a cada segundo, isto significa que você configurou certo e ta tudo funcionando e está pronto para aprender mais coisa.
+Como se pode observar pela tabela, o LED foi conectado no terminal D0 que tem como constante o valor igual a 16.
+
+Execute o código. Se você fez tudo certo, o LED vai acender e apagar a cada segundo (função delay). Isso significa que você configurou certo, está tudo funcionando e pronto para desenvolver novas ideias.
 
 
 ![Real Circuit](assets/circuit.gif)
