@@ -7,11 +7,11 @@ Aqui é um paragrafo contando o que o circuito faz, como é conhecido e onde iss
 ## Conteúdo
 - [Materiais Necessários](#materiais-necessários)
 - [Titulo 1](#titulo-1)
-  1. [sub 1](#sub-1)
-  2. [sub 2](#sub-2)
+  - [sub 1](#sub-1)
+  - [sub 2](#sub-2)
 - [Titulo 2](#titulo-2)
-  1. [sub 3](#sub-3)
-  2. [sub 4](#sub-4)
+  - [sub 3](#sub-3)
+  - [sub 4](#sub-4)
 
 
 

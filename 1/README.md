@@ -7,12 +7,12 @@ Esta aplicação nos permite ligar e desligar a luz do LED periodicamente, ela �
 ## Conteúdo
 - [Materiais Necessários](#materiais-necessários)
 - [Configurando a IDE do Arduino para programar o NodeMCU](#configurando-a-ide-do-Arduino-para-programar-o-nodemcu)
-  1. [Colocando o URL adicional para Gerenciador de Placas](#colocando-o-url-adicional-para-gerenciador-de-placas])
-  2. [Instalando o suporte a placa esp8266](#instalando-o-suporte-a-placa-esp8266)
+  - [Colocando o URL adicional para Gerenciador de Placas](#colocando-o-url-adicional-para-gerenciador-de-placas])
+  - [Instalando o suporte a placa esp8266](#instalando-o-suporte-a-placa-esp8266)
 - [Compilando o circuito Blinking](#compilando-o-circuito-blinking)
-  1. [Montagem do circuito](#montagem-do-circuito)
-  2. [Hora do Código!](#hora-do-código!)
-  3. [Compile e Execute](#compile-e-execute)
+  - [Montagem do circuito](#montagem-do-circuito)
+  - [Hora do Código!](#hora-do-código!)
+  - [Compile e Execute](#compile-e-execute)
 
 
 ## Materiais Necessários
