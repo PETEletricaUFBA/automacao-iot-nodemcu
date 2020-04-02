@@ -1,10 +1,30 @@
-# Começando 
+# Primeiros passos
 
-Para começar vamos utilizar um programa para testar se está tudo OK com o processo de compilação. Para fins de simplificação, iremos usar também a IDE do arduino e começar a se familiarizar com a pinagem do NodeMCU.
+Esta aplicação nos permite ligar e desligar a luz do LED periodicamente, ela é conhecida também como "Pisca-LED" ou "Blinking". Apesar de extremamente simples, aplicações como essas nos permite criar conhecimentos e estratégias interessantes para acionamentos de outros dispositivos como lâmpadas, motores ou qualquer elemento que represente uma saída no seu circuito. 
+
+> Neste exemplo você vai aprender a adicionar a extensão do ESP8266 à IDE do Arduino e a carregar seu primeiro código!
+
+## Conteúdo
+- [Materiais Necessários](#materiais-necessários)
+- [Configurando a IDE do Arduino para programar o NodeMCU](#configurando-a-ide-do-Arduino-para-programar-o-nodemcu)
+  1. [Colocando o URL adicional para Gerenciador de Placas](#colocando-o-url-adicional-para-gerenciador-de-placas])
+  2. [Instalando o suporte a placa esp8266](#instalando-o-suporte-a-placa-esp8266)
+- [Compilando o circuito Blinking](#compilando-o-circuito-blinking)
+  1. [Montagem do circuito](#montagem-do-circuito)
+  2. [Hora do Código!](#hora-do-código!)
+  3. [Compile e Execute](#compile-e-execute)
+
+
+## Materiais Necessários
+1. NodeMCU
+2. 1 Resistor 220Ω
+3. 1 LED (de qualquer cor)
+4. 1 Protoboard
+5. 2 Jumpers
 
 ## Configurando a IDE do Arduino para programar o NodeMCU 
 
-### 1. Colocando o URL adicional para Gerenciador de Placas
+### Colocando o URL adicional para Gerenciador de Placas
 
 Para fazer isso, na IDE do Arduino, clique em:
 
@@ -18,7 +38,7 @@ E cole o seguinte link no local indicado na imagem abaixo.
 
 Assim a sua IDE estará com a extensão do ESP8266!
 
-### 2. Instalando o suporte a placa esp8266
+### Instalando o suporte a placa esp8266
 
 ```Ferramentas -> Placa -> Gerenciador de Placas``` 
 
@@ -33,15 +53,17 @@ Pronto, sua IDE está preparada para programar um ESP!
 ## Compilando o circuito Blinking
 
 
-### Monte o circuito como mostra abaixo:
+### Montagem do circuito:
+
+Monte o circuito como mostra abaixo:
 
 ![Circuito](assets/protoboard.png)
 
-A aplicação elucidada através da imagem acima permite ligar e desligar a luz do LED e é conhecida também como "Pisca-LED" ou "Blinking". Apesar de extremamente simples, aplicações como essas nos permite criar conhecimentos e estratégias interessantes para acionamentos de outros dispositivos como lâmpadas, motores ou qualquer elemento que represente uma saída no seu circuito. Para viabilizar a montagem correta do circuito é necessário ter em mãos um LED (de qualquer cor), um resistor com um valor próximo a 1KΩ, que será responsável por limitar a corrente que circula no circuito, evitando que ultrapasse a corrente nominal de operação do LED e o queime. 
+**Note que o resistor será responsável por limitar a corrente que circula no circuito, evitando que ultrapasse a corrente nominal de operação do LED e o queime.**
 
 Além de resistor e LED, é preciso que se conheça a pinagem do NODEMCU8266 e é importante salientar que a posição dos pinos modificam conforme a versão e modelo do NODEMCU8266 que o usuário possua. No entanto, para a nossa felicidade, apesar de se encontrar em posições diferentes, a aplicabilidade dos pinos é universal, ou seja, ao encontrarmos o General Purpose Input/Output 16 (GPIO16) em um NODEMCU8266 v1.1 e identificarmos o GPIO16 em uma outra posição em um outro NODEMCU8266, este pino apresentará as mesmas especificações e aplicabilidades no kit de desenvolvimento anterior.
 
-#### PINAGEM DO KIT DE DESENVOLVIMENTO ESP 12-E
+#### Pinagem do Kit de Desenvolvimento
 
 Abaixo é possível visualizar a identificação dos pinos da placa:
 
@@ -77,7 +99,7 @@ Abaixo é possível visualizar a identificação dos pinos da placa:
 
 Use o código que está em [code](code) ou copie o código abaixo:
 
-```
+```C++
 const int led=16;
 
 void setup() {
@@ -97,7 +119,15 @@ void loop() {
 
 Como se pode observar pela tabela, o LED foi conectado no terminal D0 que tem como constante o valor igual a 16.
 
-Execute o código. Se você fez tudo certo, o LED vai acender e apagar a cada segundo (função delay). Isso significa que você configurou certo, está tudo funcionando e pronto para desenvolver novas ideias.
+### Compile e Execute
 
+Para compilar o código e verificar erros clique no primeiro botão abaixo, caso queira dar um upload para a placa, clique no segundo botão.
 
+![compile](assets/compile.png)
+
+Se você fez tudo certo, o LED vai acender e apagar a cada segundo (função delay). Isso significa que você configurou certo, está tudo funcionando e pronto para desenvolver novas ideias.
+
+Caso tenha tido algum problema abra uma issue clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new) 
+
+#### Exemplo da montagem
 ![Real Circuit](assets/circuit.gif)
