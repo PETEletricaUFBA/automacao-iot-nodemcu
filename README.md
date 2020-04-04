@@ -95,6 +95,8 @@ apt-get install arduino
 
 <!-- ESBOÇO -->
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a1b5adec51bb42ef90d079504bba374d)](https://app.codacy.com/gh/PETEletricaUFBA/IoT?utm_source=github.com&utm_medium=referral&utm_content=PETEletricaUFBA/IoT&utm_campaign=Badge_Grade_Dashboard)
+
 ## Esboço inicial para manual de automação:
 
 ### Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
