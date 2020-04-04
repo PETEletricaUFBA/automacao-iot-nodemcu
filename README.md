@@ -12,15 +12,19 @@
 <h4 align="center">Um guia definitivo para para aprender <a href="https://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a> com diversos exemplos práticos, incluindo aplicações de Internet das Coisas! Step-by-Step</h4>
 
 <p align="center">
-  <a href="http://www.peteletrica.eng.ufba.br/2017/"><img src="https://badgen.net/badge/icon/PET Elétrica/blue?icon=bitcoin-lightning&label" alt="Site do PET Elétrica"></a>
-  <!--/codacy/:type<coverage|grade>/:projectId/:branch?-
-  <a href="#">
-    <img src="https://badgen.net/codacy/coverage/c7c7c38b04d64cb78344d74473a6db2c">
+  <a href="http://www.peteletrica.eng.ufba.br/2017/" target="_blank"><img src="https://badgen.net/badge/icon/PET Elétrica/blue?icon=bitcoin-lightning&label" alt="Site do PET Elétrica"></a>
+  <a href="https://app.codacy.com/gh/PETEletricaUFBA/IoT?utm_source=github.com&utm_medium=referral&utm_content=PETEletricaUFBA/IoT&utm_campaign=Badge_Grade_Dashboard" target="_blank">
+    <img src="https://badgen.net/codacy/grade/a1b5adec51bb42ef90d079504bba374d">
   </a>
-  -->
-  <img src="https://badgen.net/github/commits/PETEletricaUFBA/IoT">
-  <img src="https://badgen.net/github/contributors/PETEletricaUFBA/IoT">
-  <img src="https://badgen.net/github/license/PETEletricaUFBA/IoT">
+  <a href="https://github.com/PETEletricaUFBA/IoT/commits/" target="_blank">
+    <img src="https://badgen.net/github/commits/PETEletricaUFBA/IoT">
+  </a>
+  <a href="https://github.com/PETEletricaUFBA/IoT/graphs/contributors" target="_blank">
+    <img src="https://badgen.net/github/contributors/PETEletricaUFBA/IoT">
+  </a>
+  <a href="#">
+    <img src="https://badgen.net/github/license/PETEletricaUFBA/IoT">
+  </a>
   <img src="https://badgen.net/github/last-commit/PETEletricaUFBA/IoT">
 </p>
 
@@ -90,6 +94,8 @@ apt-get install arduino
 ![asd](assets/trilha.svg)
 
 <!-- ESBOÇO -->
+
+## Esboço inicial para manual de automação:
 
 ### Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
 	
