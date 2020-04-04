@@ -1,8 +1,96 @@
-# Internet of Things (IoT)
+> Modelo sendo criado ainda, após isso teremos um esboço
 
-## Esboço inicial para manual de automação:
+<!-- LOGO -->
+<h1 align="center">
+  <br>
+  <a href="#"><img src="assets/automation.png" alt="A smart house logo" width="200"></a>
+  <br>
+  NodeMCU para IoT
+  <br>
+</h1>
 
-_____________________________________________________
+<h4 align="center">Um guia definitivo para para aprender <a href="https://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a> com diversos exemplos práticos, incluindo aplicações de Internet das Coisas! Step-by-Step</h4>
+
+<p align="center">
+  <a href="http://www.peteletrica.eng.ufba.br/2017/"><img src="https://badgen.net/badge/icon/PET Elétrica/blue?icon=bitcoin-lightning&label" alt="Site do PET Elétrica"></a>
+  <!--/codacy/:type<coverage|grade>/:projectId/:branch?-
+  <a href="#">
+    <img src="https://badgen.net/codacy/coverage/c7c7c38b04d64cb78344d74473a6db2c">
+  </a>
+  -->
+  <img src="https://badgen.net/github/commits/PETEletricaUFBA/IoT">
+  <img src="https://badgen.net/github/contributors/PETEletricaUFBA/IoT">
+  <img src="https://badgen.net/github/license/PETEletricaUFBA/IoT">
+  <img src="https://badgen.net/github/last-commit/PETEletricaUFBA/IoT">
+</p>
+
+<!-- Menu Principal -->
+<!-- Aqui colocamos páginas principais como creditos, licença, como contribuir, coisas assim..-->
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#contributing">Contribuir</a> •
+  <a href="#credits">Creditos</a> •
+  <a href="#authors">Autores</a> •
+  <a href="#license">Licença</a>
+</p>
+
+<!-- Sumário -->
+<!-- Tem um nome melhor pra isso? -->
+## Sumário 
+
+* [Sobre o projeto](#sobre-o-projeto)
+  * [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Roadmap](#roadmap)
+* [Contributing](#contributing)
+* [License](#license)
+* [Contact](#contact)
+* [Acknowledgements](#acknowledgements)
+
+
+
+<!-- SOBRE O PROJETO -->
+## Sobre o projeto
+Descrição sobre O QUE é o projeto, de ONDE ele começa, COMO ele termina, e o que pode ser feito por ele o QUEM aqui é todo mundo! kk
+
+### Softwares usados
+Falamos algo do tipo de que *só* vamos usar isso
+* [Arduino](https://www.arduino.cc/en/Main/Software)
+* [Fritzing](https://fritzing.org/download/) (Opcional)
+
+### Hardwares usado
+Falar sobre alguns extras que são usado, mas na maioria são:
+* Placa de desenvolvimento NodeMCU
+* Resistores
+* Push Buttons
+* Jumpers
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+* Arduino
+```sh
+apt-get install arduino
+```
+
+<!-- SUGESTÃO -->
+
+> Sugiro a gente fazer uma imagem dessa pra ficar bem legal e ilustrativo!
+![asd](assets/trilha.svg)
+
+<!-- ESBOÇO -->
+
 ### Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
 	
 Descrição: Aqui se trata de conhecer o kit de desenvolvimento, saber programar a placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
@@ -58,3 +146,33 @@ _______
 Outros:
 - Criar uma API
 - MQTT
+
+<!-- FIM ESBOÇO-->
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+
+
+
+<!-- Pra usar a logo, devemos informar o autor -->
+<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
