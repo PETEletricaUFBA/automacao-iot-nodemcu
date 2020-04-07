@@ -41,6 +41,7 @@
 
 <!-- Sumário -->
 <!-- Tem um nome melhor pra isso? -->
+<!-- Deixar por ultimo -->
 ## Sumário 
 
 * [Sobre o projeto](#sobre-o-projeto)
@@ -58,7 +59,7 @@
 
 <!-- SOBRE O PROJETO -->
 ## Sobre o projeto
-Descrição sobre O QUE é o projeto, de ONDE ele começa, COMO ele termina, e o que pode ser feito por ele o QUEM aqui é todo mundo! kk
+O projeto tem como objetivo apresentar um conteúdo prático, objetivo e de fácil consulta para um pessoa a partir de qualquer conhecimento que ela possua sobre Automação! Este guia conterá projetos iniciais como acender uma LED até como criar um servidor, integrar com um BOT e não sei oq.
 
 ### Softwares usados
 Falamos algo do tipo de que *só* vamos usar isso
@@ -72,15 +73,12 @@ Falar sobre alguns extras que são usado, mas na maioria são:
 * Push Buttons
 * Jumpers
 
-
 <!-- GETTING STARTED -->
 ## Getting Started
-
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
 This is an example of how to list things you need to use the software and how to install them.
 * Arduino
 ```sh
@@ -93,9 +91,6 @@ apt-get install arduino
 ![asd](assets/trilha.svg)
 
 <!-- ESBOÇO -->
-
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a1b5adec51bb42ef90d079504bba374d)](https://app.codacy.com/gh/PETEletricaUFBA/IoT?utm_source=github.com&utm_medium=referral&utm_content=PETEletricaUFBA/IoT&utm_campaign=Badge_Grade_Dashboard)
-
 ## Esboço inicial para manual de automação:
 
 ### Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
