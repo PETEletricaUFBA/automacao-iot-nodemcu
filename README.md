@@ -3,7 +3,7 @@
 <!-- LOGO -->
 <h1 align="center">
   <br>
-  <a href="#"><img src="assets/automation.png" alt="A smart house logo" width="200"></a>
+  <a href="#"><img src="assets/automation.png" alt="A smart house logo" width="100"></a>
   <br>
   NodeMCU para IoT
   <br>
@@ -54,7 +54,6 @@
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
-
 
 
 <!-- SOBRE O PROJETO -->
