@@ -26,7 +26,7 @@
     <img src="https://badgen.net/github/license/PETEletricaUFBA/IoT">
   </a>
   <img src="https://badgen.net/github/last-commit/PETEletricaUFBA/IoT">
-</p>
+</p> 
 
 <!-- Menu Principal -->
 <!-- Aqui colocamos páginas principais como creditos, licença, como contribuir, coisas assim..-->
