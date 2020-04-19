@@ -43,6 +43,7 @@
 <!-- Sumário -->
 <!-- Tem um nome melhor pra isso? -->
 <!-- Deixar por ultimo -->
+
 ## Sumário 
 
 * [Sobre o projeto](#sobre-o-projeto)
@@ -74,25 +75,18 @@ Falar sobre alguns extras que são usado, mas na maioria são:
 * Push Buttons
 * Jumpers
 
-<!-- GETTING STARTED -->
-## Getting Started
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-This is an example of how to list things you need to use the software and how to install them.
-* Arduino
-```sh
-apt-get install arduino
-```
-
-<!-- SUGESTÃO -->
+<!-- Organização -->
+## Organização
+Aqui fazemos uma breve descrição sobre a trilha de conhecimento do manual
 
 > Sugiro a gente fazer uma imagem dessa pra ficar bem legal e ilustrativo!
+
 ![asd](assets/trilha.svg)
 
 <!-- ESBOÇO -->
-## Esboço inicial para manual de automação:
+## Lista a vera:
+
+<!--FAZER LINKS EM TODOS OS ITENS-->
 
 ### Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
 	
@@ -115,13 +109,12 @@ Importante: Interessante usar o monitor serial ou plotter serial para debugar sa
 
 Ao término deste tópico o estudante deverá (trocar essa palavra) ter as habilidades de conhecer o básico do microcontrolador, saber programar e constuir circuitos simples para a leitura e escrita digital e analógica, instigando-o para o proximo tópico que é implementar algumas automações de pequenos circuitos em situações mais próximas do mundo real
 
-_____________________________________________________
-## Noções de implementações de automação no mundo real: (Tempo estimado: 25h)
+### Noções de implementações de automação no mundo real: (Tempo estimado: 25h)
 Descrição: Nesta etapa espera-se atingir outras habilidades como conhecimento dos diversos sensores e atuadores que se pode usar com estes microcontroladores. Basicamente a melhor forma de continuar os estudos será praticar mais circuitos!
 
 Importante: Interessante usar o monitor serial ou plotter serial para debugar saídas e entradas ou fornecer informações adicionais
 
-### Sensores:
+#### Sensores:
 1. Circuito e programa com sensor de luminosidade LDR
 2. Circuito e programa com sensor de distância
 3. Circuito e programa com sensor de temperatura   \_ Existe um sensor que mede temperatura + umidade
@@ -131,22 +124,18 @@ Importante: Interessante usar o monitor serial ou plotter serial para debugar sa
 
 Comentar outros tipos de sensores: vazão de água, sensor de corrente, sensor de chuva, pressão de gás, sensor de vibraçao e outros bem mais específicos contudo o principio de funcionamento é o mesmo
 
-### Atuadores/Módulos:
+#### Atuadores/Módulos:
 1. Circuito e programa com relé controlado por algum sensor
 2. Circuito e programa de um buzzer sendo controlado por botões ou um potênciômetro
 3. Circuito e programa de um servo motor com alimentação externa controlado por um potenciômetro ou outro sensor
 4. Circuito e programa de um motor usando Ponte H e controle através de potenciômetro ou outro sensor
 5. Circuito e programa de alguma coisa sendo escrita em um display LCD (podendo usar o protocolo I2C)
 
-_____________________________________________________
-## Noções de como levar informação para o mundo virtual!
+### Noções de como levar informação para o mundo virtual!
 Descrição: 
 
-_______
-## others 
-_______
 
-Outros:
+### Outros:
 - Criar uma API
 - MQTT
 
