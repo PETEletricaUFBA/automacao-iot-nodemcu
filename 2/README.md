@@ -9,7 +9,7 @@ O circuito também conhecido como "escrita digital/leitura digital" pode ser emp
 ## Conteúdo
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
-- [Código do Circuito](#código-do-circuito)
+- [Código do Circuito](#c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
 1. NodeMCU

@@ -9,7 +9,7 @@ O circuito também conhecido como "fading in and fading out" permite alterar o b
 ## Conteúdo
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
-- [O Código do Circuito](#codigo-do-circuito)
+- [O Código do Circuito](#c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
 1. NodeMCU
