@@ -1,4 +1,4 @@
-# 5. Circuito e programa com sensor de luminosidade LDR
+# 1. Circuito e programa com sensor de luminosidade LDR
 
 Esse projeto consiste na utilização da função ```analogRead```  juntamente com o sensor LDR (_*Light Dependent Resistor*_) visando aplicações do mundo real.
 
