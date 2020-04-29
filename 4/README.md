@@ -48,7 +48,7 @@ Use o código que está em [code](code/code.ino) ou copie o código abaixo:
 #define pot A0
 
 void setup(){
-  Serial.begin(115220);
+  Serial.begin(115200);
   pinMode(led,OUTPUT);
   pinMode(pot,INPUT);
 }
