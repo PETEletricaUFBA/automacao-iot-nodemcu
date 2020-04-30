@@ -38,15 +38,13 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 //![Protoboard](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/3/assets/pinout.png)
 
 
-É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando) e além disso, pela capacidade de gerar PWM, controla-se o valor intermediário de tensão enviado para a saída. 
+É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
 
-Essas são os pinos dísponúveis para o uso do PWM:
-![Imagem do PWM](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/3/assets/pinout.jpg)
 
 
 O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
 
-O potenciômetro é uma entrada que gera um sinal analógico ao longo do tempo e por esse mesmo motivo o terminal central do potenciômetro deve ser conectado ao pino analógico do ESP. Os terminais da extremidade devem ser conectados no VCC e no GND.
+O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo motivo o terminal XXX do sensor deve ser conectado a um pino digital do ESP. Os outros terminais devem ser conectados no VCC e no GND.
 
 ## O código do Circuito
 
