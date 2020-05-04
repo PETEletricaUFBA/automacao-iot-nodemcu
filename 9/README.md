@@ -1,87 +1,126 @@
-# 5. Circuito e programa com sensor de presença PIR
+# Titulo Principal
 
-Esse projeto consiste na utilização da função ```digitalRead```  juntamente com o sensor PIR (_*Piroelétrico*_) visando aplicações do mundo real.
+Aqui é um paragrafo contando o que o circuito faz, como é conhecido e onde isso pode ser empregado na prática em situações de automação.
 
-O sensor PIR ou sensor de presença  é um componente eletrônico capaz de detectar a variação de luz infravermelha emitida pelo corpo humano, em outras palavras esse dispositivo detecta movimentos de objetos que exalam calor e que estejam dentro do seu raio de detecção que alcança até 7 metros. É importante citar ainda que o corpo humano emite radiação e consequentemente há uma variação de luz infravermelha.
+> Frase curta resumindo tudo, exemplo: Neste exemplo você vai aprender como controlar o brilho de uma lâmpada através de um potenciômetro
 
-**Nota: O sensor PIR detecta variação de radiação infravermelha e não a radiação, logo, uma pessoa parada não será detectada pelo mesmo.**
-
-O PIR é utilizado em diversas aplicações, seja para segurança, economia de energia, entre outros. Este dispositivo é encontrado facilmente em corredores, estacionamentos e lobbys de condomínios, controlando a iluminação do local e assim economizando energia. Além disso ele pode ser utilizado para reforçar a segurança ao ser integrado a algum sistema de alarme.
-
-
-Agora que já conhecemos a funcionalidade do sensor, vamos observar o seu funcionamento no circuito abaixo:
-
-
-
-O circuito envolvendo o PIR envolve a seguinte competência trabalhada no módulo 1:
-
-- [x] Leitura Digital
-- [x] Escrita Digital
-
-> Nesse projeto você irá aprender a utilizar o PIR, juntamente com o processo de leitura digital com a função  ```digitalWrite```, bem como o de escrita digital usando a função  ```digitalRead```
 ## Conteúdo
 - [Materiais Necessários](#materiais-necessários)
-- [Montagem do Circuito](#montagem-do-circuito)
-- [O Código do Circuito](#código-do-circuito)
+- [Titulo 1](#titulo-1)
+  - [sub 1](#sub-1)
+  - [sub 2](#sub-2)
+- [Titulo 2](#titulo-2)
+  - [sub 3](#sub-3)
+  - [sub 4](#sub-4)
+
+
 
 ## Materiais Necessários
 1. NodeMCU
-2. 1 Sensor PIR
-3. 1 LED
-4. 1 Resistor de 220Ω
-5. Protoboard
-6. Jumpers
+2. Material 2
+3. Material 3
+4. Material 4
+5. Material 5
 
-## Montagem do Circuito
-O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
+## Titulo 1 
 
-//![Protoboard](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/3/assets/pinout.png)
+### Sub 1
 
+Mussum Ipsum, cacilds vidis litro abertis. Casamentiss faiz malandris se pirulitá. Leite de capivaris, leite de mula manquis 
 
-É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
+```apt-get install code```
 
+Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. 
 
+```pacman -Syu telegram-desktop```
 
-O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
+![Descrição de imagem](assets/nomeDaImagem.png)
 
-O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo motivo o terminal XXX do sensor deve ser conectado a um pino digital do ESP. Os outros terminais devem ser conectados no VCC e no GND.
+Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! 
 
-## O código do Circuito
+### Sub 2
 
-Use o código que está em [code](code/code.ino) ou copie o código abaixo:
+```Ferramentas -> Opçoes -> Geral``` 
+
+Emphasis, aka italics, with *asterisks* or _underscores_.
+
+Strong emphasis, aka bold, with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough uses two tildes. ~~Scratch this.~~
+
+[I'm an inline-style link](https://www.google.com)
+
+## Titulo 2
+
+Inline `code` has `back-ticks around` it.
  
-```C++
-#define led 12
-#define pir 5
+```c++
+#include<iostream>
 
-void setup(){
-  Serial.begin(115200);
-  pinMode(led,OUTPUT);
-  pinMode(pir,INPUT);
+int main() {
+    cout<<"Hello Word"<<endl;
+    return 0;
 }
-
-void loop(){
-  int presenca=digitalRead(pir); 
-  Serial.println(presenca);
-  delay(10);
-  if(presenca){
-    digitalWrite(led,HIGH);
-  }
-  else{
-    digitalWrite(led,LOW);
-}
-}
-  
 ```
-O código acima começa com a declaração e associação das saídas e entradas utilizadas. O LED foi associado à constante 12 (D6) e o PIR à constante 5 (D1). Feito isso, partimos para o ```void setup``` onde é necessário iniciar a comunicação serial através do comando "Serial.begin" e declarar as entradas e saídas por meio do pinMode.
 
-Posteriormente, no ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```digitalRead```  que obterá informação digital através da leitura da variável pir(sensor de presença). A informação será armazenada na variável ```presenca```  
+### sub 3:
 
-Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável presenca estiver com um nível lógico 1, então liga-se o LED, com o nível lógico 0 o LED é desligado. Você deve ter percebido o uso da função ```digitalWrite``` que tem a seguinte sintaxe: ```digitalWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre ligado e desligado(HIGH/LOW).
+Use o código que está em [code](code) ou copie o código abaixo:
 
+```C++
+const int led=16;
 
-Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
+void setup() {
+  pinMode(led, OUTPUT);
+}
 
-![Circuit](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/3/assets/circuit.gif)
+void loop() {
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led, LOW);
+  delay(1000);                 
+}
+```
 
-> Pense na utilização do PIR na sua casa ou em outras aplicações do seu cotidiano. 
+### Sub 4
+
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the 
+raw Markdown line up prettily. You can also use inline Markdown.
+
+<dl>
+  <dt>Definition list</dt>
+  <dd>Is something people use sometimes.</dd>
+
+  <dt>Markdown in HTML</dt>
+  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
+</dl>
+
+Three or more...
+
+---
+
+Hyphens
+
+***
+
+Asterisks
+
+___
+
+Underscores
+
+Caso tenha tido algum problema abra uma issue clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new) 
+
+#### Exemplo da montagem
+![Real Circuit](assets/circuit.gif)
