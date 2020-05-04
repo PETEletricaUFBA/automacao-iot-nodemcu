@@ -4,13 +4,13 @@ Esse projeto consiste na utilização da função ```analogRead```  juntamente c
 
 O sensor LDR ou fotoresistor é um componente eletrônico que apresenta resistência variável conforme a  intensidade da luz incidente. É importante citar ainda que o LDR assim como um resistor comum, não apresenta polaridade e a resistência apresentada pelo sensor diminui à medida que se aumenta a intensidade da luz incidente.
 
+![LDR](assets/LDR.jpg)
+
 Nesse momento você pode estar se perguntando: em qual situação eu posso utilizar um dispositivo que é sensível a luz no meu dia a dia?
 
 Você pode até não saber disso, mas os fotoresistores são utilizados em inúmeras aplicações do mundo real. Os postes das milhares de ruas do nosso país acendem automaticamente, você já se perguntou o por quê? O LDR se encontra no sistema de iluminação pública para determinar quando a lâmpada do poste deve acender. Outra aplicação bastante comum é o uso do LDR em sensor crespuscular, dispositivo encontrado em veículos modernos para acendimento automático dos farois. Além dessas formas comuns do uso do LDR, você pode conceber um sistema que liga ou desliga um motor a depender do horário do dia, por exemplo.
 
 Agora que já conhecemos a funcionalidade do sensor de luminosidade, vamos observar o seu funcionamento no circuito abaixo:
-
-
 
 O circuito envolvendo o LDR envolve a seguinte competência trabalhada no módulo 1:
 
@@ -35,7 +35,7 @@ O circuito envolvendo o LDR envolve a seguinte competência trabalhada no módul
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
-//![Protoboard](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/3/assets/pinout.png)
+![Protoboard](assets/pinout.png)
 
 
 É necessário conectar um terminal do LED em um pino digital do NODEMCU , pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
@@ -82,6 +82,6 @@ Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a var
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
-![Circuit](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/3/assets/circuit.gif)
+![Circuit](assets/circuit.gif)
 
 > Pense na utilização do LDR na sua casa ou em outras aplicações do seu cotidiano. 
