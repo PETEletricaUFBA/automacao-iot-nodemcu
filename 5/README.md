@@ -10,8 +10,6 @@ Nesse momento você pode estar se perguntando: em qual situação eu posso utili
 
 Você pode até não saber disso, mas os fotoresistores são utilizados em inúmeras aplicações do mundo real. Os postes das milhares de ruas do nosso país acendem automaticamente, você já se perguntou o por quê? O LDR se encontra no sistema de iluminação pública para determinar quando a lâmpada do poste deve acender. Outra aplicação bastante comum é o uso do LDR em sensor crespuscular, dispositivo encontrado em veículos modernos para acendimento automático dos farois. Além dessas formas comuns do uso do LDR, você pode conceber um sistema que liga ou desliga um motor a depender do horário do dia, por exemplo.
 
-Agora que já conhecemos a funcionalidade do sensor de luminosidade, vamos observar o seu funcionamento no circuito abaixo:
-
 O circuito envolvendo o LDR envolve a seguinte competência trabalhada no módulo 1:
 
 - [x] Escrita Digital
@@ -37,7 +35,7 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 
 ![Protoboard](assets/protoboard.png)
 
-É necessário conectar um terminal do LED em um pino digital do NODEMCU , pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
+É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
 
 
 
@@ -76,7 +74,7 @@ O código acima começa com a declaração e associação das saídas e entradas
 
 Posteriormente, no ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```analogRead```  que obterá informação analógica através da leitura da variável ldr e armazenará essa informação na variável luminosidade de forma analógica quantizada com uma resolução de 10 bits. 
 
-Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável luminosidade estiver maior que 400, então liga-se o LED, abaixo desse valor, o LED é desligado. Você deve ter percebido o uso da função ```digitalWrite``` que tem a seguinte sintaxe: ```digitalWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre ligado e desligado(HIGH/LOW).
+Além disso, utiliza-se uma estrutura condicional ```if```, de modo que, se a variável luminosidade estiver maior que 400,  liga-se o LED, e se menor, o LED é desligado. Você deve ter percebido o uso da função ```digitalWrite``` que tem a seguinte sintaxe: ```digitalWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre ligado e desligado(HIGH/LOW).
 
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
