@@ -8,11 +8,6 @@ O sensor PIR ou sensor de presença  é um componente eletrônico capaz de detec
 
 O PIR é utilizado em diversas aplicações, seja para segurança, economia de energia, entre outros. Este dispositivo é encontrado facilmente em corredores, estacionamentos e lobbys de condomínios, controlando a iluminação do local e assim economizando energia. Além disso ele pode ser utilizado para reforçar a segurança ao ser integrado a algum sistema de alarme.
 
-
-Agora que já conhecemos a funcionalidade do sensor, vamos observar o seu funcionamento no circuito abaixo:
-
-
-
 O circuito envolvendo o PIR envolve a seguinte competência trabalhada no módulo 1:
 
 - [x] Leitura Digital
@@ -77,7 +72,7 @@ O código acima começa com a declaração e associação das saídas e entradas
 
 Posteriormente, no ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```digitalRead```  que obterá informação digital através da leitura da variável pir(sensor de presença). A informação será armazenada na variável ```presenca```  
 
-Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável presenca estiver com um nível lógico 1, então liga-se o LED, com o nível lógico 0 o LED é desligado. Você deve ter percebido o uso da função ```digitalWrite``` que tem a seguinte sintaxe: ```digitalWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre ligado e desligado(HIGH/LOW).
+Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável presenca estiver com um nível lógico 1, então liga-se o LED, e com o nível lógico 0, o LED é desligado. Você deve ter percebido o uso da função ```digitalWrite``` que tem a seguinte sintaxe: ```digitalWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre ligado e desligado(HIGH/LOW).
 
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
