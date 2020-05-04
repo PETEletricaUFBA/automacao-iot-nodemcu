@@ -92,7 +92,7 @@ Aqui fazemos uma breve descrição sobre a trilha de conhecimento do manual
 	
 Descrição: Aqui se trata de conhecer o kit de desenvolvimento, saber programar a placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
 
-Pastas relacionadas: 1, 2
+Pastas relacionadas: 1, 2, 3 e 4
 
 1. Conhecer a placa de desenvolvimento (os Microcontroladores, as GIPOs, Pinout, Nível de tensão, entre outros);
 2. Saber o BÁSICO de alguma linguagem de programação como C, Lua, Python para programar o microcontrolador
@@ -115,6 +115,9 @@ Descrição: Nesta etapa espera-se atingir outras habilidades como conhecimento 
 Importante: Interessante usar o monitor serial ou plotter serial para debugar saídas e entradas ou fornecer informações adicionais
 
 #### Sensores:
+
+Pastas relacionadas: 5, 6, 7, 8, 9 e 10
+
 1. Circuito e programa com sensor de luminosidade LDR
 2. Circuito e programa com sensor de distância
 3. Circuito e programa com sensor de temperatura   \_ Existe um sensor que mede temperatura + umidade
