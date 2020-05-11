@@ -30,7 +30,7 @@ O circuito envolvendo o PIR envolve a seguinte competência trabalhada no módul
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
-//![Protoboard](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/9/assets/protoboard.png)
+![Protoboard](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/9/assets/protoboard.png)
 
 
 É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
