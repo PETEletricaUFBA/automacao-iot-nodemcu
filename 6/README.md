@@ -37,7 +37,7 @@ O circuito envolvendo o sensor ultrassônico envolve as seguintes competências 
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
-![Protoboard](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/6/assets/protoboard.png)
+![Protoboard](assets/protoboard.png)
 
 É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
 
@@ -110,6 +110,6 @@ Por fim, declara-se a variável result que como podemos visualizar abaixo, nada 
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
-![Circuit](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/9/assets/circuit.gif)
+![Circuit](assets/circuit.png)
 
 > Pense na utilização do sensro ultrassônico na sua casa ou em outras aplicações do seu cotidiano. 
