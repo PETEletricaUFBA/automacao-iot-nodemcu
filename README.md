@@ -141,6 +141,7 @@ Descrição:
 ### Outros:
 - Criar uma API
 - MQTT
+- Teste
 
 <!-- FIM ESBOÇO-->
 
