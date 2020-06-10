@@ -43,7 +43,7 @@ Use o código que está em [code](code/code.ino) ou copie o código abaixo:
 const int led = 14;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(led, OUTPUT);
 }
 
