@@ -10,7 +10,7 @@
 </h1>
 
 
-<h4 align="center">Um guia definitivo para para aprender <a href="https://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a> com diversos exemplos práticos, incluindo aplicações de Internet das Coisas! Step-by-Step</h4>
+<h4 align="center">Um guia definitivo para aprender <a href="https://www.nodemcu.com/index_en.html" target="_blank">NodeMCU</a> com diversos exemplos práticos, incluindo aplicações de Internet das Coisas! Step-by-Step</h4>
 
 <p align="center">
   <a href="http://www.peteletrica.eng.ufba.br/2017/" target="_blank"><img src="https://badgen.net/badge/icon/PET Elétrica/blue?icon=bitcoin-lightning&label" alt="Site do PET Elétrica"></a>
@@ -61,87 +61,100 @@
 
 <!-- SOBRE O PROJETO -->
 ## Sobre o projeto
-O projeto tem como objetivo apresentar um conteúdo prático, objetivo e de fácil consulta para um pessoa a partir de qualquer conhecimento que ela possua sobre Automação! Este guia conterá projetos iniciais como acender uma LED até como criar um servidor, integrar com um BOT e não sei oq.
+O projeto busca apresentar um conteúdo prático, objetivo e de fácil consulta. Ele é acessível para qualquer pessoa, independente do nível de conhecimento em Automação.
+Este guia conterá projetos iniciais, como acender um LED,  criar um servidor e integrá-lo com um bot ou na internet.
 
 ### Softwares usados
-Falamos algo do tipo de que *só* vamos usar isso
 * [Arduino](https://www.arduino.cc/en/Main/Software)
 * [Fritzing](https://fritzing.org/download/) (Opcional)
+* [Tinkercad](https://www.tinkercad.com/) (Opcional)
 
-### Hardwares usado
-Falar sobre alguns extras que são usado, mas na maioria são:
-* Placa de desenvolvimento NodeMCU
-* Resistores
-* Push Buttons
+### Hardwares usados
+* Atuadores (Ex: LED, motores etc)
+* Fonte de energia (Ex: bateria)
 * Jumpers
+* Placa de desenvolvimento NodeMCU
+* Protoboard
+* Push Buttons
+* Resistores
+* Sensores (Ex: Potenciômetro, LDR etc)
 
 <!-- Organização -->
-## Organização
-Aqui fazemos uma breve descrição sobre a trilha de conhecimento do manual
-
-> Sugiro a gente fazer uma imagem dessa pra ficar bem legal e ilustrativo!
+## Trilha de Conhecimento
+Dividiremos o conteúdo em algumas etapas, são elas:
+**1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU:** Conceitos iniciais de lógica de programação e suas aplicações em circuitos básicos.
+**2) Noções de implementações de automação no mundo real:** Estudos sobre alguns sensores e atuadores e suas interações com o mundo físico.
+**3) Noções sobre a criação de bots e uso de servidores:** 
+**4) Como levar a informação para o mundo virtual?**
 
 ![asd](assets/trilha.svg)
 
-<!-- ESBOÇO -->
-## Lista a vera:
+
+## Programação:
 
 <!--FAZER LINKS EM TODOS OS ITENS-->
 
-### Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
+### 1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
 	
-Descrição: Aqui se trata de conhecer o kit de desenvolvimento, saber programar a placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
+**Descrição:** Apresenta-se conhecimentos sobre o kit NodeMCU e como programar uma placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
 
-Pastas relacionadas: 1, 2, 3 e 4
+**Dica:** Interessante usar o monitor serial ou plotter serial para debugar saídas e entradas ou fornecer informações adicionais.
 
-1. Conhecer a placa de desenvolvimento (os Microcontroladores, as GIPOs, Pinout, Nível de tensão, entre outros);
-2. Saber o BÁSICO de alguma linguagem de programação como C, Lua, Python para programar o microcontrolador
-3. Saber como upar um código para a placa usando alguma IDE (ou não)
-4. Realizar pequenos circuitos com sensores e atuadores:
-	Abaixo um exemplo de caminho legal para seguir:
-	- Acender e apagar uma LED (Blinking) (Habilidade trabalhada > Escrita digital)
-	- Ler estado de um botão e exibir no computador via serial (Habilidade trabalhada > Leitura digital)
-	- Acender algumas LED's dependendo de alguns botões pressionados ou não (Habilidade trabalhada > Sensor + Atuador acoplados)
-	- Mudar o brilho de uma lâmpada ao decorrer do tempo (Fading in e Fading out) (Habilidade trabalhada > Escrita analógica)
-	- Acender uma led com brilho variável através de um potênciômetro (Habilidade trabalhada > Sensor + Atuador com sinais analógicos) Extra: entender PWM
+**Pastas relacionadas:** 1, 2, 3 e 4.
 
-Importante: Interessante usar o monitor serial ou plotter serial para debugar saídas e entradas ou fornecer informações adicionais
+**Conteúdo:**
+1. A placa de desenvolvimento: o microcontrolador, as GIPOs, pinout, níveis de tensão, entre outros;
+2. Uso da linguagem de programação (C++ e Python) para o microcontrolador;
+3. Processo de  upar um código para a placa usando uma IDE;
+4. Indicação de pequenos circuitos para testes:
+	- Acender e apagar uma LED (Blinking);
+	- Ler estado de um botão e exibir no computador via serial;
+	- Acender LEDs com botões;
+	- Mudar o brilho de uma lâmpada ao decorrer do tempo (Fading in e Fading out);
+	- Acender uma led com brilho variável através de um potênciômetro + PWM.
 
-Ao término deste tópico o estudante deverá (trocar essa palavra) ter as habilidades de conhecer o básico do microcontrolador, saber programar e constuir circuitos simples para a leitura e escrita digital e analógica, instigando-o para o proximo tópico que é implementar algumas automações de pequenos circuitos em situações mais próximas do mundo real
 
-### Noções de implementações de automação no mundo real: (Tempo estimado: 25h)
-Descrição: Nesta etapa espera-se atingir outras habilidades como conhecimento dos diversos sensores e atuadores que se pode usar com estes microcontroladores. Basicamente a melhor forma de continuar os estudos será praticar mais circuitos!
+### 2) Noções de implementações de automação no mundo real: (Tempo estimado: 25h)
+**Descrição:** Apresentação de outras habilidades utilizando diversos sensores e atuadores, a partir de aplicações práticas. 
 
-Importante: Interessante usar o monitor serial ou plotter serial para debugar saídas e entradas ou fornecer informações adicionais
+**Dica:** Interessante usar o monitor serial ou plotter serial para debugar saídas e entradas ou fornecer informações adicionais.
 
-#### Sensores:
+#### **SENSORES:**
 
-Pastas relacionadas: 5, 6, 7, 8, 9 e 10
+ **Pastas relacionadas:** 5, 6, 7, 8, 9 e 10.
 
-1. Circuito e programa com sensor de luminosidade LDR
-2. Circuito e programa com sensor de distância
-3. Circuito e programa com sensor de temperatura   \_ Existe um sensor que mede temperatura + umidade
-4. Circuito e programa com sensor de umidade       /
-5. Circuito e programa com sensor de presença PIR
-6. Circuito e programa com sensor de infra vermelho
+1. Sensor de luminosidade LDR;
+2. Sensor de distância;
+3. Sensor de temperatura; 
+4. Sensor de umidade;
+5. Sensor de presença PIR;
+6. Sensor de infra vermelho;
+7. Outros tipos de sensores.
 
-Comentar outros tipos de sensores: vazão de água, sensor de corrente, sensor de chuva, pressão de gás, sensor de vibraçao e outros bem mais específicos contudo o principio de funcionamento é o mesmo
 
-#### Atuadores/Módulos:
-1. Circuito e programa com relé controlado por algum sensor
-2. Circuito e programa de um buzzer sendo controlado por botões ou um potênciômetro
-3. Circuito e programa de um servo motor com alimentação externa controlado por um potenciômetro ou outro sensor
-4. Circuito e programa de um motor usando Ponte H e controle através de potenciômetro ou outro sensor
-5. Circuito e programa de alguma coisa sendo escrita em um display LCD (podendo usar o protocolo I2C)
+#### **ATUADORES/MÓDULOS:**
 
-### Noções de como levar informação para o mundo virtual!
-Descrição: 
+**Pastas relacionadas:**
 
+1. Relé controlado por sensor;
+2. Buzzer controlado por botões ou potênciômetro;
+3. Servo motor com alimentação externa controlado por um potenciômetro ou outro sensor;
+4. Motor usando Ponte H e controle através de potenciômetro ou outro sensor;
+5. Escrita em um display LCD com o protocolo I2C.
+
+### 3) Noções sobre a criação de bots e uso de servidores:*
+**Descrição:**
+
+**Pastas relacionadas:**
+
+### 4) Como levar a informação para o mundo virtual?
+**Descrição:**
+
+**Pastas relacionadas:**
 
 ### Outros:
 - Criar uma API
 - MQTT
-- Teste
 
 <!-- FIM ESBOÇO-->
 
