@@ -62,7 +62,7 @@ String result;
 void setup(){
   pinMode(echoPin, INPUT); 
   pinMode(trigPin, OUTPUT); 
-  Serial.begin(9600);
+  Serial.begin(115200);
   }
 void loop(){
   
