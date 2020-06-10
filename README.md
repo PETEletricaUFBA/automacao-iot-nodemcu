@@ -82,10 +82,10 @@ Este guia conterá projetos iniciais, como acender um LED,  criar um servidor e 
 <!-- Organização -->
 ## TRIHA DO CONHECIMENTO
 Dividiremos o conteúdo em algumas etapas, são elas:
-**1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU:** Conceitos iniciais de lógica de programação e suas aplicações em circuitos básicos.
-**2) Noções de implementações de automação no mundo real:** Estudos sobre alguns sensores e atuadores e suas interações com o mundo físico.
-**3) Noções sobre a criação de bots e uso de servidores:** 
-**4) Como levar a informação para o mundo virtual?**
+* **1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU:** Conceitos iniciais de lógica de programação e suas aplicações em circuitos básicos.
+* **2) Noções de implementações de automação no mundo real:** Estudos sobre alguns sensores e atuadores e suas interações com o mundo físico.
+* **3) Noções sobre a criação de bots e uso de servidores:** 
+* **4) Como levar a informação para o mundo virtual?**
 
 ![asd](assets/trilha.svg)
 
