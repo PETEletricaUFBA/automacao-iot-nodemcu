@@ -48,7 +48,7 @@ const int pushButton = 15;
 const int led        = 16;
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   pinMode(pushButton, INPUT);
   pinMode(led, OUTPUT);
 }
