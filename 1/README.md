@@ -130,4 +130,4 @@ Se você fez tudo certo, o LED vai acender e apagar a cada segundo (função del
 Caso tenha tido algum problema abra uma issue clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new) 
 
 #### Exemplo da montagem
-![Real Circuit](assets/circuit.gif)
+![Real Circuit](assets/circuitoGif1.gif)
