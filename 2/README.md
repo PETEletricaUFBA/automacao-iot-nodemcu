@@ -4,6 +4,10 @@ Esse projeto consiste no controle de um LED (liga/desliga) através de um botão
 
 O circuito também conhecido como "escrita digital/leitura digital" pode ser empregado de formas distintas na vida cotidiana. Habilitar ou desabilitar uma saída, apesar de simples, é uma prática fundamental e bem comum. Ao invés de se utilizar um LED, podemos utilizar esse circuito como base e, por exemplo, acionar uma sirene que nos informa, através de efeito sonoro, o vazamento de um produto venenoso em uma indústria de produtos químicos.
 
+O circuito permite trabalhar:
+
+- [x] Escrita Digital
+
 > Nesse projeto você irá aprender a transmitir as informações entre diferentes circuitos através da programação e utilizar os botões (push button) utilizando a técnica Pull-down.
 
 ## Conteúdo
@@ -27,10 +31,6 @@ O circuito também conhecido como "escrita digital/leitura digital" pode ser emp
 O circuito deve ser montado como mostra a figura acima, representado de maneira esquemática e em protoboard. Ele dividido em duas partes, uma do LED e a outra do push button.
 
 É necessário conectar um terminal do LED em uma porta digital do NODEMCU, pois através dessa conexão, é possível controlar o envio de 5V ou 0V para o LED (ligando/desligando). O outro terminal, deve ser conectado a um resistor limitador de corrente com valor de resistência em torno de 220Ω e, em seguida, ir direto para o GND.
-
-O circuito permite trabalhar:
-
-- [x] Escrita Digital
 
 A outra etapa de montagem do circuito é a conexão do PushButton. Nesse sentido, é necessário entender um pouco sobre Pull-Up e Pull-Down.
 
