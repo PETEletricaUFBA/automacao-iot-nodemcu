@@ -4,6 +4,10 @@ Esse projeto consiste na mudança do brilho de um LED utilizando a função ```a
 
 O circuito também conhecido como "fading in and fading out" permite alterar o brilho do LED. Apesar de parecer uma aplicação simples, normalmente, em projetos utilizando microcontroladores não temos como definir uma saída diferente de ligado ou desligado, afinal essa informação é digital. No entanto, se quisermos que um LED apresente um brilho intermediário, o que devemos fazer? Além do mais, em aplicações reais existem níveis intermediários entre o mínimo ou desligado e o máximo, como em um ventilador ou volume em uma caixa de som, por exemplo.
 
+O circuito permite trabalhar:
+
+- [x] Escrita Analógica
+
 > Nesse projeto você irá aprender como relizar uma escrita analógica, utilizando a função ```analogWrite``` através do controle de um brilho de uma lâmpada.
 
 ## Conteúdo
