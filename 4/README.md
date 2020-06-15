@@ -14,7 +14,7 @@ Aprendemos a escrever sinais analógicos no item [3](link), agora vamos aprender
 ## Conteúdo
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
-- [O Código do Circuito](#código-do-circuito)
+- [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
 1. NodeMCU

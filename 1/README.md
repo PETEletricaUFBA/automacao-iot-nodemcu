@@ -11,7 +11,7 @@ Esta aplicação nos permite ligar e desligar a luz do LED periodicamente, ela �
   - [Instalando o suporte a placa esp8266](#instalando-o-suporte-a-placa-esp8266)
 - [Compilando o circuito Blinking](#compilando-o-circuito-blinking)
   - [Montagem do circuito](#montagem-do-circuito)
-  - [Hora do Código!](#hora-do-c&oacute;digo!)
+  - [Hora do Código!](#hora-do-c&oacute;digo)
   - [Compile e Execute](#compile-e-execute)
 
 
