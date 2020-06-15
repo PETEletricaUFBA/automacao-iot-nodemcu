@@ -79,6 +79,6 @@ Além disso, utiliza-se uma estrutura condicional ```if```, de modo que, se a va
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
-![Circuit](assets/circuit.gif)
+![Circuit](assets/circuitoGif5.gif)
 
 > Pense na utilização do LDR na sua casa ou em outras aplicações do seu cotidiano. 
