@@ -19,7 +19,7 @@ O circuito envolvendo o LDR envolve a seguinte competência trabalhada no módul
 ## Conteúdo
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
-- [O Código do Circuito](#código-do-circuito)
+- [O Código do Circuito](#o-c&oacute;-do-circuito)
 
 ## Materiais Necessários
 1. NodeMCU
