@@ -61,7 +61,7 @@ void loop(){
   int luminosidade=analogRead(ldr); 
   Serial.println(luminosidade);
   delay(10);
-  if(luminosidade>100) {
+  if(luminosidade>400) {
     digitalWrite(led,HIGH);
   }
   else {
