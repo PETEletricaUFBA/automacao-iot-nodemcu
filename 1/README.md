@@ -52,6 +52,9 @@ Pronto, sua IDE está preparada para programar um ESP!
 
 ## Compilando o circuito Blinking
 
+O circuito permite trabaar com:
+
+- [x] Escrita Digital
 
 ### Montagem do circuito:
 
