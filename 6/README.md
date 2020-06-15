@@ -90,6 +90,15 @@ void hcsr04(){
 ```
 Diferentemente dos outros circuitos que foram mostrados nesse módulo, esse circuito precisa de uma biblioteca em específico: [``ultrasonic.h``](library/Ultrasonic.zip)
 
+No entanto você deve estar se perguntando como posso adicionar uma nova biblioteca à IDE do arduino. Para adicionar uma nova biblioteca na IDE do arduíno basta clicar em Sketch>Incluir Biblioteca e Adicionar biblioteca.ZIP (A biblioteca pode estar em .ZIP ou em uma pasta), como pode ser visualizado na imagem abaixo:
+
+![TEXTO](assets/library.png)
+
+Após adicionar a biblioteca, provavelmente você vai querer abrí-la e para realizar
+esta ação basta clicar em Arquivo, depois em exemplos, procurar a biblioteca
+requerida e clicá-la.
+
+
 A partir dessa biblioteca podemos fazer uso do sensor HCSR-04.
 
 O código acima começa com a declaração e associação das saídas e entradas utilizadas. O pino "echo" foi associado à constante 4 (D2) e o pino "trigger" à constante 5 (D1). Feito isso, partimos para o ```void setup``` onde é necessário iniciar a comunicação serial através do comando ``Serial.begin`` e declarar as entradas e saídas por meio do ``pinMode``.
