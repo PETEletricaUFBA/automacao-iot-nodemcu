@@ -21,7 +21,7 @@ O circuito também conhecido como "escrita digital/leitura digital" pode ser emp
 
 ## Montagem do Circuito
 
-![Protoboard](assets/protoboard.png)
+![Protoboard](assets/protob.png)
 ![Schematic](assets/schematic.png)
 
 O circuito deve ser montado como mostra a figura acima, representado de maneira esquemática e em protoboard. Ele dividido em duas partes, uma do LED e a outra do push button.
