@@ -88,7 +88,7 @@ void hcsr04(){
  }
   
 ```
-Diferentemente dos outros circuitos que foram mostrados nesse módulo, esse circuito precisa de uma biblioteca em específico: [``ultrasonic.h``](library/Ultrasonic.zip)
+Diferentemente dos outros circuitos que foram mostrados nesse módulo, esse circuito precisa de uma biblioteca em específico: [``Ultrasonic.h``](library/Ultrasonic.zip) **Realize o download da biblioteca antes de prosseguir para os próximos passos.**
 
 No entanto você deve estar se perguntando como posso adicionar uma nova biblioteca à IDE do arduino. Para adicionar uma nova biblioteca na IDE do arduíno basta clicar em Sketch>Incluir Biblioteca e Adicionar biblioteca.ZIP (A biblioteca pode estar em .ZIP ou em uma pasta), como pode ser visualizado na imagem abaixo:
 
