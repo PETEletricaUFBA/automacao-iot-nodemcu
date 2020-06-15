@@ -1,33 +1,20 @@
-#include <Ultrasonic.h>
+#define led 12
+#define pir 5
 
-const int echoPin = D1; 
-const int trigPin = D2;
-
-Ultrasonic ultrasonic(trigPin,echoPin);
-
-int distancia; 
-String result; 
-
-void setup() {
-  pinMode(echoPin, INPUT); 
-  pinMode(trigPin, OUTPUT); 
+void setup(){
   Serial.begin(115200);
+  pinMode(led,OUTPUT);
+  pinMode(pir,INPUT);
 }
 
 void loop(){
-  hcsr04();
-  Serial.print("Distancia ");
-  Serial.print(result); 
-  Serial.println("cm"); 
-  
+  int presenca=digitalRead(pir); 
+  Serial.println(presenca);
+  delay(10);
+  if(presenca){
+    digitalWrite(led,HIGH);
+  }
+  else{
+    digitalWrite(led,LOW);
+  }
 }
-void hcsr04(){
-    digitalWrite(trigPin, LOW);
-    delayMicroseconds(2);
-    digitalWrite(trigPin, HIGH);
-    delayMicroseconds(10);
-    digitalWrite(trigPin, LOW); 
-    distancia = ultrasonic.Ranging(CM);
-    result = String(distancia); 
-    delay(500);
- }
