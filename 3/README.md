@@ -21,7 +21,7 @@ O circuito também conhecido como "fading in and fading out" permite alterar o b
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
-![Protoboard](assets/protoboard.png)
+![Protoboard](assets/circuit.png)
 
 É necessário conectar um terminal do LED em um pino digital do NODEMCU com capacidade para gerar PWM, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando) e além disso, pela capacidade de gerar PWM, controla-se o valor intermediário de tensão enviado para a saída. 
 
