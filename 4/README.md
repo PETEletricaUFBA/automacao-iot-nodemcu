@@ -69,6 +69,6 @@ Além disso, utiliza-se a função ```analogWrite``` que tem a seguinte sintaxe:
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
-![Circuit](assets/circuit.gif)
+![Circuit](assets/circuitoGif4.gif)
 
 > Pense na utilização da função ```analogRead``` em outras aplicações e com outras entradas. 
