@@ -73,6 +73,6 @@ Após upar o código para a placa, ele deve funcionar como no gif abaixo, para v
 
 Caso tenha tido algum problema abra uma issue clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new) 
 
-![Circuit](assets/circuit.gif)
+![Circuit](assets/circuitoGif2.gif)
 
 > Tente colocar mais leds e botões usando mais portas!
