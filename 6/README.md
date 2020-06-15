@@ -94,10 +94,9 @@ No entanto você deve estar se perguntando como posso adicionar uma nova bibliot
 
 ![TEXTO](assets/library.png)
 
-Após adicionar a biblioteca, provavelmente você vai querer abrí-la e para realizar
-esta ação basta clicar em Arquivo, depois em exemplos, procurar a biblioteca
-requerida e clicá-la.
+Após adicionar a biblioteca, provavelmente você vai querer abrí-la. Para realizar esta ação basta clicar em Arquivo, depois em exemplos, procurar a biblioteca requerida e clicá-la. O conjunto das ações descritas anteriormente podem ser visualizadas na imagem a seguir:
 
+![TEXTO](assets/lib.png)
 
 A partir dessa biblioteca podemos fazer uso do sensor HCSR-04.
 
