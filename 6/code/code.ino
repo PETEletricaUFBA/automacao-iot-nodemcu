@@ -1,7 +1,7 @@
 #include <Ultrasonic.h>
 
-const int echoPin = D1; 
-const int trigPin = D2;
+const int echoPin = D0; 
+const int trigPin = D1;
 
 Ultrasonic ultrasonic(trigPin,echoPin);
 
