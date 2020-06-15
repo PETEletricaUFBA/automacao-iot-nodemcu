@@ -48,7 +48,7 @@ void setup() {
 }
 
 void loop() {
-  for(int i=0; i<255; i++) {
+  for(int i=0; i<300; i++) {
     analogWrite(led,i);
     Serial.println(i);
     delay(10);
@@ -57,9 +57,11 @@ void loop() {
 ```
 O código acima começa com a declaração e associação da saída utilizada. O LED foi associado à constante 14. Feito isso, partimos para o ```void setup``` onde é necessário iniciar a comunicação serial através do comando "Serial.begin" e declarar as entradas e saídas por meio do pinMode.
 
-Posteriormente, no ```void loop``` iniciamos a estrutura de repetição ```for```  que vai incrementar uma variável ```i``` até 255. Você deve estar se perguntando: Por quê 255? E a resposta tem relação com a construção interna do microcrontrolador, isto é, o microcontrolador (Arduino ou NodeMCU) utilizam 8 bits para gerar o PWM.
+Posteriormente, no ```void loop``` iniciamos a estrutura de repetição ```for```  que vai incrementar uma variável ```i``` até 300. 
 
-Além disso, utiliza-se a função ```analogWrite``` que tem a seguinte sintaxe: ```analogWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre um valor entre 0 (sempre desligado) e 255 (sempre ligado).
+Você deve estar se perguntando por quê 300? A escolha desse valor está relacionada com a saturação do brilho do LED. Chega um momento em que o incremento não causa um aumento de brilho, nesse caso atinge-se a saturação. É imperioso saber também que esse incremento poderia chegar até 1023 e esse valor limite igual a 1023 está relacionado com a construção interna do microcrontrolador, isto é, o microcontrolador ESP utiliza 10 bits (1024 estados diferentes) para gerar o PWM.
+
+Além disso, utiliza-se a função ```analogWrite``` que tem a seguinte sintaxe: ```analogWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre um valor entre 0 (sempre desligado) e 300 (sempre ligado).
 
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
