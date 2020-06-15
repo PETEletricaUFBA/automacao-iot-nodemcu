@@ -41,6 +41,8 @@ O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrent
 
 O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo motivo o terminal XXX do sensor deve ser conectado a um pino digital do ESP. Os outros terminais devem ser conectados no VCC e no GND.
 
+**É importante saber que o Sensor PIR só funciona quando o seu VCC está conectado a uma fonte de 4,5V a 20V, por esse motivo, é necessário conectar o seu VCC ao terminal de 5V disponível no ESP ou arduíno**
+
 ## O código do Circuito
 
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
