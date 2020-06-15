@@ -28,6 +28,10 @@ O circuito deve ser montado como mostra a figura acima, representado de maneira 
 
 É necessário conectar um terminal do LED em uma porta digital do NODEMCU, pois através dessa conexão, é possível controlar o envio de 5V ou 0V para o LED (ligando/desligando). O outro terminal, deve ser conectado a um resistor limitador de corrente com valor de resistência em torno de 220Ω e, em seguida, ir direto para o GND.
 
+O circuito permite trabalhar:
+
+- [x] Escrita Digital
+
 A outra etapa de montagem do circuito é a conexão do PushButton. Nesse sentido, é necessário entender um pouco sobre Pull-Up e Pull-Down.
 
 ![Circuito Pull-Up e Pull-Down](assets/PULLUPPULLDOWN.jpg)
