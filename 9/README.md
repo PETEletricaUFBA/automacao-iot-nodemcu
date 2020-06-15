@@ -1,4 +1,4 @@
-# 5. Circuito e programa com sensor de presença PIR
+# 9. Circuito e programa com sensor de presença PIR
 
 Esse projeto consiste na utilização da função ```digitalRead```  juntamente com o sensor PIR (_*Piroelétrico*_) visando aplicações do mundo real.
 
@@ -7,6 +7,8 @@ O sensor PIR ou sensor de presença  é um componente eletrônico capaz de detec
 **Nota: O sensor PIR detecta variação de radiação infravermelha e não a radiação, logo, uma pessoa parada não será detectada pelo mesmo.**
 
 O PIR é utilizado em diversas aplicações, seja para segurança, economia de energia, entre outros. Este dispositivo é encontrado facilmente em corredores, estacionamentos e lobbys de condomínios, controlando a iluminação do local e assim economizando energia. Além disso ele pode ser utilizado para reforçar a segurança ao ser integrado a algum sistema de alarme.
+
+Durante a utilização do sensor PIR, muitas pessoas fazem relação ou se confundem com o sensor de distância ultrassônico, no entanto, são sensores que utilizam princípios de funcionamento diferentes e os seus usos, comumente, são em situações divergentes. Enquanto o sensor ultrassônico utiliza ondas mecânicas e detecta a distância de qualquer objeto -independente se emite calor ou não- ao seu emissor, o sensor PIR utiliza infravermelho, ou melhor, diferença de intensidade do infravermelho, de modo que o sensor PIR consegue detectar qualquer corpo que emita calor e esteja dentro do seu raio de ação. 
 
 O circuito envolvendo o PIR envolve a seguinte competência trabalhada no módulo 1:
 
