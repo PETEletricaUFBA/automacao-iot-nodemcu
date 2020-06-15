@@ -33,6 +33,7 @@ O circuito envolvendo o sensor ultrassônico envolve as seguintes competências 
 5. Protoboard
 6. Jumpers
 7. Regulador de tensão 7803
+8. Fonte de alimentação (Usamos uma bateria de 9V)
 
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
