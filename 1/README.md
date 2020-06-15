@@ -57,7 +57,7 @@ Pronto, sua IDE está preparada para programar um ESP!
 
 Monte o circuito como mostra abaixo:
 
-![Circuito](assets/protoboard.png)
+![Circuito](assets/ckt.png)
 
 **Note que o resistor será responsável por limitar a corrente que circula no circuito, evitando que ultrapasse a corrente nominal de operação do LED e o queime.**
 
