@@ -88,7 +88,7 @@ void hcsr04(){
  }
   
 ```
-Diferentemente dos outros circuitos que foram mostrados nesse módulo, esse circuito precisa de uma biblioteca em específico: ``ultrasonic.h``
+Diferentemente dos outros circuitos que foram mostrados nesse módulo, esse circuito precisa de uma biblioteca em específico: [``ultrasonic.h``](/library/Ultrasonic.zip)
 
 A partir dessa biblioteca podemos fazer uso do sensor HCSR-04.
 
