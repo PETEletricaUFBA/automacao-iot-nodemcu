@@ -67,6 +67,8 @@ Após isso, dentro do void loop, declaramos uma variável "buttonState", que lê
 1) ao utilizarmos a função ```Serial.println``` para exibir os valores que essa variável assume no monitor serial
 2) controlar o LED a partir do digitalWrite e com os níveis UP/DOWN da variável
 
+Você deve ter percebido o uso de ```delay(1)```, certo? Nesse caso, o uso da função delay implica criar um debouncing via software, isto é, a partir de um espaço de tempo (delay), conseguimos fazer com que a mudança de estado do botão seja visualizado de forma satisfatória.
+
 Após upar o código para a placa, ele deve funcionar como no gif abaixo, para ver o estado do ```buttonState``` na IDE no Arduino vá em ```Ferramentas > Monitor serial``` ou pressione ```Ctrl + Alt + M```.
 
 Caso tenha tido algum problema abra uma issue clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new) 
