@@ -59,6 +59,7 @@ void loop() {
   }
 }
 ```
+Observação: O monitor (plotter) serial é usado para debugar saídas e entradas ou fornecer informações adicionais referentes ao circuito.
 O código acima começa com a declaração e associação da saída utilizada. O LED foi associado à constante 14. Feito isso, partimos para o ```void setup``` onde é necessário iniciar a comunicação serial através do comando "Serial.begin" e declarar as entradas e saídas por meio do pinMode.
 
 Posteriormente, no ```void loop``` iniciamos a estrutura de repetição ```for```  que vai incrementar uma variável ```i``` até 300. 
