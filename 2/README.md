@@ -44,8 +44,8 @@ Na imagem e no circuito em específico, o terminal "MCU" é uma entrada digital 
 Use o código que está em [code](code) ou copie o código abaixo:
  
 ```C++
-const int pushButton = 15;
-const int led        = 16;
+const int pushButton = D8;
+const int led        = D0;
 
 void setup() {
   Serial.begin(115200);
