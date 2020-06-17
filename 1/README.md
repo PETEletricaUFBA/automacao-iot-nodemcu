@@ -134,3 +134,6 @@ Caso tenha tido algum problema abra uma issue clicando [aqui](https://github.com
 
 #### Exemplo da montagem
 ![Real Circuit](assets/circuitoGif1.gif)
+
+> Experimente variar a frequência com que o LED pisca
+
