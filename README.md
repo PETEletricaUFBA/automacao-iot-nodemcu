@@ -81,16 +81,17 @@ Este guia conterá projetos iniciais, como acender um LED,  criar um servidor e 
 
 <!-- Organização -->
 ## TRILHA DO CONHECIMENTO
-Dividiremos o conteúdo em algumas etapas, são elas:
+Dividiremos o conteúdo em alguns módulos:
 * **1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU:** Conceitos iniciais de lógica de programação e suas aplicações em circuitos básicos.
 * **2) Noções de implementações de automação no mundo real:** Estudos sobre alguns sensores e atuadores e suas interações com o mundo físico.
-* **3) Noções sobre a criação de bots e uso de servidores:** 
-* **4) Como levar a informação para o mundo virtual?**
+* **3) Noções sobre a criação de bots e uso de servidores:** Competências relacionadas a conectividade e a integração de sensores e atuadores através da Internet.
+* **4) Como levar a informação para o mundo virtual?** Agora é hora de colocar nossas aplicações na nuvem!
 
+<!--RESOLVER ISSO-->
 ![asd](assets/trilha.svg)
 
 
-## PROGRAMAÇÃO:
+## MÓDULOS:
 
 <!--FAZER LINKS EM TODOS OS ITENS-->
 
@@ -98,21 +99,19 @@ Dividiremos o conteúdo em algumas etapas, são elas:
 	
 **Descrição:** Apresenta-se conhecimentos sobre o kit NodeMCU e como programar uma placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
 
-**Dica:** Interessante usar o monitor serial ou plotter serial para debugar saídas e entradas ou fornecer informações adicionais.
-
-**Pastas relacionadas:** 1, 2, 3 e 4.
-
 **Conteúdo:**
-1. A placa de desenvolvimento: o microcontrolador, as GIPOs, pinout, níveis de tensão, entre outros;
-2. Uso da linguagem de programação (C++ e Python) para o microcontrolador;
-3. Processo de  upar um código para a placa usando uma IDE;
-4. Indicação de pequenos circuitos para testes:
-	- Acender e apagar uma LED (Blinking);
-	- Ler estado de um botão e exibir no computador via serial;
-	- Acender LEDs com botões;
-	- Mudar o brilho de uma lâmpada ao decorrer do tempo (Fading in e Fading out);
-	- Acender uma led com brilho variável através de um potênciômetro + PWM.
+1. Primeiros passos
+  - Conhecendo a placa de desenvolvimento: o microcontrolador, as GIPOs, pinout, níveis de tensão, entre outros;
+  - Configurando a IDE do Arduino para programar o NodeMCU;
+  - Compilar um programa teste que acende e apaga um LED (Blinking);
 
+2. Leitura de sinais digitais: Ler estado de um botão e exibir no computador via serial;
+
+3. Escrita analógica: Mudar o brilho de uma lâmpada ao decorrer do tempo (Fading in e Fading out);
+
+4. Leitura e escrita analógica: Acender um LED com brilho variável através de um potênciômetro com PWM.
+
+<br />
 
 ### 2) Noções de implementações de automação no mundo real: (Tempo estimado: 25h)
 **Descrição:** Apresentação de outras habilidades utilizando diversos sensores e atuadores, a partir de aplicações práticas. 
