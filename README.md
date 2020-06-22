@@ -103,7 +103,7 @@ Dividiremos o conteúdo em alguns módulos:
 1. Primeiros passos
   - Conhecendo a placa de desenvolvimento: o microcontrolador, as GIPOs, pinout, níveis de tensão, entre outros;
   - Configurando a IDE do Arduino para programar o NodeMCU;
-  - Compilar um programa teste que acende e apaga um LED (Blinking);
+  - Compilar um programa teste que acende e apaga um LED (Blinking).
 
 2. Leitura de sinais digitais: Ler estado de um botão e exibir no computador via serial;
 
@@ -111,37 +111,33 @@ Dividiremos o conteúdo em alguns módulos:
 
 4. Leitura e escrita analógica: Acender um LED com brilho variável através de um potênciômetro com PWM.
 
-<br />
+<br/>
 
 ### 2) Noções de implementações de automação no mundo real: (Tempo estimado: 25h)
-**Descrição:** Apresentação de outras habilidades utilizando diversos sensores e atuadores, a partir de aplicações práticas. 
 
-**Dica:** Interessante usar o monitor serial ou plotter serial para debugar saídas e entradas ou fornecer informações adicionais.
+**Descrição:** Apresentação de outras habilidades utilizando diversos sensores e atuadores, a partir de aplicações práticas. 
 
 #### **SENSORES:**
 
- **Pastas relacionadas:** 5, 6, 7, 8, 9 e 10.
-
-1. Sensor de luminosidade LDR;
-2. Sensor de distância;
-3. Sensor de temperatura; 
-4. Sensor de umidade;
-5. Sensor de presença PIR;
-6. Sensor de infra vermelho;
-7. Outros tipos de sensores.
-
+1. Sensor de presença PIR;
+2. Sensor de luminosidade LDR;   
+3. Sensor de distância;          
+4. Sensor de temperatura; (Breve)  
+5. Sensor de umidade; (Breve)  
+6. Sensor de infra vermelho. (Breve)    
 
 #### **ATUADORES/MÓDULOS:**
 
-**Pastas relacionadas:**
+1. Relé controlado por sensor; (Breve)
+2. Buzzer controlado por botões ou potênciômetro; (Breve)
+3. Servo motor com alimentação externa controlado por um potenciômetro ou outro sensor; (Breve)
+4. Motor usando Ponte H e controle através de potenciômetro ou outro sensor; (Breve)
+5. Escrita em um display LCD com o protocolo I2C. (Breve)
 
-1. Relé controlado por sensor;
-2. Buzzer controlado por botões ou potênciômetro;
-3. Servo motor com alimentação externa controlado por um potenciômetro ou outro sensor;
-4. Motor usando Ponte H e controle através de potenciômetro ou outro sensor;
-5. Escrita em um display LCD com o protocolo I2C.
+<br/>
 
 ### 3) Noções sobre a criação de bots e uso de servidores:*
+
 **Descrição:**
 
 **Pastas relacionadas:**
