@@ -20,7 +20,7 @@
   <a href="https://github.com/PETEletricaUFBA/IoT/graphs/contributors" target="_blank">
     <img src="https://badgen.net/github/contributors/PETEletricaUFBA/IoT">
   </a>
-  <a href="https://github.com/PETEletricaUFBA/IoT/LICENSE">
+  <a href="https://github.com/PETEletricaUFBA/IoT/blob/master/LICENSE">
     <img src="https://badgen.net/github/license/PETEletricaUFBA/IoT">
   </a>
   <img src="https://badgen.net/github/last-commit/PETEletricaUFBA/IoT">
