@@ -21,19 +21,18 @@
     <img src="https://badgen.net/github/contributors/PETEletricaUFBA/IoT">
   </a>
   <a href="https://github.com/PETEletricaUFBA/IoT/blob/master/LICENSE">
-    <img src="https://badgen.net/github/license/PETEletricaUFBA/IoT">
+    <img src="https://badgen.net/badge/license/MIT/red">
   </a>
   <img src="https://badgen.net/github/last-commit/PETEletricaUFBA/IoT">
 </p> 
 
 <!-- Menu Principal -->
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#contributing">Contribuir</a> •
-  <a href="#credits">Creditos</a> •
-  <a href="#authors">Autores</a> •
-  <a href="#license">Licença</a>
+  <a href="#sobre-o-projeto">Sobre o projeto</a> •
+  <a href="#trilha-do-conhecimento">Conteúdo</a> •
+  <a href="#contribuindo">Contribuir</a> •
+  <a href="#licença">Licença</a> •
+  <a href="#contato">Contato</a>
 </p>
 
 ## Sumário
