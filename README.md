@@ -40,11 +40,7 @@
   <a href="#license">Licença</a>
 </p>
 
-<!-- Sumário -->
-<!-- Tem um nome melhor pra isso? -->
-<!-- Deixar por ultimo -->
-
-## SUMÁRIO 
+## Sumário
 
 * [Sobre o projeto](#sobre-o-projeto)
   * [Built With](#built-with)
@@ -58,9 +54,7 @@
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
 
-
-<!-- SOBRE O PROJETO -->
-## SOBRE O PROJETO
+## Sobre o projeto
 O projeto busca apresentar um conteúdo prático, objetivo e de fácil consulta. Ele é acessível para qualquer pessoa, independente do nível de conhecimento em Automação.
 Este guia conterá projetos iniciais, como acender um LED,  criar um servidor e integrá-lo com um bot ou na internet.
 
@@ -80,7 +74,7 @@ Este guia conterá projetos iniciais, como acender um LED,  criar um servidor e 
 * Sensores (Ex: Potenciômetro, LDR etc)
 
 <!-- Organização -->
-## TRILHA DO CONHECIMENTO
+## Trilha do conhecimento
 Dividiremos o conteúdo em alguns módulos:
 * **1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU:** Conceitos iniciais de lógica de programação e suas aplicações em circuitos básicos.
 * **2) Noções de implementações de automação no mundo real:** Estudos sobre alguns sensores e atuadores e suas interações com o mundo físico.
@@ -90,12 +84,9 @@ Dividiremos o conteúdo em alguns módulos:
 <!--RESOLVER ISSO-->
 ![asd](assets/trilha.svg)
 
+## Módulos:
 
-## MÓDULOS:
-
-<!--FAZER LINKS EM TODOS OS ITENS-->
-
-### 1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU: (Tempo estimado: 15h)
+### 1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU:
 	
 **Descrição:** Apresenta-se conhecimentos sobre o kit NodeMCU e como programar uma placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
 
@@ -113,11 +104,11 @@ Dividiremos o conteúdo em alguns módulos:
 
 <br/>
 
-### 2) Noções de implementações de automação no mundo real: (Tempo estimado: 25h)
+### 2) Noções de implementações de automação no mundo real:
 
 **Descrição:** Apresentação de outras habilidades utilizando diversos sensores e atuadores, a partir de aplicações práticas. 
 
-#### **SENSORES:**
+#### **Sensores:**
 
 1. Sensor de presença PIR;
 2. Sensor de luminosidade LDR;   
@@ -126,7 +117,7 @@ Dividiremos o conteúdo em alguns módulos:
 5. Sensor de umidade; (Breve)  
 6. Sensor de infra vermelho. (Breve)    
 
-#### **ATUADORES/MÓDULOS:**
+#### **Atuadores:**
 
 1. Relé controlado por sensor; (Breve)
 2. Buzzer controlado por botões ou potênciômetro; (Breve)
@@ -136,47 +127,37 @@ Dividiremos o conteúdo em alguns módulos:
 
 <br/>
 
-### 3) Noções sobre a criação de bots e uso de servidores:*
+### 3) Noções sobre a criação de bots e uso de servidores:
 
 **Descrição:**
 
-**Pastas relacionadas:**
+> EM BREVE!
+
+<br/>
 
 ### 4) Como levar a informação para o mundo virtual?
 **Descrição:**
 
-**Pastas relacionadas:**
+> EM BREVE!
 
-### Outros:
-- Criar uma API
-- MQTT
+<br/>
 
-<!-- FIM ESBOÇO-->
+## Contribuindo
 
-<!-- CONTRIBUTING -->
-## Contributing
+Contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Todas as contribuições que você fizer são **muito bem vindas**!
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+1. Crie um _Fork_ do projeto
+2. Crie sua _Branch_ (`git checkout -b feature/AmazingFeature`)
+3. Dê um _Commit_ nas suas mudanças com uma mensagem (`git commit -m 'Coloquei um recurso legal'`)
+4. _Push_ para esta _Branch_ (`git push origin feature/AmazingFeature`)
+5. Abra uma _Pull Request_ e aguarde :D
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Licença
 
-<!-- LICENSE -->
-## License
+Distribuído sob a licença MIT. Veja [LICENSE](license.md) para mais informações.
 
-Distributed under the MIT License. See `LICENSE` for more information.
+## Contato
 
-<!-- CONTACT -->
-## Contact
+PET Elétrica - [@peteletricaufba](instagram.com/peteletricaufba/) - peteletricaufbadee@gmail.com
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
-<!-- Pra usar a logo, devemos informar o autor -->
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+Link do Projeto: [https://github.com/PETEletricaUFBA/IoT/](https://github.com/PETEletricaUFBA/IoT/)
