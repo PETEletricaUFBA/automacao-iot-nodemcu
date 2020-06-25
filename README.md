@@ -1,6 +1,3 @@
-> Modelo sendo criado ainda, após isso teremos um esboço
-
-<!-- LOGO -->
 <h1 align="center">
   <br>
   <a href="#"><img src="assets/automation.png" alt="A smart house logo" width="100"></a>
@@ -23,14 +20,13 @@
   <a href="https://github.com/PETEletricaUFBA/IoT/graphs/contributors" target="_blank">
     <img src="https://badgen.net/github/contributors/PETEletricaUFBA/IoT">
   </a>
-  <a href="#">
+  <a href="https://github.com/PETEletricaUFBA/IoT/LICENSE">
     <img src="https://badgen.net/github/license/PETEletricaUFBA/IoT">
   </a>
   <img src="https://badgen.net/github/last-commit/PETEletricaUFBA/IoT">
 </p> 
 
 <!-- Menu Principal -->
-<!-- Aqui colocamos páginas principais como creditos, licença, como contribuir, coisas assim..-->
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#how-to-use">How To Use</a> •
@@ -41,7 +37,6 @@
 </p>
 
 ## Sumário
-
 * [Sobre o projeto](#sobre-o-projeto)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
@@ -73,7 +68,6 @@ Este guia conterá projetos iniciais, como acender um LED,  criar um servidor e 
 * Resistores
 * Sensores (Ex: Potenciômetro, LDR etc)
 
-<!-- Organização -->
 ## Trilha do conhecimento
 Dividiremos o conteúdo em alguns módulos:
 * **1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU:** Conceitos iniciais de lógica de programação e suas aplicações em circuitos básicos.
@@ -146,15 +140,32 @@ Dividiremos o conteúdo em alguns módulos:
 
 Contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Todas as contribuições que você fizer são **muito bem vindas**!
 
+Aqui está a estrutura de uma pasta, se você quiser contribuir com um tutorial completo <3:
+```
+.
+├── assets
+│   ├── protoboard.png
+│   └── pinoutv3.png
+├── code
+│   └── code.ino
+├── fritzing
+│   └── arquivo.fzz
+└── README.md
+```
+
+E o modelo do arquivo README está aqui: [_MODELO_](MODELO.md).
+
+Passos para enviar uma contribuição para nosso repositório:
 1. Crie um _Fork_ do projeto
 2. Crie sua _Branch_ (`git checkout -b feature/AmazingFeature`)
 3. Dê um _Commit_ nas suas mudanças com uma mensagem (`git commit -m 'Coloquei um recurso legal'`)
 4. _Push_ para esta _Branch_ (`git push origin feature/AmazingFeature`)
-5. Abra uma _Pull Request_ e aguarde :D
+5. Abra uma [_Pull Request_](pulls) e aguarde :D
+
 
 ## Licença
 
-Distribuído sob a licença MIT. Veja [LICENSE](license.md) para mais informações.
+Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais informações.
 
 ## Contato
 
