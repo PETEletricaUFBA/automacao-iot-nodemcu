@@ -37,16 +37,13 @@
 
 ## Sumário
 * [Sobre o projeto](#sobre-o-projeto)
-  * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
+  * [Softwares usados](#softwares-usados)
+  * [Hardwares usados](#hardwares-usados)
+* [Trilha do Conhecimento](#trilha-do-conhecimento)
+* [Módulos](#módulos)
+* [Contribuindo](#contribuindo)
+* [Licença](#licença)
+* [Contato](#contato)
 
 ## Sobre o projeto
 O projeto busca apresentar um conteúdo prático, objetivo e de fácil consulta. Ele é acessível para qualquer pessoa, independente do nível de conhecimento em Automação.
@@ -79,7 +76,7 @@ Dividiremos o conteúdo em alguns módulos:
 
 ## Módulos:
 
-### 1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU:
+### 1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU
 	
 **Descrição:** Apresenta-se conhecimentos sobre o kit NodeMCU e como programar uma placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
 
@@ -97,7 +94,7 @@ Dividiremos o conteúdo em alguns módulos:
 
 <br/>
 
-### 2) Noções de implementações de automação no mundo real:
+### 2) Noções de implementações de automação no mundo real
 
 **Descrição:** Apresentação de outras habilidades utilizando diversos sensores e atuadores, a partir de aplicações práticas. 
 
@@ -120,7 +117,7 @@ Dividiremos o conteúdo em alguns módulos:
 
 <br/>
 
-### 3) Noções sobre a criação de bots e uso de servidores:
+### 3) Noções sobre a criação de bots e uso de servidores
 
 **Descrição:**
 
