@@ -2,7 +2,7 @@
   <br>
   <a href="#"><img src="assets/automation.png" alt="A smart house logo" width="100"></a>
   <br>
-  NodeMCU para IoT
+  Automação & IoT com NodeMCU
   <br>
 </h1>
 
@@ -27,6 +27,7 @@
 </p> 
 
 <!-- Menu Principal -->
+<!--
 <p align="center">
   <a href="#sobre-o-projeto">Sobre o projeto</a> •
   <a href="#trilha-do-conhecimento">Conteúdo</a> •
@@ -34,6 +35,7 @@
   <a href="#licença">Licença</a> •
   <a href="#contato">Contato</a>
 </p>
+-->
 
 ## Sumário
 * [Sobre o projeto](#sobre-o-projeto)
@@ -41,6 +43,10 @@
   * [Hardwares usados](#hardwares-usados)
 * [Trilha do Conhecimento](#trilha-do-conhecimento)
 * [Módulos](#módulos)
+  * [Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU](#1-noções-básicas-de-programação-e-conhecimento-do-kit-de-desenvolvimento-nodemcu)
+  * [Noções de implementações de automação no mundo real](#2-noções-de-implementações-de-automação-no-mundo-real)
+  * [Noções sobre a criação de bots e uso de servidores](#3-noções-sobre-a-criação-de-bots-e-uso-de-servidores)
+  * [Como levar a informação para o mundo virtual?](#4-como-levar-a-informação-para-o-mundo-virtual?)
 * [Contribuindo](#contribuindo)
 * [Licença](#licença)
 * [Contato](#contato)
