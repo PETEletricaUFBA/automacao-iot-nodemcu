@@ -78,7 +78,7 @@ Dividiremos o conteúdo em alguns módulos:
 * **4) Como levar a informação para o mundo virtual?** Agora é hora de colocar nossas aplicações na nuvem!
 
 <!--RESOLVER ISSO-->
-![asd](assets/trilha.svg)
+![asd](assets/trilha.png)
 
 ## Módulos:
 
