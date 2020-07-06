@@ -119,7 +119,7 @@ Em seguida utiliza-se a função ``Ranging`` responsável por converter uma medi
 Por fim, declara-se a variável result que como podemos visualizar abaixo, nada mais é que a conversão da variável distância em uma string.
 ```result = String(distancia); ```
 
-Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
+Caso tenha encontrado algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
 ![Circuit](assets/circuit.png)
 
