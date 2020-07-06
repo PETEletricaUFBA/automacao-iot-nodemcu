@@ -52,8 +52,8 @@
 * [Contato](#contato)
 
 ## Sobre o projeto
-O projeto busca apresentar um conteúdo prático, objetivo e de fácil consulta. Ele é acessível para qualquer pessoa, independente do nível de conhecimento em Automação.
-Este guia conterá projetos iniciais, como acender um LED,  criar um servidor e integrá-lo com um bot ou na internet.
+O projeto busca apresentar um conteúdo prático, objetivo e de fácil consulta. Além disso as atividades desenvolvidas são acessíveis para qualquer pessoa, independente do nível de conhecimento em Automação.
+Este guia conterá projetos com diferentes níveis de complexidade que utilizam o NODEMCU: desde como acender um LED até um manual de como criar um servidor, integrá-lo com um bot e manter as informações do seu projeto físico de forma online.
 
 ### Softwares usados
 * [Arduino](https://www.arduino.cc/en/Main/Software)
