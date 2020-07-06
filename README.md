@@ -142,7 +142,7 @@ Dividiremos o conteúdo em alguns módulos:
 
 Contribuições são o que tornam a comunidade de código aberto um lugar incrível para aprender, inspirar e criar. Todas as contribuições que você fizer são **muito bem vindas**!
 
-Aqui está a estrutura de uma pasta, se você quiser contribuir com um tutorial completo <3:
+Aqui está a estrutura de uma pasta, se você quiser contribuir com um tutorial completo ❤:
 ```
 .
 ├── assets
