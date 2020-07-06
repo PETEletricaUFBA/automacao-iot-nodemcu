@@ -82,33 +82,33 @@ Dividiremos o conteúdo em alguns módulos:
 
 ## Módulos:
 
-### 1) Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU
+### 1) [Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%201)
 	
 **Descrição:** Apresenta-se conhecimentos sobre o kit NodeMCU e como programar uma placa para realizar leituras e escritas digitais e analógicas em circuitos básicos.
 
 **Conteúdo:**
-1. Primeiros passos
+1. [Primeiros passos](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%201/1.%20Primeiros%20passos)
   - Conhecendo a placa de desenvolvimento: o microcontrolador, as GPIOs, pinout, níveis de tensão, entre outros;
   - Configurando a IDE do Arduino para programar o NodeMCU;
   - Compilar um programa teste que acende e apaga um LED (Blinking).
 
-2. Leitura de sinais digitais: Ler estado de um botão e exibir no computador via serial;
+2. [Leitura de sinais digitais](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%201/2.%20Leitura%20de%20sinais%20digitais): Ler estado de um botão e exibir no computador via serial;
 
-3. Escrita analógica: Mudar o brilho de uma lâmpada ao decorrer do tempo (Fading in e Fading out);
+3. [Escrita analógica](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%201/3.%20Escrita%20anal%C3%B3gica): Mudar o brilho de uma lâmpada ao decorrer do tempo (Fading in e Fading out);
 
-4. Leitura e escrita analógica: Acender um LED com brilho variável através de um potênciômetro com PWM.
+4. [Leitura e escrita analógica](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%201/4.%20Leitura%20e%20escrita%20anal%C3%B3gica): Acender um LED com brilho variável através de um potênciômetro com PWM.
 
 <br/>
 
-### 2) Noções de implementações de automação no mundo real
+### 2) [Noções de implementações de automação no mundo real](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202)
 
 **Descrição:** Apresentação de outras habilidades utilizando diversos sensores e atuadores, a partir de aplicações práticas. 
 
-#### **Sensores:**
+#### **[Sensores](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores):**
 
-1. Sensor de presença PIR;
-2. Sensor de luminosidade LDR;   
-3. Sensor de distância;          
+1. [Sensor de presença PIR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/1.%20Sensor%20de%20presen%C3%A7a%20PIR);
+2. [Sensor de luminosidade LDR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/2.%20Sensor%20de%20luminosidade%20LDR);   
+3. [Sensor de distância](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/3.%20Sensor%20de%20dist%C3%A2ncia);          
 4. Sensor de temperatura; (Breve)  
 5. Sensor de umidade; (Breve)  
 6. Sensor de infra vermelho. (Breve)    
