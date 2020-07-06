@@ -2,7 +2,7 @@
 
 Esse projeto consiste no controle do brilho de um LED utilizando a função ```analogWrite()``` através da informação analógica obtida com o ```analogRead()```
 
-Aprendemos a escrever sinais analógicos no item [3](link), agora vamos aprender como obter leituras de informações analógicas também. Em muitas aplicações temos a necessidade de obtermos uma informação assim, como por exemplo a maioria dos sensores nos fornecem sinais analógicos sensor de distância, sensor de temperatura, sensor de umidade, sensor de luminosidade. Todas estas grandezas não são binárias! Por isso devemos ser capaz de realizar uma leitura analógica. Deste modo, somos capazes de realizar qualquer leitura e qualquer escrita básica, são elas:
+Aprendemos a escrever sinais analógicos no item [3](#3.-mudar-o-brilho-de-uma-lâmpada-ao-decorrer-do-tempo), agora vamos aprender como obter leituras de informações analógicas também. Em muitas aplicações temos a necessidade de obtermos uma informação assim, como por exemplo a maioria dos sensores nos fornecem sinais analógicos sensor de distância, sensor de temperatura, sensor de umidade, sensor de luminosidade. Todas estas grandezas não são binárias! Por isso devemos ser capaz de realizar uma leitura analógica. Deste modo, somos capazes de realizar qualquer leitura e qualquer escrita básica, são elas:
 
 - [x] Leitura Analógica
 - [x] Escrita Analógica
