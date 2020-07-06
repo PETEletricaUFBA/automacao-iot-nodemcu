@@ -46,7 +46,7 @@
   * [Noções básicas de programação e conhecimento do kit de desenvolvimento NodeMCU](#1-noções-básicas-de-programação-e-conhecimento-do-kit-de-desenvolvimento-nodemcu)
   * [Noções de implementações de automação no mundo real](#2-noções-de-implementações-de-automação-no-mundo-real)
   * [Noções sobre a criação de bots e uso de servidores](#3-noções-sobre-a-criação-de-bots-e-uso-de-servidores)
-  * [Como levar a informação para o mundo virtual?](#4-como-levar-a-informação-para-o-mundo-virtual?)
+  * [Como levar a informação para o mundo virtual?](#4-como-levar-a-informação-para-o-mundo-virtual)
 * [Contribuindo](#contribuindo)
 * [Licença](#licença)
 * [Contato](#contato)
