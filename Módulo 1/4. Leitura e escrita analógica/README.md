@@ -30,7 +30,7 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 É necessário conectar um terminal do LED em um pino digital do NODEMCU com capacidade para gerar PWM, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando) e além disso, pela capacidade de gerar PWM, controla-se o valor intermediário de tensão enviado para a saída. 
 
 Essas são os pinos dísponúveis para o uso do PWM:
-![Imagem do PWM](https://raw.githubusercontent.com/PETEletricaUFBA/IoT/master/3/assets/pinout.jpg)
+![Imagem do PWM](assets/pwm.jpg)
 
 
 O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
