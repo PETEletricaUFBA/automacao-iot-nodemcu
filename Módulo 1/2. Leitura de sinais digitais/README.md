@@ -64,7 +64,7 @@ void loop() {
   delay(1);
 }
 ```
-O código acima começa com a declaração e associação da entrada e saída utilizada. O botão foi associado à constante 15 do NODEMCU e o LED à constante 16. Feito isso, partimos para o void setup onde é necessário iniciar a comunicação serial através do comando ```Serial.begin``` definindo a taxa de transmissão de dados e declarar as entradas e saídas por meio do pinMode.
+O código acima começa com a declaração e associação da entrada e saída utilizada. O botão foi associado ao terminal D8 do NODEMCU e o LED ao terminal D0. Feito isso, partimos para o void setup onde é necessário iniciar a comunicação serial através do comando ```Serial.begin``` definindo a taxa de transmissão de dados e declarar as entradas e saídas por meio do pinMode.
 
 Após isso, dentro do void loop, declaramos uma variável "buttonState", que lê o valor digital da entrada do PushButton utilizando a função digitalRead. Essa variável será utilizada em dois momentos: 
 
