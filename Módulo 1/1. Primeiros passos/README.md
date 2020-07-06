@@ -116,7 +116,7 @@ void loop() {
   delay(1000);                 
 }
 ```
-É importante entender que no código acima, utilizados a correlação entre as entradas/saídas e as constantes pré-definidas:
+É importante entender que no código acima utilizamos a correlação entre as entradas/saídas e as constantes pré-definidas:
 
 ![Relação entre os terminais e seus valores](assets/11.png)
 
