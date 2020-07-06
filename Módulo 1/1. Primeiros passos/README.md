@@ -8,7 +8,7 @@ Esta aplicação nos permite ligar e desligar a luz do LED periodicamente, ela �
 - [Materiais Necessários](#materiais-necessários)
 - [Configurando a IDE do Arduino para programar o NodeMCU](#configurando-a-ide-do-Arduino-para-programar-o-nodemcu)
   - [Colocando o URL adicional para Gerenciador de Placas](#colocando-o-url-adicional-para-gerenciador-de-placas)
-  - [Instalando o suporte para a placa esp8266](#instalando-o-suporte-para-a-placa-esp8266)
+  - [Instalando o suporte para a placa ESP8266](#instalando-o-suporte-para-a-placa-esp8266)
 - [Compilando o circuito Blinking](#compilando-o-circuito-blinking)
   - [Montagem do circuito](#montagem-do-circuito)
   - [Hora do Código!](#hora-do-c&oacute;digo)
@@ -38,7 +38,7 @@ E cole o seguinte link no local indicado na imagem abaixo.
 
 Assim a sua IDE estará com a extensão do ESP8266!
 
-### Instalando o suporte para a placa esp8266
+### Instalando o suporte para a placa ESP8266
 
 ```Ferramentas -> Placa -> Gerenciador de Placas``` 
 
