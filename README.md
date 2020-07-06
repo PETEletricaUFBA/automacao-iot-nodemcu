@@ -88,7 +88,7 @@ Dividiremos o conteúdo em alguns módulos:
 
 **Conteúdo:**
 1. Primeiros passos
-  - Conhecendo a placa de desenvolvimento: o microcontrolador, as GIPOs, pinout, níveis de tensão, entre outros;
+  - Conhecendo a placa de desenvolvimento: o microcontrolador, as GPIOs, pinout, níveis de tensão, entre outros;
   - Configurando a IDE do Arduino para programar o NodeMCU;
   - Compilar um programa teste que acende e apaga um LED (Blinking).
 
