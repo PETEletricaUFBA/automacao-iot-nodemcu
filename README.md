@@ -173,4 +173,4 @@ Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais informações
 
 PET Elétrica - [@peteletricaufba](instagram.com/peteletricaufba/) - peteletricaufbadee@gmail.com
 
-Link do Projeto: [https://github.com/PETEletricaUFBA/IoT/](https://github.com/PETEletricaUFBA/IoT/)
+Link do Projeto: [https://github.com/PETEletricaUFBA/automacao-iot-nodemcu](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu)
