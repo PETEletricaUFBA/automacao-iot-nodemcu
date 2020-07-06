@@ -13,7 +13,7 @@ O circuito permite trabalhar:
 ## Conteúdo
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
-- [Código do Circuito](#o-c&oacute;digo-do-circuito)
+- [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
 1. NodeMCU
