@@ -1,4 +1,4 @@
-# 9. Circuito e programa com sensor de presença PIR
+# 1. Circuito e programa com sensor de presença PIR
 
 Esse projeto consiste na utilização da função ```digitalRead```  juntamente com o sensor PIR (_*Piroelétrico*_) visando aplicações do mundo real.
 
