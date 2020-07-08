@@ -10,7 +10,7 @@ O PIR é utilizado em diversas aplicações, seja para segurança, economia de e
 
 Durante a utilização do sensor PIR, muitas pessoas fazem relação ou se confundem com o sensor de distância ultrassônico, no entanto, são sensores que utilizam princípios de funcionamento diferentes e os seus usos, comumente, são em situações divergentes. Enquanto o sensor ultrassônico utiliza ondas mecânicas e detecta a distância de qualquer objeto -independente se emite calor ou não- ao seu emissor, o sensor PIR utiliza infravermelho, ou melhor, diferença de intensidade do infravermelho, de modo que o sensor PIR consegue detectar qualquer corpo que emita calor e esteja dentro do seu raio de ação. 
 
-O circuito envolvendo o PIR envolve a seguinte competência trabalhada no módulo 1:
+O circuito envolvendo o PIR possibilita o aprendizado da seguinte competência trabalhada no módulo 1:
 
 - [x] Leitura Digital
 - [x] Escrita Digital
