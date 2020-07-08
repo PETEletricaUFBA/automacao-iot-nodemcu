@@ -1,4 +1,4 @@
-# 06. Circuito e programa com sensor de distância
+# 3. Circuito e programa com sensor de distância
 
 Esse projeto consiste na utilização da função ```digitalRead```  juntamente com o sensor ultrassônico visando aplicações do mundo real.
 
