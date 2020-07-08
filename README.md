@@ -109,8 +109,8 @@ Dividiremos o conteúdo em alguns módulos:
 1. [Sensor de presença PIR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/1.%20Sensor%20de%20presen%C3%A7a%20PIR);
 2. [Sensor de luminosidade LDR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/2.%20Sensor%20de%20luminosidade%20LDR);   
 3. [Sensor de distância](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/3.%20Sensor%20de%20dist%C3%A2ncia);          
-4. Sensor de temperatura; (Breve)  
-5. Sensor de umidade; (Breve)  
+4. Sensor de temperatura; (Em construção)  
+5. [Sensor de umidade](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/5.%20Sensor%20de%20umidade);
 6. Sensor de infra vermelho. (Breve)    
 
 #### **Atuadores:**
