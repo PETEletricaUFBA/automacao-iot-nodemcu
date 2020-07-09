@@ -6,6 +6,6 @@ void setup() {
 
 void loop() {
   int analogSensor= analogRead(sensor);
-  Serial.print(analogSensor); 
-  Serial.print("  ");
+  Serial.println(analogSensor); 
+  delay(10);
 }
