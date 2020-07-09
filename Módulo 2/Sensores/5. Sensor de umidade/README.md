@@ -46,7 +46,7 @@ Com isso, você deve ter percebido a presença de um trimpot (pequeno potenciôm
 
 ## O código do Circuito
 
-Use o código que está em [code](code/code.ino) ou copie o código abaixo:
+Use o código que está em [code](code1/code1.ino) ou copie o código abaixo:
  
 ```C++
 #define sensor D5
@@ -59,10 +59,11 @@ void setup() {
 void loop() {
   int sensorState=digitalRead(sensor);
   if (sensorState) {
-     Serial.print("O SOLO NÃO ESTÁ ÚMIDO ");
+     Serial.println("O SOLO NÃO ESTÁ ÚMIDO ");
   } else {
-     Serial.print("O SOLO ESTÁ ÚMIDO ");
+     Serial.println("O SOLO ESTÁ ÚMIDO ");
   }
+  delay(1000);
 }
   
 ```
