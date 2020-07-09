@@ -100,6 +100,7 @@ Para efeitos de visualização e posterior calibração, abra o monitor serial e
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
+Os LEDs foram adicionados para melhor visualização das leituras dos sensores.
 ![Digital Circuit](assets/digitalcircuit.gif)
 ![Analog Circuit](assets/analogcircuit.gif)
 
