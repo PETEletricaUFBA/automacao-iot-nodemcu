@@ -88,8 +88,8 @@ void setup() {
 
 void loop() {
   int analogSensor= analogRead(sensor);
-  Serial.print(analogSensor); 
-  Serial.print("  ");
+  Serial.println(analogSensor); 
+  delay(10);
 }
 ```
 O código acima começa com a declaração e associação das saídas e entradas utilizadas. O sensor foi associado à porta analógica A0. Posteriormente, no ```void setup```, é necessário iniciar a comunicação serial através do comando ```Serial.begin``` e declarar as entradas e saídas por meio do ```pinMode```.
