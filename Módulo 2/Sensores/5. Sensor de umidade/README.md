@@ -100,6 +100,7 @@ Para efeitos de visualização e posterior calibração, abra o monitor serial e
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
-![Circuit](assets/circuit.gif)
+![Digital Circuit](assets/digitalcircuit.gif)
+![Analog Circuit](assets/analogcircuit.gif)
 
 > Pense na utilização do Sensor de Umidade do Solo na sua casa ou em outras aplicações do seu cotidiano. 
