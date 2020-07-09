@@ -73,7 +73,7 @@ O código acima começa com a declaração e associação da entrada  utilizada.
 
 Após isso, dentro do ```void loop```, declaramos uma variável denominada "sensorState", que lê o valor digital da entrada do sensor na váriavel ```sensor```, utilizando a função ```digitalRead``` e a armazena .
 
-Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável estiver com um nível lógico 1, então mostra-se no monitor serial a mensagem "O SOLO ESTÁ ÚMIDO", e com o nível lógico 0, aparece a mensagem "O SOLO NÃO ESTÁ ÚMIDO" .
+Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável estiver com um nível lógico 1, então mostra-se no monitor serial a mensagem "O SOLO NÃO ESTÁ ÚMIDO", e com o nível lógico 0, aparece a mensagem "O SOLO ESTÁ ÚMIDO".
 
 >Depois de utilizar o sensor em seu modo digital, vamos explorar o seu funcionamento analógico:
 
