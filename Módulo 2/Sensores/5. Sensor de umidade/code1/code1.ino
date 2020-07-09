@@ -8,8 +8,9 @@ void setup() {
 void loop() {
   int sensorState=digitalRead(sensor);
   if (sensorState) {
-     Serial.print("O SOLO NÃO ESTÁ ÚMIDO ");
+     Serial.println("O SOLO NÃO ESTÁ ÚMIDO ");
   } else {
-     Serial.print("O SOLO ESTÁ ÚMIDO ");
+     Serial.println("O SOLO ESTÁ ÚMIDO ");
   }
+  delay(1000);
 }
