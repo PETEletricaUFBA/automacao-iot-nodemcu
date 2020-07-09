@@ -46,7 +46,7 @@ Com isso, você deve ter percebido a presença de um trimpot (pequeno potenciôm
 
 ## O código do Circuito
 
-Use o código que está em [code](code1/code1.ino) ou copie o código abaixo:
+Use o código que está em [code1](code1/code1.ino) ou copie o código abaixo:
  
 ```C++
 #define sensor D5
@@ -77,7 +77,7 @@ Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a var
 
 >Depois de utilizar o sensor em seu modo digital, vamos explorar o seu funcionamento analógico:
 
-Use o código que está em [code](code/code2.ino) ou copie o código abaixo:
+Use o código que está em [code2](code2/code2.ino) ou copie o código abaixo:
 
 ```C++
 #define sensor A0
