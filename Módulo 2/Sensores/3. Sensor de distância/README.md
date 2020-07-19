@@ -71,7 +71,7 @@ void loop(){
   
   hcsr04(); 
   Serial.print("Distancia "); 
-  Serial.print(result); /
+  Serial.print(result);
   Serial.println("cm"); 
   
 }
