@@ -60,7 +60,7 @@ void setup(){
 }
 
 void loop(){
-  int obstaculo = digitalRead(infravermelho); 
+  bool obstaculo = digitalRead(infravermelho); 
   Serial.println(obstaculo);
   delay(10);
   if(obstaculo){
