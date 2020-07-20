@@ -51,16 +51,16 @@ Use o código que está em [code](code/code.ino) ou copie o código abaixo:
  
 ```C++
 #define led 12
-#define infra_vermelho 5
+#define infravermelho 5
 
 void setup(){
   Serial.begin(115200);
   pinMode(led, OUTPUT);
-  pinMode(infra_vermelho, INPUT);
+  pinMode(infravermelho, INPUT);
 }
 
 void loop(){
-  int obstaculo = digitalRead(infra_vermelho); 
+  int obstaculo = digitalRead(infravermelho); 
   Serial.println(obstaculo);
   delay(10);
   if(obstaculo){
