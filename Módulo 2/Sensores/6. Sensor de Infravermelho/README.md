@@ -4,7 +4,7 @@ O projeto se baseia no uso da função ```digitalRead``` e do sensor infravermel
 
 O sensor infravermelho (ou de refletância) é um componente eletrônico muito usado para a detecção de obstáculos. Seu funcionamento consiste na emissão de um raio infravermelho pelo LED branco (emissor) e recepção desse raio refletido pelo LED preto (receptor). Se houver a reflexão da luz emitida, um obstáculo terá sido detectado.
 
-**Nota: O sensor de infravermelho não consegue detectar obstáculos de cores mais escuras, pois eles absorvem grande parte da luz infraveremlha.**
+**Nota: O sensor de infravermelho não consegue detectar obstáculos de cores mais escuras, pois eles absorvem grande parte da luz infravermelha.**
 
 O alcance da detecção varia entre 2 cm e 40 cm e pode ser regulado pelo potenciômetro trimpot presente no módulo. Ressalta-se ainda que se um obstáculo for detectado, o nível lógico lido será LOW.
 
