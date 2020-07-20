@@ -73,8 +73,11 @@ void loop(){
   
 ```
 O código inicia com a declaração e associação das saídas e entradas utilizadas. O LED foi associado à constante 12 (D6) e o pino OUT do sensor infravermelho à constante 5 (D1). Posteriormente, o comportamento dos pinos é definido pelo ```pinMode```. A comunicação serial também é iniciada no ```void setup``` pelo comando ```Serial.begin```.
+
 O ```void loop``` inicia com a declaração da variável booleana ```obstaculo``` a qual armazena o valor digital lido da variável ```infravermelho```. Essa leitura é feita pela função ```digitalRead```.
+
 Depois disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável ```obstaculo``` estiver com o nível lógico 1 (HIGH), então o LED permanece desligado, pois nenhum obstáculo foi detectado. Enquanto que, se essa variável estiver com o nível lógico 0 (LOW), o LED acende, indicando a detecção de um obstáculo.
+
 Para controlar o estado do LED, faz-se uso da função ```digitalWrite``` a qual recebe como parâmetros, respectivamente,  o pino que se deseja definir o estado lógico (nesse caso o pino do led) e o nível lógico que esse pino deve assumir (HIGH/LOW).
 
 
