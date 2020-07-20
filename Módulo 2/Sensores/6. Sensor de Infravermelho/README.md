@@ -1,21 +1,21 @@
-# 1. Circuito e programa com sensor de Infravermelho
+# 1. Circuito e programa com sensor infravermelho
 
 O projeto se baseia no uso da função ```digitalRead``` e do sensor infravermelho, buscando o desenvolvimento de aplicações.
 
 O sensor infravermelho (ou de refletância) é um componente eletrônico muito usado para a detecção de obstáculos. Seu funcionamento consiste na emissão de um raio infravermelho pelo LED branco (emissor) e recepção desse raio refletido pelo LED preto (receptor). Se houver a reflexão da luz emitida, um obstáculo terá sido detectado.
 
-**Nota: O sensor de infravermelho não consegue detectar obstáculos de cores mais escuras, pois eles absorvem grande parte da luz infravermelha.**
+**Nota: O sensor infravermelho não consegue detectar obstáculos de cores mais escuras, pois eles absorvem grande parte da luz infravermelha.**
 
 O alcance da detecção varia entre 2 cm e 40 cm e pode ser regulado pelo potenciômetro trimpot presente no módulo. Ressalta-se ainda que se um obstáculo for detectado, o nível lógico lido será LOW.
 
 Uma de suas aplicações pode ser associada ao uso desse sensor em robôs para permitir que eles detectem obstáculos enquanto se movimentam e, com isso, possam evitá-los.
 
-O circuito envolvendo o sensor Infravermelho possibilita o aprendizado das seguintes competências trabalhadas no módulo 1:
+O circuito envolvendo o sensor infravermelho possibilita o aprendizado das seguintes competências trabalhadas no módulo 1:
 
 - [x] Leitura Digital
 - [x] Escrita Digital
 
-> Nesse projeto você irá aprender a utilizar sensor de Infravermelho, juntamente com o processo de escrita digital com a função  ```digitalWrite```, bem como o de leitura digital usando a função  ```digitalRead```
+> Nesse projeto você irá aprender a utilizar sensor infravermelho, juntamente com o processo de escrita digital com a função  ```digitalWrite```, bem como o de leitura digital usando a função  ```digitalRead```
 ## Conteúdo
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
@@ -23,7 +23,7 @@ O circuito envolvendo o sensor Infravermelho possibilita o aprendizado das segui
 
 ## Materiais Necessários
 1. NodeMCU
-2. 1 Sensor de Infravermelho
+2. 1 Sensor infravermelho
 3. 1 LED
 4. 1 Resistor de 220Ω
 5. Protoboard
@@ -41,9 +41,9 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 
 O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
 
-O pino OUT do sensor de Infravermelho deve ser conectado a alguma porta digital do NodeMCU para que seu sinal digital possa ser lido. Além desse pino, seus outros terminais devem ser conectados ao GND e ao VCC conforme suas denominações.
+O pino OUT do sensor infravermelho deve ser conectado a alguma porta digital do NodeMCU para que seu sinal digital possa ser lido. Além desse pino, seus outros terminais devem ser conectados ao GND e ao VCC conforme suas denominações.
 
-**É importante saber que o Sensor Infravermelho só funciona quando o seu VCC está conectado a uma fonte de 3,3V a 5V, por esse motivo, é necessário conectar o seu VCC ao terminal de 5V disponível no ESP ou arduíno**
+**É importante saber que o Sensor infravermelho só funciona quando o seu VCC está conectado a uma fonte de 3,3V a 5V, por esse motivo, é necessário conectar o seu VCC ao terminal de 5V disponível no ESP ou arduíno**
 
 ## O código do Circuito
 
