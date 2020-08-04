@@ -80,5 +80,5 @@ Além disso, utiliza-se uma estrutura condicional if, de modo que se a variável
 
 ![Circuit](assets/circuit.gif)
 
-> Pense na utilização do Sensor de Umidade do Solo na sua casa ou em outras aplicações do seu cotidiano. 
+> Pense em outras aplicações do módulo relé em seu cotidiano. 
 
