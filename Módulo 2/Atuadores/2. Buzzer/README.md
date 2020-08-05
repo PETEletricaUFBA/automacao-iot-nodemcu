@@ -64,40 +64,40 @@ void setup()
 void loop()
 {
   if (digitalRead(pino_do_unissono)) {
-    tone(pino_buzzer, 264, tempo); //(Dó uníssono = 264 Hz)
+    tone(pino_buzzer, 264, tempo);
   }
   if (digitalRead(pino_re)) {
-    tone(pino_buzzer, 297, tempo); //(Ré = 297 Hz)
+    tone(pino_buzzer, 297, tempo);
     delay(tempo);
     noTone(pino_buzzer);
   }
   if (digitalRead(pino_mi)) {
-    tone(pino_buzzer, 330, tempo); //(Mi = 330 Hz)
+    tone(pino_buzzer, 330, tempo);
     delay(tempo);
     noTone(pino_buzzer);
   }
   if (digitalRead(pino_fa)) {
-   tone(pino_buzzer, 352, tempo); //(Fá = 352 Hz)
+   tone(pino_buzzer, 352, tempo);
     delay(tempo);
     noTone(pino_buzzer);
   }
   if (digitalRead(pino_sol)) {
-   tone(pino_buzzer, 396, tempo); //(Sol = 396 Hz)
+   tone(pino_buzzer, 396, tempo);
     delay(tempo);
     noTone(pino_buzzer);
   }
   if (digitalRead(pino_la)) {
-   tone(pino_buzzer, 440, tempo); //(Lá = 440 Hz)
+   tone(pino_buzzer, 440, tempo);
     delay(tempo);
     noTone(pino_buzzer);
   }
   if (digitalRead(pino_si)) {
-   tone(pino_buzzer, 495, tempo); //(Sí = 495 Hz)
+   tone(pino_buzzer, 495, tempo);
     delay(tempo);
     noTone(pino_buzzer);
   }
   if (digitalRead(pino_do)) {
-   tone(pino_buzzer, 528, tempo); //(Dó = 528 Hz)
+   tone(pino_buzzer, 528, tempo);
     delay(tempo);
     noTone(pino_buzzer);
   }
