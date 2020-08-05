@@ -34,7 +34,7 @@ O buzzer apresenta polaridade. O polo positivo pode ser identificado pela indica
 
 ## O código do Circuito
 
-Use o código que está em [code](code/code1.ino) ou copie o código abaixo:
+Use o código que está em [code](code/code.ino) ou copie o código abaixo:
  
 ```C++
 #define pino_buzzer 16
