@@ -114,6 +114,9 @@ Desse modo, caso um botão seja pressionado, o buzzer vai emitir um som com dete
 
 **Nota:** Após o uso do ```tone()```, recomenda-se o uso do comando ```delay()``` que dure o mesmo tempo que a duração da nota musical do ```tone()```. Caso contrário, o comando ```noTone()``` cessará a execução da nota rapidamente e ela não será percebida.
 
+Ressalta-se que os valores, usados no código, para as frequências de cada nota musical foram extraídos da seguinte tabela:
+![tabela](assets/tabela.png)
+
 Caso tenha tido algum problema, abra uma *issue* clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new).
 
 ![Circuit](assets/circuit.gif)
