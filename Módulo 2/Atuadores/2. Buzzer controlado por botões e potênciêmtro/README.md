@@ -12,9 +12,11 @@ O circuito de um buzzer controlado por botões possibilita o aprendizado das seg
 - [x] Leitura Digital
 
 ## Conteúdo
-- [Materiais Necessários](#materiais-necessários)
-- [Montagem do Circuito](#montagem-do-circuito)
-- [O Código do Circuito](#o-c&oacute;digo-do-circuito)
+- [2. Buzzer controlado por botões](#2-buzzer-controlado-por-botões)
+  - [Conteúdo](#conteúdo)
+  - [Materiais Necessários](#materiais-necessários)
+  - [Montagem do Circuito](#montagem-do-circuito)
+  - [O código do Circuito](#o-código-do-circuito)
 
 ## Materiais Necessários
 1. NodeMCU
@@ -120,6 +122,11 @@ Ressalta-se que os valores, usados no código, para as frequências de cada nota
 
 Caso tenha tido algum problema, abra uma *issue* clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new).
 
-![Circuit](assets/circuit.gif)
+code01                         | code02
+------------------------------ | ---------------------------------
+![Circuit](assets/teclado.gif) | ![Circuit](assets/pot.gif)
+audio1                         | audio2
+
+
 
 > Pense na utilização do Buzzer na sua casa ou em outras aplicações do seu cotidiano. 
