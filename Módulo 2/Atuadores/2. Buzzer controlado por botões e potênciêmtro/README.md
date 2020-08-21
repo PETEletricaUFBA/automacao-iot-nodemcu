@@ -5,7 +5,7 @@ Ele pode ser usado em alarmes, teclados e em outros equipamentos que dependem de
 
 Um disco piezo, feito de material cerâmico, funciona quando uma corrente elétrica passa pelo material fazendo com que ele se deforme e produza um som. O efeito piezoelétrico é um processo reversível, então quando se bate nele ou ele sofre algum tipo de pressão, a força no material provoca a geração de uma corrente elétrica. 
 
-![rele](assets/rele.jpg)
+![buzzer](assets/buzzer.jpg)
 
 O circuito de um buzzer controlado por botões ou potenciômetro possibilita o aprendizado das seguintes competência trabalhadas no Módulo 1:
 
