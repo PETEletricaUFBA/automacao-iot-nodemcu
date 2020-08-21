@@ -148,6 +148,6 @@ Cada ```delayMicroseconds``` representa um semiperíodo da onda quadrada. Dessa 
 
 Caso tenha tido algum problema, abra uma *issue* clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new).
 
-![Circuit](assets/circuit.gif)
+![Circuito](assets/circuit.gif)
 
 > Pense na utilização do Buzzer na sua casa ou em outras aplicações do seu cotidiano. 
