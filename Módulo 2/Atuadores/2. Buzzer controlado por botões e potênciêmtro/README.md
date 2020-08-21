@@ -1,4 +1,4 @@
-# 2. Buzzer controlado por botões ou potenciômetro
+# 2. Buzzer
 
 O projeto consiste em um buzzer ou Disco Piezoelétrico. O buzzer é um componente cujo funcionamento se expressa de forma sonora. Apesar disso, a qualidade do seu som apresenta limitações.
 Ele pode ser usado em alarmes, teclados e em outros equipamentos que dependem de atuação sonora.  
@@ -62,6 +62,8 @@ O código inicia com a declaração das constantes referentes ao potenciômetro 
 A função ```loop()``` é formada pela variável que recebe a frequência desejada para ser executada pelo buzzer. Esse valor está baseado na leitura analógica feita no pino do potenciômetro. Além disso, a função contém ainda a o comando ```tone()``` que recebe como parâmetros o pino do buzzer e a frequência a ser tocada.
 
 Com isso, o funcionamento esperado para o código consiste na frequência tocada pelo buzzer ser controlada pelo potenciômetro.
+
+Caso tenha tido algum problema, abra uma *issue* clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new).
 
 ![potenciômetro](assets/pot.gif)
 
