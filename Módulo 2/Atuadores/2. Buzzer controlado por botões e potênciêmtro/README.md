@@ -63,6 +63,8 @@ A função ```loop()``` é formada pela variável que recebe a frequência desej
 
 Com isso, o funcionamento esperado para o código consiste na frequência tocada pelo buzzer ser controlada pelo potenciômetro.
 
+![potenciômetro](assets/pot.gif)
+
 ## Bônus
 
 Desse modo, caso um botão seja pressionado, o buzzer vai emitir um som com determinada frequência, relativa às notas musicais. Após a emissão do som, há um tempo de espera e o som é interrompido. Ou seja, a produção sonora só continua enquanto o botão permanecer pressionado.
