@@ -146,10 +146,8 @@ Cada ```delayMicroseconds``` representa um semiperíodo da onda quadrada. Dessa 
 
 ***Nota:*** Os valores atribuídos a cada semiperíodo baseiam-se nos cálculos referentes às notas musicais no terceiro harmônico.
 
-![teclado](assets/teclado.gif)
-
 Caso tenha tido algum problema, abra uma *issue* clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new).
 
-![Circuit](assets/circuit.gif)
+![teclado](assets/teclado.gif)
 
 > Pense na utilização do Buzzer na sua casa ou em outras aplicações do seu cotidiano. 
