@@ -76,7 +76,7 @@ Desse modo, caso um botão seja pressionado, o buzzer vai emitir um som com dete
 4. Protoboard
 5. Jumpers
 6. 1 Resistor de 100 Ω
-7. 8 Resistores de 10 kΩ
+7. 5 Resistores de 10 kΩ
 
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard. 
@@ -146,8 +146,10 @@ Cada ```delayMicroseconds``` representa um semiperíodo da onda quadrada. Dessa 
 
 ***Nota:*** Os valores atribuídos a cada semiperíodo baseiam-se nos cálculos referentes às notas musicais no terceiro harmônico.
 
+![teclado](assets/teclado.gif)
+
 Caso tenha tido algum problema, abra uma *issue* clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new).
 
-![Circuito](assets/circuit.gif)
+![Circuit](assets/circuit.gif)
 
 > Pense na utilização do Buzzer na sua casa ou em outras aplicações do seu cotidiano. 
