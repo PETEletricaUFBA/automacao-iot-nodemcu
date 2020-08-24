@@ -67,6 +67,8 @@ Caso tenha tido algum problema, abra uma *issue* clicando [aqui](https://github.
 
 ![potenciômetro](assets/pot.gif)
 
+Para ouvir o som clique [aqui](https://raw.githubusercontent.com/PETEletricaUFBA/automacao-iot-nodemcu/master/M%C3%B3dulo%202/Atuadores/2.%20Buzzer%20controlado%20por%20bot%C3%B5es%20e%20pot%C3%AAnci%C3%AAmtro/assets/audiopot.mp3)
+
 ## Bônus
 
 Desse modo, caso um botão seja pressionado, o buzzer vai emitir um som com determinada frequência, relativa às notas musicais. Após a emissão do som, há um tempo de espera e o som é interrompido. Ou seja, a produção sonora só continua enquanto o botão permanecer pressionado.
@@ -151,5 +153,7 @@ Cada ```delayMicroseconds``` representa um semiperíodo da onda quadrada. Dessa 
 Caso tenha tido algum problema, abra uma *issue* clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new).
 
 ![teclado](assets/teclado.gif)
+
+Para ouvir o som clique [aqui](https://raw.githubusercontent.com/PETEletricaUFBA/automacao-iot-nodemcu/master/M%C3%B3dulo%202/Atuadores/2.%20Buzzer%20controlado%20por%20bot%C3%B5es%20e%20pot%C3%AAnci%C3%AAmtro/assets/audioteclado.mp3)
 
 > Pense na utilização do Buzzer na sua casa ou em outras aplicações do seu cotidiano. 
