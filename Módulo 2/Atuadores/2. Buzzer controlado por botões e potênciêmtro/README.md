@@ -85,7 +85,7 @@ Desse modo, caso um botão seja pressionado, o buzzer vai emitir um som com dete
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard. 
 
-![Protoboard](assets/atuador1.png)
+![Circuito do Buzzer](assets/buzzerCircuitoFritzing2.png)
 
 O buzzer deve ser conectado da mesma forma que no circuito anterior. Cada botão, conectado em circuito Pull-Down, só oferece 5V na entrada digital enquanto o botão for pressionado.
 
