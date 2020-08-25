@@ -26,7 +26,7 @@ O circuito de um buzzer controlado por botões ou potenciômetro possibilita o a
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard. 
 
-![Circuito do buzzer](assets/buzzerCircuitoFritzing.png)
+![Circuito do buzzer](assets/buzzerCircuito1.png)
 
 O buzzer apresenta polaridade. O polo positivo pode ser identificado pela indicação com o sinal +. Além disso, o terminal positivo é maior que o negativo. O terminal positivo deve ser conectada a uma porta digital (não será necessário o recurso PWM, pois utilizaremos a função ```tone()``` para gerar os sinais sonoros) e o negativo deve ser conectada ao GND do NodeMCU (ressalta-se a importância do uso de um resistor de 100 Ω entre o terminal negativo e o GND).
 
@@ -85,7 +85,7 @@ Desse modo, caso um botão seja pressionado, o buzzer vai emitir um som com dete
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard. 
 
-![Circuito do Buzzer](assets/buzzerCircuitoFritzing2.png)
+![Circuito do Buzzer](assets/buzzerCircuitoBonus.png)
 
 O buzzer deve ser conectado da mesma forma que no circuito anterior. Cada botão, conectado em circuito Pull-Down, só oferece 5V na entrada digital enquanto o botão for pressionado.
 
