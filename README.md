@@ -77,7 +77,6 @@ Dividiremos o conteúdo em alguns módulos:
 * **3) Noções sobre a criação de bots e uso de servidores:** Competências relacionadas a conectividade e a integração de sensores e atuadores através da Internet.
 * **4) Como levar a informação para o mundo virtual?** Agora é hora de colocar nossas aplicações na nuvem!
 
-<!--RESOLVER ISSO-->
 ![asd](assets/trilha.png)
 
 ## Módulos:
