@@ -114,8 +114,8 @@ Dividiremos o conteúdo em alguns módulos:
 
 #### **Atuadores:**
 
-1. Relé controlado por sensor; (Breve)
-2. Buzzer controlado por botões ou potênciômetro; (Breve)
+1. [Relé controlado por sensor](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/1.%20Rel%C3%A9%20controlado%20por%20sensor);
+2. [Buzzer controlado por botões ou potênciômetro](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/2.%20Buzzer%20controlado%20por%20bot%C3%B5es%20e%20pot%C3%AAnci%C3%AAmtro);
 3. Servo motor com alimentação externa controlado por um potenciômetro ou outro sensor; (Breve)
 4. Motor usando Ponte H e controle através de potenciômetro ou outro sensor; (Breve)
 5. Escrita em um display LCD com o protocolo I2C. (Breve)
