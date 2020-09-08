@@ -46,7 +46,7 @@ Instale a placa _**esp8266 by ESP8266 Community**_
 
 ![Instalando placa](assets/board.png)
 
-Após isso, em ```Ferramentas -> Placa``` selecione _**Generic ESP8266 Module**_
+Após isso, em ```Ferramentas -> Placa``` selecione _**NodeMCU 0.9**_ ou _**NodeMCU 1.0**_
 
 Pronto, sua IDE está preparada para programar um ESP!
 
