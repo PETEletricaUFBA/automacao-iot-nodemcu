@@ -45,7 +45,7 @@ Portanto, enquanto o fio vermelho e o fio marrom serão conectados a +5V e GND, 
 Para a aplicação que utiliza o potênciometro,
 como visto em práticas anteriores, os terminais da extremidade se conectam com o +5V e GND, respectivamente, enquanto que o terminal do meio é conectado em um pino analógico do NODEMCU (A0)
 
-![Servomotor, NODEMCU e potenciômetro](assets/circuito2.png)
+![Servomotor, NODEMCU e potenciômetro](assets/protoboard2.png)
 
 
 ## O código do Circuito
