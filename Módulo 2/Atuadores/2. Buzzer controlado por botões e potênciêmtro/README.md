@@ -1,4 +1,4 @@
-# 2. Buzzer
+# 2. Buzzer controlado por botões e potenciômetro
 
 O projeto consiste em um buzzer ou Disco Piezoelétrico. O buzzer é um componente cujo funcionamento se expressa de forma sonora. Apesar disso, a qualidade do seu som apresenta limitações.
 Ele pode ser usado em alarmes, teclados e em outros equipamentos que dependem de atuação sonora.  
