@@ -10,5 +10,5 @@ void setup() {
 }
 
 void loop() {
-  servo.write(map(analogRead(A0),0,1024,0,180));
+  servo.write(map(analogRead(A0),0,1023,0,180));
 }
