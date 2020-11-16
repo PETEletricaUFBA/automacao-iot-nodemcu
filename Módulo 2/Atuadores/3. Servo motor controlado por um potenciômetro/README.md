@@ -50,8 +50,7 @@ como visto em práticas anteriores, os terminais da extremidade se conectam com 
 
 ## O código do Circuito
 
-Use o código que está em [code](code/code.ino) ou copie o código abaixo:
->Use o código que está em [code](code/code.ino) ou copie o código abaixo:
+>Use o código que está em [code1](code1/code1.ino) ou copie o código abaixo:
  
 ```C++
 
@@ -89,7 +88,7 @@ O resultado obtido pode ser visto a seguir:
 ![Motor girando](assets/circuito1.gif)
 
 Para a segunda aplicação temos:
->Use o código que está em [code](code/code.ino) ou copie o código abaixo:
+>Use o código que está em [code1](code2/code2.ino) ou copie o código abaixo:
 ```C++
 #include <Servo.h>
 Servo servo;
