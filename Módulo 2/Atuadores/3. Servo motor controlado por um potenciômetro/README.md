@@ -7,7 +7,7 @@ Por meio desse módulo aprenderemos o que são e como funcionam alguns important
 ![Servomotor](assets/servomotor.png)
  
 
-Nesse momento você pode estar se perguntando o que é ou como funciona um microservo. O microservo é um atuador extremamente requisitado em projetos de eletrônica, mecatrônica, automação e robótica. Enquanto em projetos de robótica faz a função de mover as extremidades do robô, em projetos de automobilismo e aeromobilismo, respectivamente, podem controlar as rodas dianteiras ou os flaps da asa dos aviões. Dessa forma, os servos são motores que apresentam um controle de posição angular, podendo variar de -90º até 90º, ou seja 180º de grau de liberdade!
+Nesse momento você pode estar se perguntando o que é ou como funciona um microservo. O microservo é um atuador extremamente requisitado em projetos de eletrônica, mecatrônica, automação e robótica. Enquanto em projetos de robótica faz a função de mover as extremidades do robô, em projetos de automobilismo e aeromobilismo, respectivamente, podem controlar as rodas dianteiras ou os flaps da asa dos aviões. Dessa forma, os servos são motores que apresentam um controle de posição angular, podendo variar de -90° até 90°, ou seja 180° de grau de liberdade!
 
 O servomotor que utilizaremos para essa prática, como vimos na figura acima, é o Servo Motor SG90 9g, um servo pequeno, mas com um torque satisfatório para a maioria dos projetos de robótica educacional
 
@@ -38,12 +38,12 @@ Como visto na primeira imagem do projeto, o microservo apresenta três terminais
 2.Fio Vermelho - +VCC
 3.Fio Marrom - GND
 
-Portanto, enquanto o fio vermelho e o fio marrom serão conectados a +5V e GND, respectivamente, no NODEMCU, o fio laranja será conectado a um terminal digital, capaz de fornecer um sinal PWM e controlar a rotação do motor.
+Portanto, enquanto o fio vermelho e o fio marrom serão conectados a +3v3 e GND, respectivamente, no NODEMCU, o fio laranja será conectado a um terminal digital, capaz de fornecer um sinal PWM e controlar a rotação do motor.
 
 ![Servomotor e NODEMCU](assets/circuito1.png)
 
 Para a aplicação que utiliza o potênciometro,
-como visto em práticas anteriores, os terminais da extremidade se conectam com o +5V e GND, respectivamente, enquanto que o terminal do meio é conectado em um pino analógico do NODEMCU (A0)
+como visto em práticas anteriores, os terminais da extremidade se conectam com o +3v3 e GND, respectivamente, enquanto que o terminal do meio é conectado em um pino analógico do NODEMCU (A0)
 
 ![Servomotor, NODEMCU e potenciômetro](assets/protoboard2.png)
 
@@ -81,7 +81,9 @@ O circuito começa através da adição de uma biblioteca chamada ```"Servo.h"``
 
  É importante dizer que o write não indica quantos graus o servomotor deve se deslocar e sim para qual grau ele deve ir. Isto é, se você usa ```write(0)``` e depois write(90) ele irá se mover uma vez e depois ficará parado. É importante frisar ainda que, existe uma angulação máxima a qual o servomotor está construído para ir,  caso, via programação um write seja dado com uma angulação superior ao limite suportado, o atuador irá parar no grau máximo.
  
- Portanto, no void setup, indicamos que o servomotor começa com 0º e através do loop criado com os dois for's, já no void loop, fazemos o ângulo variar de 0 a 90º e depois de 90º a 0º
+ Portanto, no void setup, indicamos que o servomotor começa com 0º e através do loop criado com os dois for's, já no void loop, fazemos o ângulo variar de 0°
+ a 90° e depois de 90° a 0°
+
  
 O resultado obtido pode ser visto a seguir:
 
@@ -113,6 +115,8 @@ No ```void loop``` utilizamos a, já conhecida, função map, que realiza uma co
 
 O resultado pode ser visto no gif a seguir:
 
-![Motor controlado por potenciômetro](assets/circuito2.gif)
+![Motor controlado por potenciômetro](assets/circuito2.gif
+
+Caso tenha tido algum problema abra uma issue clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new) 
 
 > Pense na quantidade de aplicações que podemos fazer com esta aplicação, como por exemplo, simular o movimento dos braços e pernas de um robô!
