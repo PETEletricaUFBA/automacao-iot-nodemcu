@@ -3,8 +3,10 @@
 Por meio desse módulo aprenderemos o que são e como funcionam alguns importantes e usuais atuadores. Nesse projeto falaremos um pouco mais sobre servomotores e o controle desse famoso atuador.
 
  Através desse circuito criamos uma aplicação capaz de controlar a rotação do motor de forma simples e mecânica. Esse projeto, inclusive, pode ser utilizado para controlar braços robóticos ou mesmo, abrir a cortina de casa com um simples giro de um potenciômetro!
-
-![Servomotor](assets/servomotor.png)
+ 
+ <p align="center">
+  <img src="assets/servomotor.png" alt="Servomotor" />
+</p>
  
 
 Nesse momento você pode estar se perguntando o que é ou como funciona um microservo. O microservo é um atuador extremamente requisitado em projetos de eletrônica, mecatrônica, automação e robótica. Enquanto em projetos de robótica faz a função de mover as extremidades do robô, em projetos de automobilismo e aeromobilismo, respectivamente, podem controlar as rodas dianteiras ou os flaps da asa dos aviões. Dessa forma, os servos são motores que apresentam um controle de posição angular, podendo variar de -90° até 90°, ou seja 180° de grau de liberdade!
