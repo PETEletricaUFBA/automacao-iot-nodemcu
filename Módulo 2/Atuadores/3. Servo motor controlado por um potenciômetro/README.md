@@ -8,6 +8,7 @@ Por meio desse módulo aprenderemos o que são e como funcionam alguns important
   <img src="assets/servomotor.png" alt="Servomotor" />
 </p>
  
+**Você pode observar na imagem que um terminal do Servomotor deve ir para +5v, no entanto, o ESP não tem entradas de terminal e por isso, ao longo do projeto, vamos conectar esse terminal do servo no terminal 3v3 do ESP**
 
 Nesse momento você pode estar se perguntando o que é ou como funciona um microservo. O microservo é um atuador extremamente requisitado em projetos de eletrônica, mecatrônica, automação e robótica. Enquanto em projetos de robótica faz a função de mover as extremidades do robô, em projetos de automobilismo e aeromobilismo, respectivamente, podem controlar as rodas dianteiras ou os flaps da asa dos aviões. Dessa forma, os servos são motores que apresentam um controle de posição angular, podendo variar de -90° até 90°, ou seja 180° de grau de liberdade!
 
