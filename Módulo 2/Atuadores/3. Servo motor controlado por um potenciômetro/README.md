@@ -42,7 +42,9 @@ Como visto na primeira imagem do projeto, o microservo apresenta três terminais
 
 Portanto, enquanto o fio vermelho e o fio marrom serão conectados a +3v3 e GND, respectivamente, no NODEMCU, o fio laranja será conectado a um terminal digital, capaz de fornecer um sinal PWM e controlar a rotação do motor.
 
-![Servomotor e NODEMCU](assets/circuito1.png)
+<p align="center">
+  <img src="assets/circuito1.png" alt="Servomotor e NODEMCU" width="335" />
+</p>
 
 Para a aplicação que utiliza o potênciometro,
 como visto em práticas anteriores, os terminais da extremidade se conectam com o +3v3 e GND, respectivamente, enquanto que o terminal do meio é conectado em um pino analógico do NODEMCU (A0)
