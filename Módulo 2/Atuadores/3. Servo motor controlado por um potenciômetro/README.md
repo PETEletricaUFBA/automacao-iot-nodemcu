@@ -122,7 +122,7 @@ No ```void loop``` utilizamos a, já conhecida, função map, que realiza uma co
 
 O resultado pode ser visto no gif a seguir:
 
-![Motor controlado por potenciômetro](assets/circuito2.gif
+![Motor controlado por potenciômetro](assets/circuito2.gif)
 
 Caso tenha tido algum problema abra uma issue clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new) 
 
