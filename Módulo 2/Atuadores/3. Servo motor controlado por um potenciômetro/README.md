@@ -98,7 +98,7 @@ O resultado obtido pode ser visto a seguir:
 ![Motor girando](assets/circuito1.gif)
 
 Para a segunda aplicação temos:
->Use o código que está em [code1](code2/code2.ino) ou copie o código abaixo:
+>Use o código que está em [code2](code2/code2.ino) ou copie o código abaixo:
 ```C++
 #include <Servo.h>
 Servo servo;
