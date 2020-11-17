@@ -52,7 +52,7 @@ como visto em práticas anteriores, os terminais da extremidade se conectam com 
 ![Servomotor, NODEMCU e potenciômetro](assets/protoboard2.png)
 
 <p align="center">
-  <img src="assets/protoboard2.png" alt="Servomotor, NODEMCU e potenciômetro" width="167.5" />
+  <img src="assets/protoboard2.png" alt="Servomotor, NODEMCU e potenciômetro" width="167,5" />
 </p>
 
 
