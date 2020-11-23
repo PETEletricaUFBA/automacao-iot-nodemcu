@@ -6,7 +6,7 @@ Módulos de display LCD de caracteres alfanuméricos são interfaces de comunica
 
 O I2C é um protocolo de barramento, que conecta todos os dispositivos do setup com os mesmos fios, reduzindo o números de pinos utilizados no NodeMCU. Além dos pinos utilizados para relacionar o NodeMCU ao display, possui ainda um potenciômetro para ajustar o contraste do display e o Jumper Backlight, que pode ser usado para controlar a luz de fundo.
 
-![I2C](assets/I2C.jpg)
+![I2C](assets/I2C.png)
 
 O circuito e código para a escrita em display LCD com o protocolo I2C possibilita o aprendizado das seguintes competência trabalhadas no Módulo 1:
 
