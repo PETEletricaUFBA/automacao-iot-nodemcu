@@ -27,7 +27,7 @@ O circuito e código para a escrita em display LCD com o protocolo I2C possibili
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard. 
 
-![Protoboard](assets/circuito.png)
+![Protoboard](assets/circuito.PNG)
 
 No módulo I2C em um dos lados, temos 4 pinos: VCC, GND, SDA, conectado ao D2, e SCL, conectado ao D1 do NodeMCU. Na parte de baixo, os 16 pinos se conectam com os pinos do display.
 
