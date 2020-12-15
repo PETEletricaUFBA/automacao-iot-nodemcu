@@ -128,9 +128,7 @@ Dividiremos o conteúdo em alguns módulos:
 
 #### **Criação de Bots:**
 1. Criação de um BOT no Telegram
-2. Criação de um BOT pelo Integromat
-3. Criação de um BOT em Python ou C
-4. Criação de um BOT pelo Api.ai
+2. Criação de um BOT em Python ou C
 #### **Integração do Bot em um projeto físico:**
 1. Criação do código de funcionamento e configuração da interação com o Telegram 
 #### **Armazenamento do projeto em uma nuvem:**
