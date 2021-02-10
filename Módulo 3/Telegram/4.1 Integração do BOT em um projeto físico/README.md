@@ -22,7 +22,9 @@ Antes de começarmos a falar propriamente dessa aplicação, lembre-se de ter gu
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
-![Protoboard](assets/protoboard.PNG)
+ <p align="center">
+  <img src="assets/protoboard.PNG" alt="Protoboard"/>
+</p>
 
 É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
 
