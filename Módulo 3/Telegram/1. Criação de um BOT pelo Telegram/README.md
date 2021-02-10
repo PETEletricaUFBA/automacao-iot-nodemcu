@@ -20,6 +20,10 @@ Após o download e configuração inicial de sua conta, caso você já não tenh
 
 Digite “BotFather” na barra de pesquisa do Telegram ou acesse [BotFather] (https://t.me/botfather) e encontre a aplicação do telegram responsável pelo desenvolvimento de BOTs. Ao abrir o chat será possível escrever diversos comandos na janela de chat do BotFather.
 
+ <p align="center">
+  <img src="assets/botfather1.png" alt="botfather1"/>
+</p>
+
 Quando abrir o chat do BotFather, clique em “Começar” ou digite /start. Após o início da conexão com o “BotFather”, digite /newbot para criar o seu Bot.
 
 Depois de escrever /newbot, será necessário realizar configurações iniciais do seu BOT. Dessa forma, forneça um nome e um nome de usuário (username)
