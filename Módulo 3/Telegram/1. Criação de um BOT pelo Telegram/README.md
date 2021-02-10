@@ -28,7 +28,7 @@ Quando abrir o chat do BotFather, clique em “Começar” ou digite /start. Ap�
 
 Depois de escrever /newbot, será necessário realizar configurações iniciais do seu BOT. Dessa forma, forneça um nome e um nome de usuário (username)
 
-Por fim, o BotFather lhe fornecerá um Token (único e intransferível), como uma senha, responsável pela identificação do seu robô virtual. Por último, copie o token e deixe-o armazenado em algum lugar de fácil acesso. Detalhe: O token mostrado na imagem é de um bot qualquer. A do seu bot criado será diferente do mostrado na imagem!
+Por fim, o BotFather lhe fornecerá um Token (único e intransferível), como uma senha, responsável pela identificação do seu robô virtual. Por último, copie o token e deixe-o armazenado em algum lugar de fácil acesso. Detalhe: O token mostrado na imagem é de um bot qualquer. O token do seu bot será diferente do mostrado na imagem!
 
  <p align="center">
   <img src="assets/newbot1.png" alt="criação e configuração do bot "/>
