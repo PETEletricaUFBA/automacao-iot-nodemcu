@@ -33,5 +33,5 @@ Por fim, o BotFather lhe fornecerá um Token (único e intransferível), como um
  <p align="center">
   <img src="assets/newbot1.png" alt="criação e configuração do bot "/>
 </p>
-*Detalhe: O token mostrado na imagem é de um bot qualquer. A do seu bot criado será diferente do mostrado na imagem*
+Detalhe: O token mostrado na imagem é de um bot qualquer. A do seu bot criado será diferente do mostrado na imagem
 Pronto, a sua aplicação está pronta para ser utilizada em projetos futuros..
