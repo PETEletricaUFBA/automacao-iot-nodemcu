@@ -30,4 +30,8 @@ Depois de escrever /newbot, será necessário realizar configurações iniciais 
 
 Por fim, o BotFather lhe fornecerá um Token (único e intransferível), como uma senha, responsável pela identificação do seu robô virtual. Por último, copie o token e deixe-o armazenado em algum lugar de fácil acesso. 
 
+ <p align="center">
+  <img src="assets/newbot1.png" alt="criação e configuração do bot "/>
+</p>
+
 Pronto, a sua aplicação está pronta para ser utilizada em projetos futuros..
