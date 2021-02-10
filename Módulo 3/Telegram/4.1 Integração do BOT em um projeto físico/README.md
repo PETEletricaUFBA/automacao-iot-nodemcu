@@ -41,8 +41,8 @@ Use o código que está em [code](code/code.ino) ou copie o código abaixo:
 CTBot myBot;
 //Definicoes da rede wifi e conexao
 String ssid  = "COLOQUE O NOME DA SUA REDE WI-FI"; //Nome da sua rede wifi
-String pass  = "COLOQUEAQUI A SENHA DO WI-FI"; //Senha da sua rede wifi
-String token = "1678005731:AAHBn2rS173oS4Elnnp8YmQEQNwMaJx-fOw"; //Token bot Telegram
+String pass  = "COLOQUE AQUI A SENHA DO WI-FI"; //Senha da sua rede wifi
+String token = "COLOQUE AQUI O SEU TOKEN"; //Token bot Telegram
 //Pinos dos leds
 uint8_t led1 = D4;
 uint8_t led2 = D3;
