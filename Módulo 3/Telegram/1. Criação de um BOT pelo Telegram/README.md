@@ -18,7 +18,7 @@ O primeiro passo para desenvolvermos nossa aplicação no Telegram começa atrav
 
 Após o download e configuração inicial de sua conta, caso você já não tenha uma, começa, enfim, o processo de criação do BOT.
 
-Digite “BotFather” na barra de pesquisa do Telegram ou acesse [BotFather] (https://t.me/botfather) e encontre a aplicação do telegram responsável pelo desenvolvimento de BOTs. Ao abrir o chat será possível escrever diversos comandos na janela de chat do BotFather.
+Digite “BotFather” na barra de pesquisa do Telegram ou acesse [BotFather](https://t.me/botfather) e encontre a aplicação do telegram responsável pelo desenvolvimento de BOTs. Ao abrir o chat será possível escrever diversos comandos na janela de chat do BotFather.
 
  <p align="center">
   <img src="assets/botfather1.png" alt="botfather1"/>
