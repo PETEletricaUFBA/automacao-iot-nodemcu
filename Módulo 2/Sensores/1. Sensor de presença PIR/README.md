@@ -33,9 +33,8 @@ O circuito envolvendo o PIR possibilita o aprendizado da seguinte competência t
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
  <p align="center">
-  <img src="assets/botfather.png" alt="botfather" />
+  <img src="assets/servomotor.png" alt="Servomotor" />
 </p>
-
 
 
 É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
