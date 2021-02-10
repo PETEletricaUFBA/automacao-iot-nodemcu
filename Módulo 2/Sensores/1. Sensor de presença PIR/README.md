@@ -33,7 +33,7 @@ O circuito envolvendo o PIR possibilita o aprendizado da seguinte competência t
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
  <p align="center">
-  <img src="assets/servomotor.png" alt="Servomotor" />
+  <img src="assets/servomotor.png" alt="Servomotor"/>
 </p>
 
 
