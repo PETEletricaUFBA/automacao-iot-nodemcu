@@ -1,6 +1,9 @@
 # 4. Criação de um BOT no Telegram
 
-![botfather](assets/botfather.png)
+ <p align="center">
+  <img src="assets/botfather.png" alt="botfather"/>
+</p>
+
 ## O que são bots e porque o Telegram
 Em algum momento, ao navegar na internet, você já deve ter ouvido falar dos bots ou robôs virtuais, certo? Os bots são aplicações computacionais programadas para realizar, de forma autônoma, uma tarefa previamente determinada. Esses programas podem ser usados em diversos contextos e para finalidades distintas.
 
