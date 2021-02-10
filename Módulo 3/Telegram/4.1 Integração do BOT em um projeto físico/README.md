@@ -123,7 +123,7 @@ O código acima é responsável por realizar as seguintes ações:
 
 O resultado obtido através da integração do BOT pode ser visto na imagem e GIF a seguir através das telas do Telegram e o projeto físico:
 
-![Motor controlado por potenciômetro](assets/gif1.gif)
-![Motor controlado por potenciômetro](assets/essetaok.gif)
+![interação bot no telegram e projeto fisico](assets/gif1.gif)
+![interação bot no telegram e projeto fisico](assets/essetaok.gif)
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
