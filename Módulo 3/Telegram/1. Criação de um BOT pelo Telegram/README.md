@@ -34,4 +34,4 @@ Por fim, o BotFather lhe fornecerá um Token (único e intransferível), como um
   <img src="assets/newbot1.png" alt="criação e configuração do bot "/>
 </p>
 
-Pronto, a sua aplicação está pronta para ser utilizada em projetos futuros..
+Pronto, a sua aplicação está pronta para ser utilizada em projetos futuros.
