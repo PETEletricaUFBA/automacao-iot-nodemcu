@@ -1,8 +1,8 @@
-# 4.1 Integração do BOT em um projeto físico:
+# 2. Integração do BOT em um projeto físico:
 
 No tópico [Criação de um BOT no Telegram](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Telegram/1.%20Cria%C3%A7%C3%A3o%20de%20um%20BOT%20pelo%20Telegram) ensinamos como criar um BOT (robô virtual) utilizando o Telegram. Esse robô, quando programado, pode realizar infinitas ações nos mais diversos contextos. Para o contexto abordado nesse presente repositório, buscamos fazer com que esse robô virtual possa monitorar e informar sobre estados de variáveis ou atuar sobre as saídas dos projetos físicos. O robô é capaz de, por exemplo, desligar ou ligar uma luz, aumentar/diminuir a temperatura de um ar condicionado, abrir a trava eletrônica de uma porta, emitir um alerta no seu celular quando alguém passar por um determinado perímetro da casa, controlar um robô, etc.
 
-Você nesse momento pode estar se perguntando, por que eu quero integrar um robô do Telegram com um projeto físico que eu tenho na minha casa ou na minha empresa, por exemplo? A resposta é simples, quando conecta-se um BOT com um projeto físico, é possível controlar aquela aplicação em qualquer lugar do ambiente (é necessário estar conectado a uma rede local que vai ser a mesma do seu ESP 8266), desde que você tenha acesso a internet. Em um tópico futuro ensinaremos como controlar um projeto físico de qualquer lugar do planeta a partir de QUALQUER rede de internet.
+Você nesse momento pode estar se perguntando, por que eu quero integrar um robô do Telegram com um projeto físico que eu tenho na minha casa ou na minha empresa, por exemplo? A resposta é simples, quando conecta-se um BOT com um projeto físico, é possível controlar aquela aplicação em qualquer lugar do planeta, desde que você tenha acesso a internet.
 
 Dessa forma, nesse tópico aprenderemos a integrar o BOT criado no tópico anterior a um projeto físico qualquer. Para fins de simplificação e foco no objetivo principal do módulo, escolhemos um projeto em que a função do BOT vai ser desligar e ligar dois LEDs diferentes, bem como informar o estado atual do BOT.
 
@@ -22,7 +22,7 @@ Antes de começarmos a falar propriamente dessa aplicação, lembre-se de ter gu
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
- <p align="center">
+<p align="center">
   <img src="assets/protoboard.PNG" alt="Protoboard"/>
 </p>
 
@@ -108,7 +108,7 @@ void loop()
 }
   
 ```
-Assim como algumas outras aplicações que foram mostradas em módulos anteriores, precisa-se utilizar duas bibliotecas específicas ArduinoJson e a CTBot. : [``ArduinoJson``](library/ArduinoJson.zip) e [``CTBot``](library/CTBot.zip)**Clique nos links ao lado, realize o download da biblioteca, instale na sua IDE, como já o fizemos outras vezes antes de prosseguir para os próximos passos.**
+Assim como algumas outras aplicações que foram mostradas em módulos anteriores, precisa-se utilizar duas bibliotecas específicas ArduinoJson e a CTBot. : [``ArduinoJson``](library/ArduinoJson.zip) e [``CTBot``](library/CTBot.zip) **Clique nos links ao lado, realize o download da biblioteca, instale na sua IDE, como já o fizemos outras vezes antes de prosseguir para os próximos passos.**
 
 
 
