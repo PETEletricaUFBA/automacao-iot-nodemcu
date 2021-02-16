@@ -128,11 +128,18 @@ Dividiremos o conteúdo em alguns módulos:
 
 #### **Criação de Bots:**
 1. Criação de um BOT no Telegram
-2. Criação de um BOT em Python ou C
-#### **Integração do Bot em um projeto físico:**
-1. Criação do código de funcionamento e configuração da interação com o Telegram 
-#### **Armazenamento do projeto em uma nuvem:**
-> EM BREVE!
+2. Integração do Bot em um projeto físico
+
+#### **Webserver:**
+1. Webserver com página estática
+2. Webserver com página dinâmica, usando AJAX
+3. Acessar um Webserver através da Internet
+
+<!--
+- Módulo 4: Falar sobre o Thing Speak e a integração do Thing Speak com um projeto físico!
+- Módulo 3/Módulo 4: Integrar o Thing Speak com Web-Server. Como receber as informações do Thing Speak em uma dashboard diferente da do próprio site.
+- Heroku
+-->
 
 <br/>
 
