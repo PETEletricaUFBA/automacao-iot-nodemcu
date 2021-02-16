@@ -127,8 +127,8 @@ Dividiremos o conteúdo em alguns módulos:
 **Descrição:** Serão apresentadas a criação de bots e a sua integração em projetos físicos os quais incluem os conhecimentos aprendidos nos módulos anteriores.
 
 #### **Criação de Bots:**
-1. Criação de um BOT no Telegram
-2. Integração do Bot em um projeto físico
+1. [Criação de um BOT no Telegram](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Cria%C3%A7%C3%A3o%20de%20Bots/1.%20Cria%C3%A7%C3%A3o%20de%20um%20BOT%20pelo%20Telegram)
+2. [Integração do Bot em um projeto físico](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Cria%C3%A7%C3%A3o%20de%20Bots/2.%20Integra%C3%A7%C3%A3o%20do%20BOT%20em%20um%20projeto%20f%C3%ADsico)
 
 #### **Webserver:**
 1. Webserver com página estática
