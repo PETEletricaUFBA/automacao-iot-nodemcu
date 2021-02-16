@@ -108,7 +108,7 @@ void loop()
 }
   
 ```
-Assim como algumas outras aplicações que foram mostradas em módulos anteriores, precisa-se utilizar duas bibliotecas específicas ArduinoJson e a CTBot. : [``ArduinoJson``](library/ArduinoJson.zip) e [``CTBot``](library/CTBot.zip) **Clique nos links ao lado, realize o download da biblioteca, instale na sua IDE, como já o fizemos outras vezes antes de prosseguir para os próximos passos.**
+Assim como algumas outras aplicações que foram mostradas em módulos anteriores, precisa-se utilizar duas bibliotecas específicas ArduinoJson e a CTBot. : [``ArduinoJson``](library/ArduinoJson-5.13.5.zip) e [``CTBot``](library/CTBot-2.1.4.zip) **Clique nos links ao lado, realize o download da biblioteca, instale na sua IDE, como já o fizemos outras vezes antes de prosseguir para os próximos passos.**
 
 
 
