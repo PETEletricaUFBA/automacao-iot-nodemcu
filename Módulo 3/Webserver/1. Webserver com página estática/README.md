@@ -253,8 +253,11 @@ As demais funções utilizadas neste código, são funções padrão das bibliot
 
 3. Caso opte por utilizar um LED RGB, atente-se para a possibilidade do seu LED RGB ser ânodo comum ou cátodo comum.
 
+Gif de funcionamento   | Imagem da página num smartphone
+--------- | ------
+<img src="assets/circuit.gif"/> | <img height="300px" src="assets/print.jpg"/>
+
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
-![Circuit](assets/circuit.gif)
 
 > É importante saber que o uso de *web servers* não se restringe a esse projeto com LEDs em específico. Após a compreensão do que foi feito no post, experimente criar uma outra aplicação física e integrá-la a um web server. É possível, por exemplo, controlar todas as lâmpadas de sua casa ou um eletrodoméstico, ativar ou desativar alarme de segurança via navegador do seu celular ou computador.
