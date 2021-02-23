@@ -257,6 +257,10 @@ Gif de funcionamento   | Imagem da página num smartphone
 --------- | ------
 <img src="assets/circuit.gif"/> | <img height="300px" src="assets/print.jpg"/>
 
+É importante salientar que a construção de um *web server* com páginas estáticas apresenta algumas limitações especifícas que comprometem o monitoramento e o controle de variáveis em tempo real. Não há a atualização dos estados das variáveis sem que o usuário aperte a tecla F5, se o usuário mudar uma variável por um dispositivo, como um celular, por exemplo, o web server não será atualizado no segundo dispositivo, como em um computador.
+
+A solução para o problema descrito acima é a construção de um *web server* dinâmico com o AJAX. Tema do nosso próximo tópico do repositório!
+
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
 
