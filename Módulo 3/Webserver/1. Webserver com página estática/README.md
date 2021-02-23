@@ -253,7 +253,7 @@ As demais funções utilizadas neste código, são funções padrão das bibliot
 
 3. Caso opte por utilizar um LED RGB, atente-se para a possibilidade do seu LED RGB ser ânodo comum ou cátodo comum.
 
-Gif de funcionamento   | Imagem da página num smartphone
+Gif de funcionamento   | Imagem da página
 --------- | ------
 <img src="assets/circuit.gif"/> | <img height="300px" src="assets/print.jpg"/>
 
