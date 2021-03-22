@@ -1,30 +1,42 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
-#include "index.h"
  
  
 /********** PLEASE CHANGE THIS *************************/
 const char* ssid = "HUAWEI-2.4G-Uppx";
 const char* password = "eBTPrJ4a";
+
+IPAddress ip(192,168,100,234); 
+IPAddress gateway(192,168,100,0); 
+IPAddress subnet(255,255,255,0);
  
 ESP8266WebServer server(80);
  
 uint8_t lightPin = D0;
 bool lightStatus = LOW;
- 
-uint8_t buzzerPin = D1;
-bool buzzerStatus = LOW;
+
+uint8_t outletPin = D2;
+bool outletStatus = LOW;
+
+uint8_t doorPin = D4;
+bool doorStatus = LOW;
+
+uint8_t airPin = D5;
+bool airStatus = LOW;
  
 void setup() {
   Serial.begin(115200);
   pinMode(lightPin, OUTPUT);
-  pinMode(buzzerPin, OUTPUT);
+  pinMode(outletPin, OUTPUT);
+  pinMode(doorPin, OUTPUT);
+  pinMode(airPin, OUTPUT);
  
   Serial.println("Connecting to ");
   Serial.println(ssid);
  
   //connect to your local wi-fi network
   WiFi.begin(ssid, password);
+  WiFi.config(ip, gateway, subnet);
  
   //check wi-fi is connected to wi-fi network
   while (WiFi.status() != WL_CONNECTED) {
@@ -37,7 +49,9 @@ void setup() {
  
   server.on("/", handleRoot);
   server.on("/toggleLight", updateLight);
-  server.on("/toggleBuzzer", updateBuzzerSound);
+  server.on("/toggleOutlet", updateOutlet);
+  server.on("/toggleDoor", updateDoor);
+  server.on("/toggleAir", updateAir);
   server.onNotFound(handleNotFound);
  
   server.begin();
@@ -58,27 +72,45 @@ void updateLight() {
  
   server.send(200, "text/plain", "Success!");
 }
- 
-void updateBuzzerSound() {
-  String buzzerStatusParam = server.arg("buzzerStatus");
-  if (buzzerStatusParam == "ON")
-    buzzerStatus =  HIGH;
+
+void updateOutlet() {
+  String outletStatusParam = server.arg("outletStatus");
+  if (outletStatusParam == "ON")
+    outletStatus =  HIGH;
   else
-    buzzerStatus =  LOW;
+    outletStatus =  LOW;
+  digitalWrite(outletPin, outletStatus);
  
-  if (buzzerStatus)
-    tone(buzzerPin, 1200);
+  server.send(200, "text/plain", "Success!");
+}
+
+void updateDoor() {
+  String doorStatusParam = server.arg("doorStatus");
+  if (doorStatusParam == "ON")
+    doorStatus =  HIGH;
   else
-    noTone(buzzerPin);
+    doorStatus =  LOW;
+  digitalWrite(doorPin, doorStatus);
+ 
+  server.send(200, "text/plain", "Success!");
+}
+
+
+void updateAir() {
+  String airStatusParam = server.arg("airStatus");
+  if (airStatusParam == "ON")
+    airStatus =  HIGH;
+  else
+    airStatus =  LOW;
+  digitalWrite(airPin, airStatus);
  
   server.send(200, "text/plain", "Success!");
 }
  
+ 
 void handleNotFound() {
   server.send(404, "text/plain", "Not found");
 }
- 
-
 
 void loop() {
   server.handleClient();
@@ -107,54 +139,6 @@ String prepareHTML() {
 "\n        <script src=\"https:\/\/maxcdn.bootstrapcdn.com\/bootstrap\/4.0.0-alpha.6\/js\/bootstrap.min.js\" integrity=\"sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn\" crossorigin=\"anonymous\"><\/script>"
 "\n        <link href=\"https:\/\/fonts.googleapis.com\/css?family=Montserrat|Raleway\" rel=\"stylesheet\">"
 "\n        <script src=\"https:\/\/kit.fontawesome.com\/a552ae84ad.js\" crossorigin=\"anonymous\"><\/script>"
-"\n        <style>"
-"\n          .onoffswitch {"
-"\n            position: relative; width: 110px;"
-"\n            -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;"
-"\n          }"
-"\n          .onoffswitch-checkbox {"
-"\n              position: absolute;"
-"\n              opacity: 0;"
-"\n              pointer-events: none;"
-"\n          }"
-"\n          .onoffswitch-label {"
-"\n              display: block; overflow: hidden; cursor: pointer;"
-"\n              border: 2px solid #798A99; border-radius: 20px;"
-"\n          }"
-"\n          .onoffswitch-inner {"
-"\n              display: block; width: 200%; margin-left: -100%;"
-"\n              transition: margin 0.3s ease-in 0s;"
-"\n          }"
-"\n          .onoffswitch-inner:before, .onoffswitch-inner:after {"
-"\n              display: block; float: left; width: 50%; height: 23px; padding: 0; line-height: 23px;"
-"\n              font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;"
-"\n              box-sizing: border-box;"
-"\n          }"
-"\n          .onoffswitch-inner:before {"
-"\n              content: \"Ligado\";"
-"\n              padding-left: 10px;"
-"\n              background-color: #0275D8; color: #FFFFFF;"
-"\n          }"
-"\n          .onoffswitch-inner:after {"
-"\n              content: \"Desligado\";"
-"\n              padding-right: 10px;"
-"\n              background-color: #EEEEEE; color: #999999;"
-"\n              text-align: right;"
-"\n          }"
-"\n          .onoffswitch-switch {"
-"\n              display: block; width:17px; margin: 5px;"
-"\n              background: #F7F7F7;"
-"\n              position: absolute; top: 0; bottom: 0;"
-"\n              border: 2px solid #798A99; border-radius: 20px;"
-"\n              transition: all 0.3s ease-in 0s; "
-"\n          }"
-"\n          .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {"
-"\n              margin-left: 0;"
-"\n          }"
-"\n          .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {"
-"\n              right: 0px; "
-"\n          }"
-"\n        <\/style>"
 "\n    <\/head>"
 "\n    <body>     "
 "\n      <nav class=\"navbar navbar-toggleable-md navbar-inverse bg-primary\">"
@@ -181,11 +165,10 @@ String prepareHTML() {
 "\n            <div class=\"col-sm\">"
 "\n              <div class=\"card center\">"
 "\n                <div class=\"card-block center\">"
-"\n                  <!--<span class=\"card-title\"><i class=\"fa fa-lightbulb\" aria-hidden=\"true\" style=\"color:#dddddd;\"><\/i><\/span>-->"
-"\n                  <span class=\"card-title\"><i class=\"fa fa-lightbulb\" aria-hidden=\"true\" style=\"color:rgb(255, 238, 0);\"><\/i><\/span>"
+"\n                  <span class=\"card-title\"><i id=\"lightIcon\" class=\"fa fa-lightbulb\" aria-hidden=\"true\" style=\"color:lightgray;\"><\/i><\/span>"
 "\n                  <br><b>Luzes:<\/b>"
 "\n                  <div class=\"onoffswitch center\">"
-"\n                    <input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"light\" tabindex=\"0\" checked>"
+"\n                    <input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"light\" tabindex=\"0\">"
 "\n                    <label class=\"onoffswitch-label\" for=\"light\">"
 "\n                        <span class=\"onoffswitch-inner\"><\/span>"
 "\n                        <span class=\"onoffswitch-switch\"><\/span>"
@@ -197,12 +180,11 @@ String prepareHTML() {
 "\n            <div class=\"col-sm\">"
 "\n              <div class=\"card center\">"
 "\n                <div class=\"card-block center\">"
-"\n                  <!--<span class=\"card-title\"><i class=\"fa fa-plug\" aria-hidden=\"true\" style=\"color:#dddddd;\"><\/i><\/span>-->"
-"\n                  <span class=\"card-title\"><i class=\"fa fa-plug\" aria-hidden=\"true\" style=\"color:rgb(206, 3, 3)\"><\/i><\/span>"
+"\n                  <span class=\"card-title\"><i id=\"outletIcon\" class=\"fa fa-plug\" aria-hidden=\"true\" style=\"color:lightgray;\"><\/i><\/span>"
 "\n                  <br><b>Tomadas<\/b>"
 "\n                  <br>"
 "\n                  <div class=\"onoffswitch center\">"
-"\n                    <input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"outlet\" tabindex=\"0\" checked>"
+"\n                    <input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"outlet\" tabindex=\"0\">"
 "\n                    <label class=\"onoffswitch-label\" for=\"outlet\">"
 "\n                        <span class=\"onoffswitch-inner\"><\/span>"
 "\n                        <span class=\"onoffswitch-switch\"><\/span>"
@@ -214,11 +196,10 @@ String prepareHTML() {
 "\n            <div class=\"col-sm\">"
 "\n              <div class=\"card center\">"
 "\n                <div class=\"card-block\">"
-"\n                  <!--<span class=\"card-title\"><i class=\"fas fa-door-closed\" aria-hidden=\"true\" style=\"color:#dddddd;\"><\/i><\/span>-->"
-"\n                  <span class=\"card-title\"><i class=\"fas fa-door-open\" aria-hidden=\"true\" style=\"color:#59c031\"><\/i><\/span>"
+"\n                  <span class=\"card-title\"><i id=\"doorIcon\" class=\"fas fa-door-open\" aria-hidden=\"true\" style=\"color:lightgray;\"><\/i><\/span>"
 "\n                  <br><b>Porta<\/b>"
 "\n                  <div class=\"onoffswitch center\">"
-"\n                    <input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"door\" tabindex=\"0\" checked>"
+"\n                    <input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"door\" tabindex=\"0\">"
 "\n                    <label class=\"onoffswitch-label\" for=\"door\">"
 "\n                        <span class=\"onoffswitch-inner\"><\/span>"
 "\n                        <span class=\"onoffswitch-switch\"><\/span>"
@@ -230,8 +211,7 @@ String prepareHTML() {
 "\n            <div class=\"col-sm\">"
 "\n              <div class=\"card center\">"
 "\n                <div class=\"card-block center\">"
-"\n                  <!--<span class=\"card-title\"><i class=\"fas fa-wind\" aria-hidden=\"true\" style=\"color:#dddddd;\"><\/i><\/span>-->"
-"\n                  <span class=\"card-title\"><i class=\"fas fa-wind\" aria-hidden=\"true\" style=\"color:rgb(99, 163, 247);\"><\/i><\/span>"
+"\n                  <span class=\"card-title\"><i id=\"airIcon\" class=\"fas fa-wind\" aria-hidden=\"true\" style=\"color:lightgray;\"><\/i><\/span>"
 "\n                  <br><b>Ar Condicionado<\/b>"
 "\n                  <br>"
 "\n                  <div class=\"d-flex justify-content-center my-4 slidecontainer\">"
@@ -242,7 +222,7 @@ String prepareHTML() {
 "\n                    <span class=\"font-weight-bold text-primary ml-2 mt-1\">\u00BAC<\/span>"
 "\n                  <\/div>"
 "\n                  <div class=\"onoffswitch center\">"
-"\n                    <input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"air\" tabindex=\"0\" checked>"
+"\n                    <input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"air\" tabindex=\"0\">"
 "\n                    <label class=\"onoffswitch-label\" for=\"air\">"
 "\n                        <span class=\"onoffswitch-inner\"><\/span>"
 "\n                        <span class=\"onoffswitch-switch\"><\/span>"
@@ -260,9 +240,11 @@ String prepareHTML() {
 "\n            console.log(\"Deu BOM\");"
 "\n            if ( this.checked ) {"
 "\n              lightStatus = \"ON\";"
+"\n              document.getElementById(\"lightIcon\").style.color = \"yellow\";"
 "\n              console.log(\"ON\");"
 "\n            } else {"
 "\n              lightStatus = \"OFF\";"
+"\n              document.getElementById(\"lightIcon\").style.color = \"lightgray\";"
 "\n              console.log(\"OFF\");"
 "\n            }"
 "\n            var xhttp = new XMLHttpRequest();"
@@ -274,21 +256,70 @@ String prepareHTML() {
 "\n            xhttp.open(\"GET\", \"toggleLight?lightStatus=\"+lightStatus, true);"
 "\n            xhttp.send();"
 "\n          };"
-"\n          document.getElementById(\'buzzerSwitch\').onclick = function() {"
+"\n          document.getElementById(\'outlet\').onclick = function() {"
 "\n            \/\/ access properties using this keyword"
-"\n            var buzzerStatus;"
+"\n            var outletStatus;"
+"\n            console.log(\"Deu BOM\");"
 "\n            if ( this.checked ) {"
-"\n              buzzerStatus = ON;"
+"\n              outletStatus = \"ON\";"
+"\n              document.getElementById(\"outletIcon\").style.color = \"red\";"
+"\n              console.log(\"ON\");"
 "\n            } else {"
-"\n              buzzerStatus = OFF;"
+"\n              outletStatus = \"OFF\";"
+"\n              document.getElementById(\"outletIcon\").style.color = \"lightgray\";"
+"\n              console.log(\"OFF\");"
 "\n            }"
 "\n            var xhttp = new XMLHttpRequest();"
 "\n            xhttp.onreadystatechange = function() {"
 "\n              if (this.readyState == 4 && this.status == 200) {"
-"\n                "
+"\n                console.log(\"Successfully received\");"
 "\n              }"
 "\n            };"
-"\n            xhttp.open(GET, \"toggleBuzzer?buzzerStatus\"+buzzerStatus, true);"
+"\n            xhttp.open(\"GET\", \"toggleOutlet?outletStatus=\"+outletStatus, true);"
+"\n            xhttp.send();"
+"\n          };"
+"\n          document.getElementById(\'door\').onclick = function() {"
+"\n            \/\/ access properties using this keyword"
+"\n            var doorStatus;"
+"\n            console.log(\"Deu BOM\");"
+"\n            if ( this.checked ) {"
+"\n              doorStatus = \"ON\";"
+"\n              document.getElementById(\"doorIcon\").style.color = \"green\";"
+"\n              console.log(\"ON\");"
+"\n            } else {"
+"\n              doorStatus = \"OFF\";"
+"\n              document.getElementById(\"doorIcon\").style.color = \"lightgray\";"
+"\n              console.log(\"OFF\");"
+"\n            }"
+"\n            var xhttp = new XMLHttpRequest();"
+"\n            xhttp.onreadystatechange = function() {"
+"\n              if (this.readyState == 4 && this.status == 200) {"
+"\n                console.log(\"Successfully received\");"
+"\n              }"
+"\n            };"
+"\n            xhttp.open(\"GET\", \"toggleDoor?doorStatus=\"+doorStatus, true);"
+"\n            xhttp.send();"
+"\n          };"
+"\n          document.getElementById(\'air\').onclick = function() {"
+"\n            \/\/ access properties using this keyword"
+"\n            var airStatus;"
+"\n            console.log(\"Deu BOM\");"
+"\n            if ( this.checked ) {"
+"\n              airStatus = \"ON\";"
+"\n              document.getElementById(\"airIcon\").style.color = \"cornflowerblue\";"
+"\n              console.log(\"ON\");"
+"\n            } else {"
+"\n              airStatus = \"OFF\";"
+"\n              document.getElementById(\"airIcon\").style.color = \"lightgray\";"
+"\n              console.log(\"OFF\");"
+"\n            }"
+"\n            var xhttp = new XMLHttpRequest();"
+"\n            xhttp.onreadystatechange = function() {"
+"\n              if (this.readyState == 4 && this.status == 200) {"
+"\n                console.log(\"Successfully received\");"
+"\n              }"
+"\n            };"
+"\n            xhttp.open(\"GET\", \"toggleAir?airStatus=\"+airStatus, true);"
 "\n            xhttp.send();"
 "\n          };"
 "\n        <\/script>"
