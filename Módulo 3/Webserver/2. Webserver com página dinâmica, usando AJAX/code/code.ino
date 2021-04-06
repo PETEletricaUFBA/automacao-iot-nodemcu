@@ -2,13 +2,14 @@
 #include <ESP8266WebServer.h>
  
  
-/********** PLEASE CHANGE THIS *************************/
-const char* ssid = "HUAWEI-2.4G-Uppx";
-const char* password = "eBTPrJ4a";
+/********** Mudar para valores de sua rede ****************/
+const char* ssid = "Nome da rede";
+const char* password = "Senha da rede";
 
 IPAddress ip(192,168,100,234); 
 IPAddress gateway(192,168,100,0); 
 IPAddress subnet(255,255,255,0);
+/*********************************************************/
  
 ESP8266WebServer server(80);
  
@@ -31,21 +32,21 @@ void setup() {
   pinMode(doorPin, OUTPUT);
   pinMode(airPin, OUTPUT);
  
-  Serial.println("Connecting to ");
+  Serial.println("Conectando em ");
   Serial.println(ssid);
  
-  //connect to your local wi-fi network
+  // Conectar a sua rede de wifi local
   WiFi.begin(ssid, password);
   WiFi.config(ip, gateway, subnet);
  
-  //check wi-fi is connected to wi-fi network
+  // Checar se esta conectado a rede
   while (WiFi.status() != WL_CONNECTED) {
     delay(1000);
     Serial.print(".");
   }
   Serial.println("");
-  Serial.println("WiFi connected..!");
-  Serial.print("Got IP: ");  Serial.println(WiFi.localIP());
+  Serial.println("WiFi conectada..!");
+  Serial.print("IP: ");  Serial.println(WiFi.localIP());
  
   server.on("/", handleRoot);
   server.on("/toggleLight", updateLight);
@@ -55,7 +56,7 @@ void setup() {
   server.onNotFound(handleNotFound);
  
   server.begin();
-  Serial.println("HTTP server started");
+  Serial.println("Servidor HTTP iniciado");
 }
  
 void handleRoot() {
@@ -69,8 +70,7 @@ void updateLight() {
   else
     lightStatus =  LOW;
   digitalWrite(lightPin, lightStatus);
- 
-  server.send(200, "text/plain", "Success!");
+  server.send(200, "text/plain", "Sucesso!");
 }
 
 void updateOutlet() {
@@ -81,7 +81,7 @@ void updateOutlet() {
     outletStatus =  LOW;
   digitalWrite(outletPin, outletStatus);
  
-  server.send(200, "text/plain", "Success!");
+  server.send(200, "text/plain", "Sucesso!");
 }
 
 void updateDoor() {
@@ -91,25 +91,23 @@ void updateDoor() {
   else
     doorStatus =  LOW;
   digitalWrite(doorPin, doorStatus);
- 
-  server.send(200, "text/plain", "Success!");
+  server.send(200, "text/plain", "Sucesso!");
 }
 
 
 void updateAir() {
   String airStatusParam = server.arg("airStatus");
+  String airTempParam   = server.arg("airTemp");
   if (airStatusParam == "ON")
-    airStatus =  HIGH;
+    analogWrite(airPin,map(airTempParam.toInt(), 15, 28, 0, 1023));
   else
-    airStatus =  LOW;
-  digitalWrite(airPin, airStatus);
- 
-  server.send(200, "text/plain", "Success!");
+    digitalWrite(airPin, LOW);
+  server.send(200, "text/plain", "Sucesso!");
 }
  
  
 void handleNotFound() {
-  server.send(404, "text/plain", "Not found");
+  server.send(404, "text/plain", "Nao encontrado");
 }
 
 void loop() {
@@ -117,8 +115,6 @@ void loop() {
 }
 
 String prepareHTML() {
-  // BuildMyString.com generated code. Please enjoy your string responsibly.
- 
   String html = "<!DOCTYPE html>"
 "\n<html lang=\"en\">"
 "\n    <head>"
@@ -140,7 +136,7 @@ String prepareHTML() {
 "\n        <link href=\"https:\/\/fonts.googleapis.com\/css?family=Montserrat|Raleway\" rel=\"stylesheet\">"
 "\n        <script src=\"https:\/\/kit.fontawesome.com\/a552ae84ad.js\" crossorigin=\"anonymous\"><\/script>"
 "\n    <\/head>"
-"\n    <body>     "
+"\n    <body onload=\"init();\">"
 "\n      <nav class=\"navbar navbar-toggleable-md navbar-inverse bg-primary\">"
 "\n        <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle Navigation\">"
 "\n          <i class=\"fa fa-bars\" aria-hidden=\"true\"><\/i>"
@@ -159,7 +155,6 @@ String prepareHTML() {
 "\n          <\/ul>"
 "\n        <\/div>"
 "\n      <\/nav>"
-"\n      <!-- DEFAULT AT\u00C9 AQUI -->"
 "\n        <div class=\"container-fluid\"> "
 "\n          <div class=\"row\">"
 "\n            <div class=\"col-sm\">"
@@ -234,13 +229,15 @@ String prepareHTML() {
 "\n          <\/div>"
 "\n        <\/div>"
 "\n        <script>"
-"\n          document.getElementById(\'light\').onclick = function() {"
-"\n            \/\/ access properties using this keyword"
+"\n          var light = document.getElementById(\'light\');"
+"\n          var lightStatus = light.checked ? \"ON\" : \"OFF\";"
+"\n          document.getElementById(\"lightIcon\").style.color = light.checked? \"gold\" : \"lightgray\";"
+"\n          light.onclick = function() {"
 "\n            var ledStatus;"
-"\n            console.log(\"Deu BOM\");"
+"\n            console.log(\"Botao da luz clicado\");"
 "\n            if ( this.checked ) {"
 "\n              lightStatus = \"ON\";"
-"\n              document.getElementById(\"lightIcon\").style.color = \"yellow\";"
+"\n              document.getElementById(\"lightIcon\").style.color = \"gold\";"
 "\n              console.log(\"ON\");"
 "\n            } else {"
 "\n              lightStatus = \"OFF\";"
@@ -250,19 +247,21 @@ String prepareHTML() {
 "\n            var xhttp = new XMLHttpRequest();"
 "\n            xhttp.onreadystatechange = function() {"
 "\n              if (this.readyState == 4 && this.status == 200) {"
-"\n                console.log(\"Successfully received\");"
+"\n                console.log(\"Requisicao recebida\");"
 "\n              }"
 "\n            };"
 "\n            xhttp.open(\"GET\", \"toggleLight?lightStatus=\"+lightStatus, true);"
 "\n            xhttp.send();"
 "\n          };"
-"\n          document.getElementById(\'outlet\').onclick = function() {"
-"\n            \/\/ access properties using this keyword"
+"\n          var outlet = document.getElementById(\'outlet\');"
+"\n          var outletStatus = outlet.checked ? \"ON\" : \"OFF\";"
+"\n          document.getElementById(\"outletIcon\").style.color = outlet.checked? \"firebrick\" : \"lightgray\";"
+"\n          outlet.onclick = function() {"
 "\n            var outletStatus;"
-"\n            console.log(\"Deu BOM\");"
+"\n            console.log(\"Botao da tomada clicado\");"
 "\n            if ( this.checked ) {"
 "\n              outletStatus = \"ON\";"
-"\n              document.getElementById(\"outletIcon\").style.color = \"red\";"
+"\n              document.getElementById(\"outletIcon\").style.color = \"firebrick\";"
 "\n              console.log(\"ON\");"
 "\n            } else {"
 "\n              outletStatus = \"OFF\";"
@@ -272,19 +271,21 @@ String prepareHTML() {
 "\n            var xhttp = new XMLHttpRequest();"
 "\n            xhttp.onreadystatechange = function() {"
 "\n              if (this.readyState == 4 && this.status == 200) {"
-"\n                console.log(\"Successfully received\");"
+"\n                console.log(\"Requisicao recebida\");"
 "\n              }"
 "\n            };"
 "\n            xhttp.open(\"GET\", \"toggleOutlet?outletStatus=\"+outletStatus, true);"
 "\n            xhttp.send();"
 "\n          };"
-"\n          document.getElementById(\'door\').onclick = function() {"
-"\n            \/\/ access properties using this keyword"
+"\n          var door = document.getElementById(\'door\');"
+"\n          var doorStatus = door.checked ? \"ON\" : \"OFF\";"
+"\n          document.getElementById(\"doorIcon\").style.color = door.checked? \"forestgreen\" : \"lightgray\";"
+"\n          door.onclick = function() {"
 "\n            var doorStatus;"
-"\n            console.log(\"Deu BOM\");"
+"\n            console.log(\"Botao da porta clicado\");"
 "\n            if ( this.checked ) {"
 "\n              doorStatus = \"ON\";"
-"\n              document.getElementById(\"doorIcon\").style.color = \"green\";"
+"\n              document.getElementById(\"doorIcon\").style.color = \"forestgreen\";"
 "\n              console.log(\"ON\");"
 "\n            } else {"
 "\n              doorStatus = \"OFF\";"
@@ -294,16 +295,20 @@ String prepareHTML() {
 "\n            var xhttp = new XMLHttpRequest();"
 "\n            xhttp.onreadystatechange = function() {"
 "\n              if (this.readyState == 4 && this.status == 200) {"
-"\n                console.log(\"Successfully received\");"
+"\n                console.log(\"Requisicao recebida\");"
 "\n              }"
 "\n            };"
 "\n            xhttp.open(\"GET\", \"toggleDoor?doorStatus=\"+doorStatus, true);"
 "\n            xhttp.send();"
 "\n          };"
-"\n          document.getElementById(\'air\').onclick = function() {"
-"\n            \/\/ access properties using this keyword"
-"\n            var airStatus;"
-"\n            console.log(\"Deu BOM\");"
+"\n          \/\/ Obtendo elementos da pagina e suas informacoes"
+"\n          var air = document.getElementById(\'air\');"
+"\n          var airStatus = air.checked ? \"ON\" : \"OFF\";"
+"\n          document.getElementById(\"airIcon\").style.color = air.checked? \"cornflowerblue\" : \"lightgray\";"
+"\n          var slideAir = document.getElementById(\"slider11\");"
+"\n          \/\/ Funcao ativada pela mudanca estado do ar, envia uma requisicao AJAX com o status do ar e temperatura"
+"\n          air.onclick = function() {"
+"\n            console.log(\"Botao do ar clicado\");"
 "\n            if ( this.checked ) {"
 "\n              airStatus = \"ON\";"
 "\n              document.getElementById(\"airIcon\").style.color = \"cornflowerblue\";"
@@ -316,17 +321,40 @@ String prepareHTML() {
 "\n            var xhttp = new XMLHttpRequest();"
 "\n            xhttp.onreadystatechange = function() {"
 "\n              if (this.readyState == 4 && this.status == 200) {"
-"\n                console.log(\"Successfully received\");"
+"\n                console.log(\"Requisicao recebida\");"
 "\n              }"
 "\n            };"
-"\n            xhttp.open(\"GET\", \"toggleAir?airStatus=\"+airStatus, true);"
+"\n            xhttp.open(\"GET\", \"toggleAir?airStatus=\"+airStatus+\"&airTemp=\"+slideAir.value, true);"
 "\n            xhttp.send();"
 "\n          };"
+"\n          slideAir.oninput = function() {"
+"\n            console.log(\"Valor do ar mudado\");"
+"\n            var xhttp = new XMLHttpRequest();"
+"\n            xhttp.onreadystatechange = function() {"
+"\n              if (this.readyState == 4 && this.status == 200) {"
+"\n                console.log(\"Requisicao recebida\");"
+"\n              }"
+"\n            };"
+"\n            xhttp.open(\"GET\", \"toggleAir?airStatus=\"+airStatus+\"&airTemp=\"+slideAir.value, true);"
+"\n            xhttp.send();"
+"\n          };"
+"\n          function init() {"
+"\n            var xhttp1 = new XMLHttpRequest();"
+"\n            xhttp1.open(\"GET\", \"toggleLight?lightStatus=\"+lightStatus, true);"
+"\n            xhttp1.send();"
+"\n            var xhttp2 = new XMLHttpRequest();"
+"\n            xhttp2.open(\"GET\", \"toggleOutlet?outletStatus=\"+outletStatus, true);"
+"\n            xhttp2.send();"
+"\n            var xhttp3 = new XMLHttpRequest();"
+"\n            xhttp3.open(\"GET\", \"toggleDoor?doorStatus=\"+doorStatus, true);"
+"\n            xhttp3.send();"
+"\n            var xhttp4 = new XMLHttpRequest();"
+"\n            xhttp4.open(\"GET\", \"toggleAir?airStatus=\"+airStatus+\"&airTemp=\"+slideAir.value, true);"
+"\n            xhttp4.send();"
+"\n          }"
 "\n        <\/script>"
 "\n    <\/body>"
 "\n<\/html>"
 "\n";
- 
- 
   return html;
 }
