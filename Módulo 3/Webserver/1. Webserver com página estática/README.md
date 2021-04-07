@@ -259,7 +259,7 @@ Gif de funcionamento   | Imagem da página
 
 É importante salientar que a construção de um *web server* com páginas estáticas apresenta algumas limitações especifícas que comprometem o monitoramento e o controle de variáveis em tempo real. Não há a atualização dos estados das variáveis sem que o usuário aperte a tecla F5, se o usuário mudar uma variável por um dispositivo, como um celular, por exemplo, o web server não será atualizado no segundo dispositivo, como em um computador.
 
-A solução para o problema descrito acima é a construção de um *web server* dinâmico com o AJAX. Tema do nosso próximo tópico do repositório!
+A solução para o problema descrito acima é a construção de um *web server* dinâmico com o AJAX. Tema do nosso próximo tópico do repositório! Para ver como melhorar esse projeto, [clique aqui](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Webserver/2.%20Webserver%20com%20p%C3%A1gina%20din%C3%A2mica%2C%20usando%20AJAX)
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
