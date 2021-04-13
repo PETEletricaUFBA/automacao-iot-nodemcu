@@ -1,7 +1,6 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
  
- 
 /********** Mudar para valores de sua rede ****************/
 const char* ssid = "Nome da rede";
 const char* password = "Senha da rede";
