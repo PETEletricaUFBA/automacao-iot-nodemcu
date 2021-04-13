@@ -1,7 +1,7 @@
 # 2. Webserver com página dinâmica, usando AJAX
 
 <p align="center">
-  <img src="assets/ajax.png" alt="ajax"/>
+  <img width="400px" src="assets/ajax.png" alt="ajax"/>
 </p>
 
 Ao final do post anterior vimos que a utilização do [Webserver com página estática](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Webserver/1.%20Webserver%20com%20p%C3%A1gina%20est%C3%A1tica) apresenta alguns inconvenientes que comprometem significativamente o controle e a supervisão de um processo em tempo real. Portanto, para resolver esse problema, aprenderemos como criar um Webserver capaz de atualizar a sua página e garantir o monitoramento e controle em tempo real.
@@ -35,7 +35,7 @@ Dessa forma, a característica primordial a ser acrescida no nosso webserver com
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
 <p align="center">
-  <img src="assets/circuit.png" alt="Protoboard"/>
+  <img src="assets/circuit.jpg" alt="Protoboard"/>
 </p>
 
 Para esta aplicação utilizamos quatro LEDs de cores diferentes. Como visualizado na figura, cada LED deve ser conectado a um pino digital e ao GND. O detalhe importante é a utilização e necessidade de um resistor para controle de corrente.
@@ -172,7 +172,9 @@ Para o funcionamento do ar condicionado em específico criamos uma nova função
 As demais funções utilizadas neste código, são funções padrão das bibliotecas e por motivos de simplificação, não serão explicadas. 
 
 É possível configurar um apelido para o ip do seu servidor no seu computador como mostra a imagem a seguir:
-![](assets/host.png)
+<p align="center">
+  <img width="400px" src="assets/host.png" alt="host"/>
+</p>
 
 Para fazer isso no Linux, basta adicionar uma linha no arquivo `/etc/hosts`:
 ```bash
@@ -184,7 +186,9 @@ Para fazer isso no Linux, basta adicionar uma linha no arquivo `/etc/hosts`:
 
 No windows, este arquivo está no diretório `C: > Windows > System32 > Drivers > etc`.
 
-![Circuit](assets/circuit.gif)
+<p align="center">
+  <img src="assets/circuit.gif" alt="circuito"/>
+</p>
 
 Neste webserver importamos alguns códigos externos de bibliotecas para estilização da página. Estes códigos estão hospedados na internet, isto faz com que nosso webserver exiba a página adequadamente apenas quando a rede que este ESP está conectado estiver com acesso à internet. Isto pode ser um problema se quisermos implementar um sistema em algum local com uma rede que não tem acesso a internet.
 
