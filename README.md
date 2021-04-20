@@ -105,18 +105,18 @@ Dividiremos o conteúdo em alguns módulos:
 
 #### **[Sensores](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores):**
 
-1. [Sensor de presença PIR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/1.%20Sensor%20de%20presen%C3%A7a%20PIR);
-2. [Sensor de luminosidade LDR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/2.%20Sensor%20de%20luminosidade%20LDR);   
-3. [Sensor de distância](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/3.%20Sensor%20de%20dist%C3%A2ncia);          
-4. Sensor de temperatura; (Em construção)  
-5. [Sensor de umidade](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/5.%20Sensor%20de%20umidade);
-6. Sensor de infra vermelho. (Breve)    
+1. [Sensor de presença PIR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/1.%20Sensor%20de%20presen%C3%A7a%20PIR): Utilizar o estado atual do sensor de presença (HIGH ou LOW) para alterar o estado de uma saída 
+2. [Sensor de luminosidade LDR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/2.%20Sensor%20de%20luminosidade%20LDR): Mudando o estado de uma saída de acordo com os níveis de luminosidade do ambiente
+4. [Sensor de distância](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/3.%20Sensor%20de%20dist%C3%A2ncia): Realizando medições com o sensor de distância
+5. Sensor de temperatura; (Em construção)  
+6. [Sensor de umidade](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/5.%20Sensor%20de%20umidade); Aprendendo a utilizar o sensor de umidade e configurá-lo para realizar leitura digital ou analógica
+7. Sensor de infra vermelho. (Breve)    
 
 #### **[Atuadores](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores):**
 
-1. [Relé controlado por sensor](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/1.%20Rel%C3%A9%20controlado%20por%20sensor);
-2. [Buzzer controlado por botões ou potênciômetro](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/2.%20Buzzer%20controlado%20por%20bot%C3%B5es%20e%20pot%C3%AAnci%C3%AAmtro);
-3. [Servo motor controlado por um potenciômetro](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/3.%20Servo%20motor%20controlado%20por%20um%20potenci%C3%B4metro)
+1. [Relé controlado por sensor](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/1.%20Rel%C3%A9%20controlado%20por%20sensor): Compreendendo o funcionamento de um relé ativado por um sensor qualquer e o seu para controlar o estado de uma lâmpada residencial
+2. [Buzzer controlado por botões ou potênciômetro](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/2.%20Buzzer%20controlado%20por%20bot%C3%B5es%20e%20pot%C3%AAnci%C3%AAmtro): Aprendendo sobre o funcionamento de um buzzer e o controle desse atuador através de um sensor digital ou analógico.
+3. [Servo motor controlado por um potenciômetro](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/3.%20Servo%20motor%20controlado%20por%20um%20potenci%C3%B4metro): Compreendendo o que é um servomotor e aprendendo como controlar o sentido de giro através de um sensor analógico
 4. Motor usando Ponte H e controle através de potenciômetro ou outro sensor; (Breve)
 5. Escrita em um display LCD com o protocolo I2C. (Breve)
 
@@ -127,12 +127,12 @@ Dividiremos o conteúdo em alguns módulos:
 **Descrição:** Serão apresentadas a criação de bots e a sua integração em projetos físicos os quais incluem os conhecimentos aprendidos nos módulos anteriores.
 
 #### **Criação de Bots:**
-1. [Criação de um BOT no Telegram](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Cria%C3%A7%C3%A3o%20de%20Bots/1.%20Cria%C3%A7%C3%A3o%20de%20um%20BOT%20pelo%20Telegram)
-2. [Integração do Bot em um projeto físico](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Cria%C3%A7%C3%A3o%20de%20Bots/2.%20Integra%C3%A7%C3%A3o%20do%20BOT%20em%20um%20projeto%20f%C3%ADsico)
+1. [Criação de um BOT no Telegram](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Cria%C3%A7%C3%A3o%20de%20Bots/1.%20Cria%C3%A7%C3%A3o%20de%20um%20BOT%20pelo%20Telegram): Aprendendo a criar e configurar o seu próprio BOT através do Telegram
+2. [Integração do Bot em um projeto físico](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Cria%C3%A7%C3%A3o%20de%20Bots/2.%20Integra%C3%A7%C3%A3o%20do%20BOT%20em%20um%20projeto%20f%C3%ADsico): Aprendendo a controlar projetos físicos por meio do BOT no Telegram e através de um celular, computador ou notebook.
 
 #### **Webserver:**
-1. [Webserver com página estática](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Webserver/1.%20Webserver%20com%20p%C3%A1gina%20est%C3%A1tica)
-2. [Webserver com página dinâmica, usando AJAX](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/blob/master/M%C3%B3dulo%203/Webserver/2.%20Webserver%20com%20p%C3%A1gina%20din%C3%A2mica,%20usando%20AJAX/README.md)
+1. [Webserver com página estática](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Webserver/1.%20Webserver%20com%20p%C3%A1gina%20est%C3%A1tica): Aprendendo a criar o seu primeiro Webserver com página estática. Por meio desse projeto, você criará uma pequena página capaz de controlar e monitorar seu projeto físico.
+2. [Webserver com página dinâmica, usando AJAX](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/blob/master/M%C3%B3dulo%203/Webserver/2.%20Webserver%20com%20p%C3%A1gina%20din%C3%A2mica,%20usando%20AJAX/README.md): Desenvolvendo um webserver dinâmico capaz de oferecer o controle e monitoramento em tempo real do seu projeto.
 3. Webserver com o uso da memória flash e ponto de acesso
 4. Acessar um Webserver através da Internet
 
