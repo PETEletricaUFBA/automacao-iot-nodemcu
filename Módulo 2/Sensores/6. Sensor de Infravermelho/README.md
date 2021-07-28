@@ -32,7 +32,9 @@ O circuito envolvendo o sensor infravermelho possibilita o aprendizado das segui
 ## Montagem do Circuito
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
-![Protoboard](assets/protoboard.png)
+![Protoboard](https://i.imgur.com/iasZ4qO.png)
+
+
 
 
 É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
