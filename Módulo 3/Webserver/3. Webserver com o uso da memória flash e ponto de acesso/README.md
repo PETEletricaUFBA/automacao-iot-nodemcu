@@ -84,7 +84,7 @@ Use o código que está em [code](code/code.ino)
 
 A primeira coisa você deve fazer é mudar este trecho de código, inserindo o nome da sua rede WiFi e a sua senha (fique tranquilo(a), essa informação não será divulgada na internet). Realizar essa ação só permite que o seu ESP se conecte na sua rede Wi-fi, assim como o seu celular e outros dispositivos móveis, por exemplo.
 
-```c++=5
+```c++
 const char* ssid = "NOME DA SUA REDE";
 const char* password = "SENHA DA SUA REDE";
 ```
