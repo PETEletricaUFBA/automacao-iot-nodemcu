@@ -1,5 +1,5 @@
-#define led D5
-#define pot A0
+#define led 14 //D5
+#define pot 17 //A0
 
 void setup(){
   Serial.begin(115200);
@@ -12,4 +12,3 @@ void loop(){
   Serial.println(potenciometro);
   analogWrite(led,potenciometro);
 }
-  
