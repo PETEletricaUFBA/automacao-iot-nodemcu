@@ -60,7 +60,7 @@ IPAddress gateway(192,168,100,0);
 IPAddress subnet(255,255,255,0);
 ```
 Um outro trecho de código que vale a pena uma explicação mais detalhada é a seguinte:
-```c++=66
+```c++
 void updateLight() {
   String ledStatusParam = server.arg("lightStatus");
   if (ledStatusParam == "ON")
