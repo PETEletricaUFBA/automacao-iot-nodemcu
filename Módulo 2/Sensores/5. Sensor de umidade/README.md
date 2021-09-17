@@ -49,7 +49,7 @@ Com isso, você deve ter percebido a presença de um trimpot (pequeno potenciôm
 Use o código que está em [code1](code1/code1.ino) ou copie o código abaixo:
  
 ```C++
-#define sensor D5
+#define sensor 14 //D5
 
 void setup() {
   pinMode(sensor, INPUT);
@@ -80,7 +80,7 @@ Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a var
 Use o código que está em [code2](code2/code2.ino) ou copie o código abaixo:
 
 ```C++
-#define sensor A0
+#define sensor 17 //A0
 void setup() {
   pinMode(sensor, INPUT);
   Serial.begin(115200);
