@@ -52,8 +52,8 @@ O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo 
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
  
 ```C++
-#define led 12
-#define pir 5
+#define led 12 //D6
+#define pir 5  //D1
 
 void setup(){
   Serial.begin(115200);
