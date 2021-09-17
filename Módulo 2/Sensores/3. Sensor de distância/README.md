@@ -54,8 +54,8 @@ Use o código que está em [code](code/code.ino) ou copie o código abaixo:
  
 ```C++
 #include "Ultrasonic.h" 
-const int echoPin = 4; 
-const int trigPin = 5;
+const int echoPin = 4; //D2
+const int trigPin = 5; //D1
 
 Ultrasonic ultrasonic(trigPin,echoPin); 
 
