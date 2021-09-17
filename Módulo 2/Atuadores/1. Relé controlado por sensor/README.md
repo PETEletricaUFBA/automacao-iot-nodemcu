@@ -51,8 +51,8 @@ A escolha dos contatos depende de como queremos que o interruptor seja empregado
 Use o código que está em [code](code/code1.ino) ou copie o código abaixo:
  
 ```C++
-#define sensor D6
-#define rele  D1
+#define sensor 12 //D6
+#define rele  5 //D1
 
 void setup() {
   pinMode(rele, OUTPUT);
