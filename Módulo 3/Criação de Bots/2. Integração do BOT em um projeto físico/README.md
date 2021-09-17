@@ -44,8 +44,8 @@ String ssid  = "COLOQUE O NOME DA SUA REDE WI-FI"; //Nome da sua rede wifi
 String pass  = "COLOQUE AQUI A SENHA DO WI-FI"; //Senha da sua rede wifi
 String token = "COLOQUE AQUI O SEU TOKEN"; //Token bot Telegram
 //Pinos dos leds
-uint8_t led1 = D4;
-uint8_t led2 = D3;
+uint8_t led1 = 2; //D4
+uint8_t led2 = 0; //D3
 void setup()
 {
   Serial.begin(115200);
