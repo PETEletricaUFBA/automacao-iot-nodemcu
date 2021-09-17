@@ -37,8 +37,8 @@ O potenciômetro é um resistor de três terminais que pode ter sua resistência
 Para o buzzer controlado por potenciômetro use o código que está em [code](code1/code1.ino) ou copie o código abaixo:
  
 ```C++
-const int pot = A0;
-const int som = D7;
+const int pot = 17; //A0
+const int som = 13; //D7
 
 
 void setup() {
@@ -94,11 +94,11 @@ O buzzer deve ser conectado da mesma forma que no circuito anterior. Cada botão
 Para o buzzer controlado por botôes use o código que está em [code](code2/code2.ino) ou copie o código abaixo:
  
 ```C++
-const int DO = D0;
-const int RE = D1;
-const int MI = D2;
-const int FA = D5;
-const int SOL= D6;
+const int DO = 16; //D0
+const int RE = 5;  //D1
+const int MI = 4;  //D2
+const int FA = 14; //D5
+const int SOL= 12; //D6
 
 int estadoDo  = 0;
 int estadoRe  = 0;
@@ -106,8 +106,7 @@ int estadoMi  = 0;
 int estadoFa  = 0;
 int estadoSol = 0;
 
-const int som = D7;
-
+const int som = 13; //D7
 int semiperiodo = 0;
 
 void setup() {
