@@ -102,7 +102,7 @@ Para a segunda aplicação temos:
 ```C++
 #include <Servo.h>
 Servo servo;
-const int pot = A0;
+const int pot = 17; //A0
 
 void setup() {
   pinMode(A0, INPUT);
