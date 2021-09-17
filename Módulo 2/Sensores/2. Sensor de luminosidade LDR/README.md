@@ -48,8 +48,8 @@ O LDR é uma entrada que gera um sinal analógico ao longo do tempo e por esse m
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
  
 ```C++
-#define led D5
-#define ldr A0
+#define led 14 //D5
+#define ldr 17 //A0
 
 void setup(){
   Serial.begin(115200);
