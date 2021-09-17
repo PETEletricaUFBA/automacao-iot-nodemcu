@@ -1,4 +1,4 @@
-const int LM35 = A0;
+const int LM35 = 17; //A0
 float temperatura;
  
 void setup() {
