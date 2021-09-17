@@ -52,8 +52,8 @@ O pino OUT do sensor infravermelho deve ser conectado a alguma porta digital do 
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
  
 ```C++
-#define led 12
-#define infravermelho 5
+#define led 12           //D6
+#define infravermelho 5  //D1
 
 void setup(){
   Serial.begin(115200);
