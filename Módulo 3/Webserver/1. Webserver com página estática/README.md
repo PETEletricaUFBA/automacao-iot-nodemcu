@@ -45,11 +45,11 @@ IPAddress subnet(255,255,255,0);
 
 WiFiServer server(80);
 
-const int redPin    = D2;
-const int greenPin  = D1;
-const int bluePin   = D0;
+const int redPin    = 4;  //D2
+const int greenPin  = 5;  //D1
+const int bluePin   = 16; //D0
 
-const int led = D4;
+const int led = 2;        //D4
 boolean stateLed = 0;
 
 void ledColor(char color) {
