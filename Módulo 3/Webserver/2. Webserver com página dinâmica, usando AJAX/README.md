@@ -76,7 +76,7 @@ void updateLight() {
 
 Posteriormente, através da estrutura condicional, e após consultar o estado da variável, garantimos, a mudança do estado de saída para HIGH ou LOW
 
-```c++=98
+```c++
 void updateAir() {
   String airStatusParam = server.arg("airStatus");
   String airTempParam   = server.arg("airTemp");
