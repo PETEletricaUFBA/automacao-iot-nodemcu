@@ -16,12 +16,15 @@ O circuito envolvendo o sensor infravermelho possibilita o aprendizado das segui
 - [x] Escrita Digital
 
 > Nesse projeto você irá aprender a utilizar sensor infravermelho, juntamente com o processo de escrita digital com a função  ```digitalWrite```, bem como o de leitura digital usando a função  ```digitalRead```
+
 ## Conteúdo
+
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
 - [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
+
 1. NodeMCU
 2. 1 Sensor infravermelho
 3. 1 LED
@@ -30,27 +33,23 @@ O circuito envolvendo o sensor infravermelho possibilita o aprendizado das segui
 6. Jumpers
 
 ## Montagem do Circuito
+
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
 ![Protoboard](https://i.imgur.com/iasZ4qO.png)
 
-
-
-
-É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
-
-
+É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 3.3V ou 0V para o LED (ligando/desligando).
 
 O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
 
 O pino OUT do sensor infravermelho deve ser conectado a alguma porta digital do NodeMCU para que seu sinal digital possa ser lido. Além desse pino, seus outros terminais devem ser conectados ao GND e ao VCC conforme suas denominações.
 
-**É importante saber que o Sensor infravermelho só funciona quando o seu VCC está conectado a uma fonte de 3,3V a 5V, por esse motivo, é necessário conectar o seu VCC ao terminal de 5V disponível no ESP ou arduíno**
+**É importante saber que o Sensor infravermelho só funciona quando o seu VCC está conectado a uma fonte de 3,3V a 5V, por esse motivo, é necessário conectar o seu VCC ao terminal de 5V disponível no ESP ou arduíno, se necessario em caso de não haver saidas 5V usar alimentação externa.**
 
 ## O código do Circuito
 
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
- 
+
 ```C++
 #define led 12           //D6
 #define infravermelho 5  //D1
@@ -74,6 +73,7 @@ void loop(){
 }
   
 ```
+
 O código inicia com a declaração e associação das saídas e entradas utilizadas. O LED foi associado à constante 12 (D6) e o pino OUT do sensor infravermelho à constante 5 (D1). Posteriormente, o comportamento dos pinos é definido pelo ```pinMode```. A comunicação serial também é iniciada no ```void setup``` pelo comando ```Serial.begin```.
 
 O ```void loop``` inicia com a declaração da variável booleana ```obstaculo``` a qual armazena o valor digital lido da variável ```infravermelho```. Essa leitura é feita pela função ```digitalRead```.
@@ -82,9 +82,8 @@ Depois disso, utiliza-se uma estrutura condicional ```if```, de modo que se a va
 
 Para controlar o estado do LED, faz-se uso da função ```digitalWrite``` a qual recebe como parâmetros, respectivamente,  o pino que se deseja definir o estado lógico (nesse caso o pino do led) e o nível lógico que esse pino deve assumir (HIGH/LOW).
 
-
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
 ![Circuit](assets/circuit.gif)
 
-> Pense na utilização do sensor infravermelho na sua casa ou em outras aplicações do seu cotidiano. 
+> Pense na utilização do sensor infravermelho na sua casa ou em outras aplicações do seu cotidiano.

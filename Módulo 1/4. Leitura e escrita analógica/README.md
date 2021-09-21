@@ -10,11 +10,13 @@ Aprendemos a escrever sinais analógicos no item [3](https://github.com/PETEletr
 > Nesse projeto você irá aprender como relizar uma escrita analógica, utilizando a função ```analogWrite``` através do controle de um brilho de uma lâmpada, bem como a ler uma entrada analógica utilizando a função ```analogRead```
 
 ## Conteúdo
+
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
 - [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
+
 1. NodeMCU
 2. 1 LED
 3. 1 Resistor de 220Ω
@@ -23,17 +25,17 @@ Aprendemos a escrever sinais analógicos no item [3](https://github.com/PETEletr
 6. Potenciômetro 10kΩ (ou outro)
 
 ## Montagem do Circuito
+
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
 ![Protoboard](assets/pinout.png)
 
-É necessário conectar um terminal do LED em um pino digital do NODEMCU com capacidade para gerar PWM, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando) e além disso, pela capacidade de gerar PWM, controla-se o valor intermediário de tensão enviado para a saída. 
+É necessário conectar um terminal do LED em um pino digital do NODEMCU com capacidade para gerar PWM, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 3.3V ou 0V para o LED (ligando/desligando) e além disso, pela capacidade de gerar PWM, controla-se o valor intermediário de tensão enviado para a saída.
 
-Mas o que é um sinal PWM? PWM significa Pulse Width Modulation ou Modulação de Largura de Pulso em português e é utilizado quando queremos simular um sinal analógico a partir de um sinal digital. Esse artifício é possível quando modulamos a largura do pulso de um sinal digital, ou seja, nós controlamos quanto tempo a cada período o sinal digital vai ficar em nível alto e por quanto vai ficar em nível baixo. Por exemplo, se tínhamos um sinal digital de 5V que ficava em nível alto o tempo todo e fazemos com que a corrente só seja transmitida por metade do período, fazendo com que ele fique metade do tempo em 5V e a outra metade em 0V, então, para a potência média do dispositivo que recebe o sinal, é como se o sinal recebido tivesse 2,5V. Vale ressaltar que só obtemos uma boa aproximação para efeitos práticos quando a frequência do sinal é elevada.
+Mas o que é um sinal PWM? PWM significa Pulse Width Modulation ou Modulação de Largura de Pulso em português e é utilizado quando queremos simular um sinal analógico a partir de um sinal digital. Esse artifício é possível quando modulamos a largura do pulso de um sinal digital, ou seja, nós controlamos quanto tempo a cada período o sinal digital vai ficar em nível alto e por quanto vai ficar em nível baixo. Por exemplo, se tínhamos um sinal digital de 3.3V que ficava em nível alto o tempo todo e fazemos com que a corrente só seja transmitida por metade do período, fazendo com que ele fique metade do tempo em 3.3V e a outra metade em 0V, então, para a potência média do dispositivo que recebe o sinal, é como se o sinal recebido tivesse 1.65V. Vale ressaltar que só obtemos uma boa aproximação para efeitos práticos quando a frequência do sinal é elevada.
 
 Essas são os pinos dísponúveis para o uso do PWM:
 ![Imagem do PWM](assets/pwm.jpg)
-
 
 O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
 
@@ -42,7 +44,7 @@ O potenciômetro é uma entrada que gera um sinal analógico ao longo do tempo e
 ## O código do Circuito
 
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
- 
+
 ```C++
 #define led 14 //D5
 #define pot 17 //A0
@@ -60,15 +62,15 @@ void loop(){
 }
   
 ```
+
 O código acima começa com a declaração e associação das saídas e entradas utilizadas. O LED foi associado à constante 14 (D5) e o potenciômetro à porta analógica A0. Feito isso, partimos para o ```void setup``` onde é necessário iniciar a comunicação serial através do comando "Serial.begin" e declarar as entradas e saídas por meio do pinMode.
 
-Posteriormente, no ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```analogRead```  que obterá informação analógica através da leitura da variável pot e armazenará essa informação na variável potenciometro de forma analógica quantizada com uma resolução de 10 bits. 
+Posteriormente, no ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```analogRead```  que obterá informação analógica através da leitura da variável pot e armazenará essa informação na variável potenciometro de forma analógica quantizada com uma resolução de 10 bits.
 
-Além disso, utiliza-se a função ```analogWrite``` que tem a seguinte sintaxe: ```analogWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre um valor entre 0 (sempre desligado) e 255 (sempre ligado). 
-
+Além disso, utiliza-se a função ```analogWrite``` que tem a seguinte sintaxe: ```analogWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre um valor entre 0 (sempre desligado) e 255 (sempre ligado).
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
 ![Circuit](assets/circuitoGif4.gif)
 
-> Pense na utilização da função ```analogRead``` em outras aplicações e com outras entradas. 
+> Pense na utilização da função ```analogRead``` em outras aplicações e com outras entradas.

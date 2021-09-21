@@ -14,17 +14,18 @@ As imagens a seguir mostram as diferenças do funcionamento de um Webserver com 
 
 [![](https://mermaid.ink/img/eyJjb2RlIjoic3RhdGVEaWFncmFtLXYyXG4gICAgc3RhdGUgQUpBWCB7XG4gICAgICAgIENsaWVudGUtLT5DaGFtYWRhQUpBWCA6IENoYW1hZGEgZG8gSmF2YVNjcmlwdFxuICAgICAgICBDaGFtYWRhQUpBWCAtLT4gV2ViU2VydmVyIDogUHJvY2Vzc2Egb3MgZGFkb3NcbiAgICAgICAgV2ViU2VydmVyLS0-Q2hhbWFkYUFKQVggOiBFbnZpYSBkYWRvcyBYTUxcbiAgICAgICAgQ2hhbWFkYUFKQVggLS0-IENsaWVudGUgOiBSZWFsaXphIGFzIGF0dWFsaXphw6fDtWVzIG5hIHDDoWdpbmFcbiAgICAgICAgc3RhdGUgQ2xpZW50ZSB7XG4gICAgICAgICAgICBjbGllbnRlOkNvbXB1dGFkb3IgZSBDZWx1bGFyIChIVE1MLCBDU1MsIEpTKVxuICAgICAgICAgICAgamF2YXNjcmlwdDogSmF2YXNjcmlwdFxuICAgICAgICAgICAgamF2YXNjcmlwdCAtLT4gY2xpZW50ZSA6IEVzdGlsaXphIGEgcMOhZ2luYSBcbiAgICAgICAgICAgIGNsaWVudGUgLS0-IGphdmFzY3JpcHQgOiBVc3XDoXJpbyBjbGljYSBubyBib3TDo29cbiAgICAgICAgfVxuICAgICAgICBzdGF0ZSBDaGFtYWRhQUpBWCB7IFxuICAgICAgICAgICAgYXM6TWVjYW5pc21vIGVtIEphdmFzY3JpcHRcbiAgICAgICAgfVxuICAgICAgICBzdGF0ZSBXZWJTZXJ2ZXIge1xuICAgICAgICAgICAgc2VydmVyOldlYiBzZXJ2ZXIgKE5vZGVNQ1UgRVNQODI2NilcbiAgICAgICAgICAgIGZpc2ljbzogQWNlbmRlIExFRHNcbiAgICAgICAgICAgIGZpc2ljbyAtLT4gc2VydmVyIDogXG4gICAgICAgICAgICBzZXJ2ZXIgLS0-IGZpc2ljb1xuICAgICAgICB9XG4gICAgICAgIG5vdGUgcmlnaHQgb2YgV2ViU2VydmVyXG4gICAgICAgICAgICBPIHNlcnZpZG9yIHByb2Nlc3NhIGluZm9ybWHDp8O1ZXMgXG4gICAgICAgICAgICBlIGF0dWFsaXphIGEgcMOhZ2luYSBkbyBjbGllbnRlIFxuICAgICAgICAgICAgYXNzaW5jcm9uYW1lbnRlLCBzZW0gcmVjYXJyZWdhciBhIHDDoWdpbmFcbiAgICAgICAgZW5kIG5vdGVcbiAgICB9IiwibWVybWFpZCI6e30sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoic3RhdGVEaWFncmFtLXYyXG4gICAgc3RhdGUgQUpBWCB7XG4gICAgICAgIENsaWVudGUtLT5DaGFtYWRhQUpBWCA6IENoYW1hZGEgZG8gSmF2YVNjcmlwdFxuICAgICAgICBDaGFtYWRhQUpBWCAtLT4gV2ViU2VydmVyIDogUHJvY2Vzc2Egb3MgZGFkb3NcbiAgICAgICAgV2ViU2VydmVyLS0-Q2hhbWFkYUFKQVggOiBFbnZpYSBkYWRvcyBYTUxcbiAgICAgICAgQ2hhbWFkYUFKQVggLS0-IENsaWVudGUgOiBSZWFsaXphIGFzIGF0dWFsaXphw6fDtWVzIG5hIHDDoWdpbmFcbiAgICAgICAgc3RhdGUgQ2xpZW50ZSB7XG4gICAgICAgICAgICBjbGllbnRlOkNvbXB1dGFkb3IgZSBDZWx1bGFyIChIVE1MLCBDU1MsIEpTKVxuICAgICAgICAgICAgamF2YXNjcmlwdDogSmF2YXNjcmlwdFxuICAgICAgICAgICAgamF2YXNjcmlwdCAtLT4gY2xpZW50ZSA6IEVzdGlsaXphIGEgcMOhZ2luYSBcbiAgICAgICAgICAgIGNsaWVudGUgLS0-IGphdmFzY3JpcHQgOiBVc3XDoXJpbyBjbGljYSBubyBib3TDo29cbiAgICAgICAgfVxuICAgICAgICBzdGF0ZSBDaGFtYWRhQUpBWCB7IFxuICAgICAgICAgICAgYXM6TWVjYW5pc21vIGVtIEphdmFzY3JpcHRcbiAgICAgICAgfVxuICAgICAgICBzdGF0ZSBXZWJTZXJ2ZXIge1xuICAgICAgICAgICAgc2VydmVyOldlYiBzZXJ2ZXIgKE5vZGVNQ1UgRVNQODI2NilcbiAgICAgICAgICAgIGZpc2ljbzogQWNlbmRlIExFRHNcbiAgICAgICAgICAgIGZpc2ljbyAtLT4gc2VydmVyIDogXG4gICAgICAgICAgICBzZXJ2ZXIgLS0-IGZpc2ljb1xuICAgICAgICB9XG4gICAgICAgIG5vdGUgcmlnaHQgb2YgV2ViU2VydmVyXG4gICAgICAgICAgICBPIHNlcnZpZG9yIHByb2Nlc3NhIGluZm9ybWHDp8O1ZXMgXG4gICAgICAgICAgICBlIGF0dWFsaXphIGEgcMOhZ2luYSBkbyBjbGllbnRlIFxuICAgICAgICAgICAgYXNzaW5jcm9uYW1lbnRlLCBzZW0gcmVjYXJyZWdhciBhIHDDoWdpbmFcbiAgICAgICAgZW5kIG5vdGVcbiAgICB9IiwibWVybWFpZCI6e30sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
 
-
 Dessa forma, a característica primordial a ser acrescida no nosso webserver com a utilização do AJAX é a atualização de partes de uma página a partir de eventos de um usuário, ou seja, caso algum sensor ou atuador mudem de estado, pela natureza do processo ou pela interação com o usuário, o seu estado será atualizado sem a necessidade de atualizar a página inteira.
 
 > Nesse projeto você irá aprender a criar um web server com página dinâmica utilizando AJAX na rede interna e integrá-lo ao seu projeto físico no ESP 8266.
 
 ## Conteúdo
+
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
 - [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
+
 1. NodeMCU
 2. 4 LEDs
 3. 4 Resistores de 220Ω a 1KΩ
@@ -32,6 +33,7 @@ Dessa forma, a característica primordial a ser acrescida no nosso webserver com
 5. Jumpers
 
 ## Montagem do Circuito
+
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
 <p align="center">
@@ -39,7 +41,6 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 </p>
 
 Para esta aplicação utilizamos quatro LEDs de cores diferentes. Como visualizado na figura, cada LED deve ser conectado a um pino digital e ao GND. O detalhe importante é a utilização e necessidade de um resistor para controle de corrente.
-
 
 ## O código do Circuito
 
@@ -59,7 +60,9 @@ IPAddress ip(192,168,100,234);
 IPAddress gateway(192,168,100,0); 
 IPAddress subnet(255,255,255,0);
 ```
+
 Um outro trecho de código que vale a pena uma explicação mais detalhada é a seguinte:
+
 ```c++
 void updateLight() {
   String ledStatusParam = server.arg("lightStatus");
@@ -72,7 +75,7 @@ void updateLight() {
 }
   ```
 
-`String ledStatusParam=server.arg("lightStatus") `permite consultar o valor da variável lightStatus através do parâmetro em javascript que foi adicionado anteriormente. (É uma conexão entre o projeto físico e a parte virtual do projeto)
+`String ledStatusParam=server.arg("lightStatus")`permite consultar o valor da variável lightStatus através do parâmetro em javascript que foi adicionado anteriormente. (É uma conexão entre o projeto físico e a parte virtual do projeto)
 
 Posteriormente, através da estrutura condicional, e após consultar o estado da variável, garantimos, a mudança do estado de saída para HIGH ou LOW
 
@@ -87,6 +90,7 @@ void updateAir() {
   server.send(200, "text/plain", "Sucesso!");
 }
 ```
+
 Diferentemente das outras três funções que foram implementadas para a lâmpada, porta e tomadas, o ar condicionado é uma grandeza analógica quantizada, assume uma faixa de valores previamente definidas, isto é, o ar condicionado da sua residência consegue variar entre 16°C e 28°C, enquanto a tomada e as lâmpadas estão ligadas ou desligadas, apenas.
 
 Semelhante ao que foi feito para as outras saídas, armazena-se o estado da variável `airStatus` e `airTem`. Nesse sentido, caso um usuário deseje alterar o valor atual da temperatura, a requisição efetuada pelo usuário enviará ao servidor a informação `"ON"` + a alteração do valor de temperatura.
@@ -98,6 +102,7 @@ Semelhante ao que você aprendeu em escrita analógica, há a conversão direta 
 Por fim, caso o usuário queira desligar o aparelho, a informação enviada ao servidor Web é `LOW` e com isso altera-se o seu estado atual para desligado.
 
 Uma vez que se houve a compreensão da parte inicial do nosso código, faz-se necessário entender os processos que são realizados com Javascript. Falaremos somente um pouco sobre as funções, caso você queira aprender mais sobre JavaScript, [clique aqui](https://www.w3schools.com/js/default.asp). A seguir explicaremos um pouco as funções do `JavaScript`. Note que o código pode estar um pouco diferente em algums momentos como no lugar de `"` tem um `\"`, isso se deve ao fato de o código Javascript está dentro de uma string em C, por isso, teve que ser feito esse artifício. O primeiro processo que vale a pena destacar é o realizado pela `function init()` que está abaixo:
+
 ```js=341
 function init() {
     var xhttp1 = new XMLHttpRequest();
@@ -118,6 +123,7 @@ function init() {
 Através dessa função obtém-se o estado atual da página de cada saída, isto é, a lâmpada está ligada ou desligada? O ar condicionado está ligado? Se sim, está configurado em qual temperatura? Dessa forma, a função é capaz de obter informações preliminares e atualizar o estado dos ícones do nosso web-server e dos seus dispositivos físicos.
 
 Uma outra função que vale a pena destacar e que se repete para as outras saídas do nosso projeto é a ```air.onclick = function()``` a seguir:
+
 ```js=305
 var air = document.getElementById('air');
 var airStatus = air.checked ? "ON" : "OFF";
@@ -167,9 +173,10 @@ slideAir.oninput = function() {
     xhttp.send();
 };
 ```
+
 Para o funcionamento do ar condicionado em específico criamos uma nova função ```slideAir.oninput = function()``` que é responsável por passar informações ao servidor sobre o valor de temperatura e o status do ar condicionado quando o usuário deslizar o botão, selecionando uma temperatura em específico. Lembrando que, com a utilização do AJAX, as alterações são processadas de forma assíncrona.
 
-As demais funções utilizadas neste código, são funções padrão das bibliotecas e por motivos de simplificação, não serão explicadas. 
+As demais funções utilizadas neste código, são funções padrão das bibliotecas e por motivos de simplificação, não serão explicadas.
 
 É possível configurar um apelido para o ip do seu servidor no seu computador como mostra a imagem a seguir:
 <p align="center">
@@ -177,6 +184,7 @@ As demais funções utilizadas neste código, são funções padrão das bibliot
 </p>
 
 Para fazer isso no Linux, basta adicionar uma linha no arquivo `/etc/hosts`:
+
 ```bash
 # Host addresses
 127.0.0.1        localhost
