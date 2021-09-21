@@ -91,13 +91,13 @@ const char* password = "SENHA DA SUA REDE";
 
 E por último, você deve editar essas linhas. Os parâmetros da segunda e da terceira linha se referem ao gateway padrão e máscara de sub-rede que podem ser encontradas seguindo este [tutorial](https://www.sony.com.br/electronics/support/laptop-pc-sve-series/sve15111ebs/articles/00022321). Os três primeiros parâmetros do _ip_ você deve mantê-los iguais aos do _gateway_, já no último parâmetro você coloca um número entre 100 e 255. Escolhemos, de forma pessoal, o número 234
 
-```c++=9
+```c++
 IPAddress ip(192,168,100,234); 
 IPAddress gateway(192,168,100,0); 
 IPAddress subnet(255,255,255,0);
 ```
 Um outro trecho de código que vale a pena uma explicação mais detalhada é a seguinte:
-```c++=66
+```c++
 void updateLight() {
   String ledStatusParam = server.arg("lightStatus");
   if (ledStatusParam == "ON")
@@ -113,7 +113,7 @@ void updateLight() {
 
 Posteriormente, através da estrutura condicional, e após consultar o estado da variável, garantimos, a mudança do estado de saída para HIGH ou LOW
 
-```c++=98
+```c++
 void updateAir() {
   String airStatusParam = server.arg("airStatus");
   String airTempParam   = server.arg("airTemp");
@@ -135,7 +135,7 @@ Semelhante ao que você aprendeu em escrita analógica, há a conversão direta 
 Por fim, caso o usuário queira desligar o aparelho, a informação enviada ao servidor Web é `LOW` e com isso altera-se o seu estado atual para desligado.
 
 Uma vez que se houve a compreensão da parte inicial do nosso código, faz-se necessário entender os processos que são realizados com Javascript. Falaremos somente um pouco sobre as funções, caso você queira aprender mais sobre JavaScript, [clique aqui](https://www.w3schools.com/js/default.asp). A seguir explicaremos um pouco as funções do `JavaScript`. Note que o código pode estar um pouco diferente em algums momentos como no lugar de `"` tem um `\"`, isso se deve ao fato de o código Javascript está dentro de uma string em C, por isso, teve que ser feito esse artifício. O primeiro processo que vale a pena destacar é o realizado pela `function init()` que está abaixo:
-```js=341
+```c++
 function init() {
     var xhttp1 = new XMLHttpRequest();
     xhttp1.open("GET", "toggleLight?lightStatus="+lightStatus, true);
@@ -155,7 +155,7 @@ function init() {
 Através dessa função obtém-se o estado atual da página de cada saída, isto é, a lâmpada está ligada ou desligada? O ar condicionado está ligado? Se sim, está configurado em qual temperatura? Dessa forma, a função é capaz de obter informações preliminares e atualizar o estado dos ícones do nosso web-server e dos seus dispositivos físicos.
 
 Uma outra função que vale a pena destacar e que se repete para as outras saídas do nosso projeto é a ```air.onclick = function()``` a seguir:
-```js=305
+```c++
 var air = document.getElementById('air');
 var airStatus = air.checked ? "ON" : "OFF";
 document.getElementById("airIcon").style.color = air.checked? "cornflowerblue" : "lightgray";
@@ -191,7 +191,7 @@ Nesse caso, a partir da função ```air.onclick=function()```, o usuário conseg
 
 A partir de ```var xhttp = new XMLHttpRequest();```, acontece uma requisição do servidor ao cliente, que de forma assíncrona, atualiza as informações alteradas, sem que haja a necessidade de atualizar a página inteira.
 
-```js=330
+```c++
 slideAir.oninput = function() {
     console.log("Valor do ar mudado");
     var xhttp = new XMLHttpRequest();
