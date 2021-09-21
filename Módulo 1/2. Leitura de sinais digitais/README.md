@@ -30,13 +30,13 @@ O circuito permite trabalhar:
 
 O circuito deve ser montado como mostra a figura acima, representado de maneira esquemática e em protoboard. Ele dividido em duas partes, uma do LED e a outra do push button.
 
-É necessário conectar um terminal do LED em uma porta digital do NODEMCU, pois através dessa conexão, é possível controlar o envio de 5V ou 0V para o LED (ligando/desligando). O outro terminal, deve ser conectado a um resistor limitador de corrente com valor de resistência em torno de 220Ω e, em seguida, ir direto para o GND.
+É necessário conectar um terminal do LED em uma porta digital do NODEMCU, pois através dessa conexão, é possível controlar o envio de 3.3V ou 0V para o LED (ligando/desligando). O outro terminal, deve ser conectado a um resistor limitador de corrente com valor de resistência em torno de 220Ω e, em seguida, ir direto para o GND.
 
 A outra etapa de montagem do circuito é a conexão do PushButton. Nesse sentido, é necessário entender um pouco sobre Pull-Up e Pull-Down.
 
 ![Circuito Pull-Up e Pull-Down](assets/PULLUPPULLDOWN.jpg)
 
-O circuito Pull-UP garante que antes de apertar o botão, a entrada digital do NODEMCU apresente 5V (o NODEMCU possui alta impedância e o circuito se comporta como um aberto, assim impedindo a passagem de corrente, não havendo, então, queda no Resistor de Pull-Up). O circuito Pull-Down, por sua vez, garante 5V somente após e enquanto o botão for pressionado. Desse modo, essa parte do circuito visualizado na figura "Schematic", é implementado a partir do circuito Pull-Down. 
+O circuito Pull-UP garante que antes de apertar o botão, a entrada digital do NODEMCU apresente 3.3V (o NODEMCU possui alta impedância e o circuito se comporta como um aberto, assim impedindo a passagem de corrente, não havendo, então, queda no Resistor de Pull-Up). O circuito Pull-Down, por sua vez, garante 3.3V somente após e enquanto o botão for pressionado. Desse modo, essa parte do circuito visualizado na figura "Schematic", é implementado a partir do circuito Pull-Down. 
 
 É importante que o resistor de pull up ou pull down seja de um valor alto de resistencia para não solicitar muita corrente do µC, nesta montagem utilizamos um de 10kΩ.
 

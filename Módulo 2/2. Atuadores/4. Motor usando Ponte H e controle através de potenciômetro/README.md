@@ -21,11 +21,13 @@ O circuito do chip LM298N é um pouco diferente do mostrado anteriormente, mas o
 > Neste projeto você irá aprender como realizar o controle de um motor DC com 4 tipos de estados de operação utilizando a ponte H.
 
 ## Conteúdo
+
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
 - [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
+
 1. NodeMCU
 2. Ponte H L298N
 3. Potenciômetro
@@ -40,27 +42,33 @@ Primeiramente vamos conhecer os terminais da Ponte H:
 
 Como visualizado na imagem acima, a ponte H possui conjuntos de terminais:
 
-##### Motores:
-* `OUT1`: Pino de saída para o motor A;
-* `OUT2`: Pino de saída para o motor A;
-* `OUT3`: Pino de saída para o motor B;
-* `OUT4`: Pino de saída para o motor B;
+##### Motores
 
-##### Alimentação:
-* `+12V`: Tensão de alimentação dos motores. (Recomendado 12V, para outras tensões, consultar _data sheet_);
-* `GND`: Pino de referência;
-* `+5V`: Tensão de alimentação para circuitos lógicos do chip;
+- `OUT1`: Pino de saída para o motor A;
 
-##### Entradas:
-* `ENA`: Pino de enable para o motor A;
-* `IN1`: Pino de entrada para o motor A;
-* `IN2`: Pino de entrada para o motor A;
-* `IN3`: Pino de entrada para o motor B;
-* `IN4`: Pino de entrada para o motor B;
-* `ENB`: Pino de enable para o motor B;
+- `OUT2`: Pino de saída para o motor A;
+- `OUT3`: Pino de saída para o motor B;
+- `OUT4`: Pino de saída para o motor B;
+
+##### Alimentação
+
+- `+12V`: Tensão de alimentação dos motores. (Recomendado 12V, para outras tensões, consultar _data sheet_);
+
+- `GND`: Pino de referência;
+- `+5V`: Tensão de alimentação para circuitos lógicos do chip;
+
+##### Entradas
+
+- `ENA`: Pino de enable para o motor A;
+
+- `IN1`: Pino de entrada para o motor A;
+- `IN2`: Pino de entrada para o motor A;
+- `IN3`: Pino de entrada para o motor B;
+- `IN4`: Pino de entrada para o motor B;
+- `ENB`: Pino de enable para o motor B;
 
 A tabela a seguir relaciona as entradas com o movimento do motor A:
-    
+
 | Motor A      | IN1      | IN2      |
 | ------------ | -------- | -------- |
 | Horário      | VCC      | GND      |
@@ -76,14 +84,14 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 
 ![Protoboard](assets/protoboard.png)
 
-Além disso, a ponte H apresenta uma particularidade em sua montagem: é preciso definir de que forma prefere alimentar o circuito, isto é, alimentará  o circuito com o módulo ESP8266 ou por meio de uma fonte de energia externa? A depender da sua resposta, algumas alterações no circuito devem ser efetuadas. 
+Além disso, a ponte H apresenta uma particularidade em sua montagem: é preciso definir de que forma prefere alimentar o circuito, isto é, alimentará  o circuito com o módulo ESP8266 ou por meio de uma fonte de energia externa? A depender da sua resposta, algumas alterações no circuito devem ser efetuadas.
 
 Ao utilizar uma alimentação externa para o motor, é necessário que o jumper do regulador de tensão esteja conectado.
 
 ## O código do Circuito
 
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
- 
+
 ```C++
 void setup() {
  

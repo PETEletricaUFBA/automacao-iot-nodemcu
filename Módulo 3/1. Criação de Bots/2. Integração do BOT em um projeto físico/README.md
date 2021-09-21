@@ -1,4 +1,4 @@
-# 2. Integração do BOT em um projeto físico:
+# 2. Integração do BOT em um projeto físico
 
 No tópico [Criação de um BOT no Telegram](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Telegram/1.%20Cria%C3%A7%C3%A3o%20de%20um%20BOT%20pelo%20Telegram) ensinamos como criar um BOT (robô virtual) utilizando o Telegram. Esse robô, quando programado, pode realizar infinitas ações nos mais diversos contextos. Para o contexto abordado nesse presente repositório, buscamos fazer com que esse robô virtual possa monitorar e informar sobre estados de variáveis ou atuar sobre as saídas dos projetos físicos. O robô é capaz de, por exemplo, desligar ou ligar uma luz, aumentar/diminuir a temperatura de um ar condicionado, abrir a trava eletrônica de uma porta, emitir um alerta no seu celular quando alguém passar por um determinado perímetro da casa, controlar um robô, etc.
 
@@ -9,32 +9,34 @@ Dessa forma, nesse tópico aprenderemos a integrar o BOT criado no tópico anter
 Antes de começarmos a falar propriamente dessa aplicação, lembre-se de ter guardado o Token do BOT criado no tópico anterior. Através dele será possível controlar o seu BOT e permitir que a ação pretendida seja realizada por ele.
 
 ## Conteúdo
+
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
 - [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
+
 1. NodeMCU
 3. 2 LEDs
 4. Protoboard
 5. Jumpers
 
 ## Montagem do Circuito
+
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
 <p align="center">
   <img src="assets/protoboard.PNG" alt="Protoboard"/>
 </p>
 
-É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
+É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 3.3V ou 0V para o LED (ligando/desligando).
 
 O outro terminal de cada um dos LEDs devem ser conectados ao GND.
-
 
 ## O código do Circuito
 
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
- 
+
 ```C++
 //Autor: Arduino e Cia//Modificado pelo PET Elétrica
 #include "CTBot.h"
@@ -108,14 +110,13 @@ void loop()
 }
   
 ```
+
 Assim como algumas outras aplicações que foram mostradas em módulos anteriores, precisa-se utilizar duas bibliotecas específicas ArduinoJson e a CTBot. : [``ArduinoJson``](library/ArduinoJson-5.13.5.zip) e [``CTBot``](library/CTBot-2.1.4.zip) **Clique nos links ao lado, realize o download da biblioteca, instale na sua IDE, como já o fizemos outras vezes antes de prosseguir para os próximos passos.**
-
-
 
 O código acima é responsável por realizar as seguintes ações:
 
-1. Conecta na WiFi configurada 
-2. Configura os sensores e atuadores 
+1. Conecta na WiFi configurada
+2. Configura os sensores e atuadores
 3. Fica em loop consultando por novas mensagens no Telegram.
 4. Ao receber novas mensagens, começa o tratamento de cada comando.
 

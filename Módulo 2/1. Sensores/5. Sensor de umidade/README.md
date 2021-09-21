@@ -2,7 +2,6 @@
 
 Esse projeto consiste na utilização da função ```analogRead```  ou ```digitalRead``` com o Sensor de Umidade do Solo (Higrômetro) visando aplicações do mundo real.
 
-
 O sensor de umidade do solo ou higrômetro  é um módulo eletrônico que, como o próprio nome indica, é capaz de detectar as variações de umidade no solo. É importante salientar ainda que esse medidor apresenta duas possibilidade de operação: digital ou analógico. Portanto, ele pode atuar de modo que  quando o solo está seco, a saída do sensor fica em estado alto e quando úmido, a saída do sensor fica em estado baixo ou ainda, apresentar uma faixa de valores de umidade onde o próprio usuário calibra de acordo com a sua própria necessidade.
 
 O sensor pode ser visto na imagem abaixo e seu princípio de funcionamento é bem simples. O módulo eletrônico utiliza duas pontas de prova e através deles, circula uma corrente pelo solo de modo que a sua leitura é baseada na resistência elétrica resultante do solo, uma vez que quanto maior for a quantidade de água no solo, mais baixa é a resistência do solo e mais fácil fica a condução entre as pontas de prova. De forma contrária, quando o solo está seco, a condutividade é baixa, logo a resistência é alta.
@@ -17,24 +16,26 @@ O circuito envolvendo o Sensor de Umidade do Solo possibilita o aprendizado da s
 - [x] Leitura Analógica
 
 > Nesse projeto você irá aprender a utilizar o higrômetro utilizando o processo de leitura digital com a função  ```digitalRead```, bem como o de leitura analógica por meio da função  ```analogRead```
-> 
+>
 ## Conteúdo
+
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
 - [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
+
 1. NodeMCU
 2. 1 Sensor de Umidade do Solo
 3. Protoboard
 4. Jumpers
 
 ## Montagem do Circuito
+
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard. É importante destacar que na primeira imagem temos a montagem usando leitura digital e, na segunda, leitura analógica.
 
 ![Protoboard](assets/circuito-digital.png)
 ![Protoboard](assets/circuito-analogico.png)
-
 
 Como visualizado na imagem acima, é necessário conectar os dois fios dos eletrodos do medidor de umidade do solo no drive (não tem polaridade nesse caso). A saída do drive do higrômetro apresenta quatro terminais distintos: VCC, GND, A0 e D0.
 
@@ -47,7 +48,7 @@ Com isso, você deve ter percebido a presença de um trimpot (pequeno potenciôm
 ## O código do Circuito
 
 Use o código que está em [code1](code1/code1.ino) ou copie o código abaixo:
- 
+
 ```C++
 #define sensor D5
 
@@ -67,7 +68,8 @@ void loop() {
 }
   
 ```
->Desde o início da explicação evidenciamos que o módulo sensor pode ser utilizado tanto de forma digital quanto analógica. O código apresentado acima empregará o sensor em seu modo digital. 
+
+>Desde o início da explicação evidenciamos que o módulo sensor pode ser utilizado tanto de forma digital quanto analógica. O código apresentado acima empregará o sensor em seu modo digital.
 
 O código acima começa com a declaração e associação da entrada  utilizada. O sensor foi associado ao terminal D5 do NODEMCU. Feito isso, partimos para o ```void setup```  onde é necessário iniciar a comunicação serial através do comando ```Serial.begin``` definindo a taxa de transmissão de dados e declarar as entradas e saídas por meio do ```pinMode```.
 
@@ -92,6 +94,7 @@ void loop() {
   delay(10);
 }
 ```
+
 O código acima começa com a declaração e associação das saídas e entradas utilizadas. O sensor foi associado à porta analógica A0. Posteriormente, no ```void setup```, é necessário iniciar a comunicação serial através do comando ```Serial.begin``` e declarar as entradas e saídas por meio do ```pinMode```.
 
 No ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```analogRead``` que obterá informação analógica através da leitura da variável sensor e armazenará essa informação na variável analogSensor de forma analógica quantizada com uma resolução de 10 bits.
@@ -104,4 +107,4 @@ Os LEDs foram adicionados para melhor visualização das leituras dos sensores.
 ![Digital Circuit](assets/digitalcircuit.gif)
 ![Analog Circuit](assets/analogcircuit.gif)
 
-> Pense na utilização do Sensor de Umidade do Solo na sua casa ou em outras aplicações do seu cotidiano. 
+> Pense na utilização do Sensor de Umidade do Solo na sua casa ou em outras aplicações do seu cotidiano.

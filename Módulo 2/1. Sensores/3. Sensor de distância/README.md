@@ -40,7 +40,7 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 
 ![Protoboard](assets/protoboard.png)
 
-É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
+É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 3.3V ou 0V para o LED (ligando/desligando).
 
 O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
 
