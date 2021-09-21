@@ -7,6 +7,7 @@ O sensor ultrassônico  é um componente eletrônico capaz de emitir e receber o
 Portanto, esses sensores conseguem medir variáveis como enchimento e altura sem ter que entrar em contato com os elementos do meio, o que é uma grande vantagem quando comparado com outros tipos de sensores. Uma outra vantagem é que o sensor ultrassônico não possui sua operação prejudicada pela transparência, poeira, sujeira ou vapores/gases presentes no ambiente.  Desde que o objeto reflita as ondas sonoras, é possível usar um sensor ultrassônico independentemente de seu acabamento superficial ou cor. Existem sensores que podem medir distâncias de dezenas de metros com ótima precisão. Devido a todas essas características, os sensores ultrassônicos são amplamente utilizados na indústria e em várias aplicações de robótica e automação.
 
 A seguir, algumas das principais aplicações do sensor:
+
 * Detecção de objetos e verificação de presença;
 * Medição de altura e largura;
 * Medição de níveis de enchimento;
@@ -15,17 +16,20 @@ A seguir, algumas das principais aplicações do sensor:
 
 O circuito envolvendo o sensor ultrassônico envolve as seguintes competências trabalhadas no módulo 1:
 
-- [x] Leitura Digital
-- [x] Escrita Digital
+* [x] Leitura Digital
+* [x] Escrita Digital
 
 > Nesse projeto você irá aprender a utilizar o ultrassônico, juntamente com o processo de escrita digital com a função  ```digitalWrite```.
 
 ## Conteúdo
-- [Materiais Necessários](#materiais-necessários)
-- [Montagem do Circuito](#montagem-do-circuito)
-- [O Código do Circuito](#o-c&oacute;digo-do-circuito)
+
+* [Materiais Necessários](#materiais-necessários)
+
+* [Montagem do Circuito](#montagem-do-circuito)
+* [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
+
 1. NodeMCU
 2. 1 Sensor ultrassônico HC-SR04
 3. 1 LED
@@ -36,6 +40,7 @@ O circuito envolvendo o sensor ultrassônico envolve as seguintes competências 
 8. Fonte de alimentação (Usamos uma bateria de 9V)
 
 ## Montagem do Circuito
+
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
 ![Protoboard](assets/protoboard.png)
@@ -51,7 +56,7 @@ O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo 
 ## O código do Circuito
 
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
- 
+
 ```C++
 #include "Ultrasonic.h" 
 const int echoPin = 4; 
@@ -88,6 +93,7 @@ void hcsr04(){
  }
   
 ```
+
 Diferentemente dos outros circuitos que foram mostrados nesse módulo, esse circuito precisa de uma biblioteca em específico: [``Ultrasonic.h``](library/Ultrasonic.zip) **Clique no link ao lado e realize o download da biblioteca antes de prosseguir para os próximos passos.**
 
 No entanto você deve estar se perguntando como posso adicionar uma nova biblioteca à IDE do arduino. Para adicionar uma nova biblioteca na IDE do arduíno basta clicar em Sketch>Incluir Biblioteca e Adicionar biblioteca.ZIP (A biblioteca pode estar em .ZIP ou em uma pasta), como pode ser visualizado na imagem abaixo:
@@ -115,12 +121,13 @@ Por fim e não menos importante, temos a função ```hcsr04``` que é chamada de
     delayMicroseconds(10); 
     digitalWrite(trigPin, LOW);
 ```
+
 Em seguida utiliza-se a função ``Ranging`` responsável por converter uma medida de tempo (tempo que levou desde o envio do pulso até o recebimento no echo) em uma medida de distância em cm. Depois, armazena-se essa distância em cm, na variável distância.
 Por fim, declara-se a variável result que como podemos visualizar abaixo, nada mais é que a conversão da variável distância em uma string.
-```result = String(distancia); ```
+```result = String(distancia);```
 
 Caso tenha encontrado algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
 ![Circuit](assets/circuit.png)
 
-> Pense na utilização do sensro ultrassônico na sua casa ou em outras aplicações do seu cotidiano. 
+> Pense na utilização do sensro ultrassônico na sua casa ou em outras aplicações do seu cotidiano.
