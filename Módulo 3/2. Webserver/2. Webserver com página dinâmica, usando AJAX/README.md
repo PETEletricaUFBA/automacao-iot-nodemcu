@@ -48,7 +48,7 @@ Use o código que está em [code](code/code.ino)
 
 A primeira coisa você deve fazer é mudar este trecho de código, inserindo o nome da sua rede WiFi e a sua senha (fique tranquilo(a), essa informação não será divulgada na internet). Realizar essa ação só permite que o seu ESP se conecte na sua rede Wi-fi, assim como o seu celular e outros dispositivos móveis, por exemplo.
 
-```c++=5
+```c++
 const char* ssid = "NOME DA SUA REDE";
 const char* password = "SENHA DA SUA REDE";
 ```
@@ -103,7 +103,7 @@ Por fim, caso o usuário queira desligar o aparelho, a informação enviada ao s
 
 Uma vez que se houve a compreensão da parte inicial do nosso código, faz-se necessário entender os processos que são realizados com Javascript. Falaremos somente um pouco sobre as funções, caso você queira aprender mais sobre JavaScript, [clique aqui](https://www.w3schools.com/js/default.asp). A seguir explicaremos um pouco as funções do `JavaScript`. Note que o código pode estar um pouco diferente em algums momentos como no lugar de `"` tem um `\"`, isso se deve ao fato de o código Javascript está dentro de uma string em C, por isso, teve que ser feito esse artifício. O primeiro processo que vale a pena destacar é o realizado pela `function init()` que está abaixo:
 
-```js=341
+```c++
 function init() {
     var xhttp1 = new XMLHttpRequest();
     xhttp1.open("GET", "toggleLight?lightStatus="+lightStatus, true);
@@ -124,7 +124,7 @@ Através dessa função obtém-se o estado atual da página de cada saída, isto
 
 Uma outra função que vale a pena destacar e que se repete para as outras saídas do nosso projeto é a ```air.onclick = function()``` a seguir:
 
-```js=305
+```c++
 var air = document.getElementById('air');
 var airStatus = air.checked ? "ON" : "OFF";
 document.getElementById("airIcon").style.color = air.checked? "cornflowerblue" : "lightgray";
@@ -160,7 +160,7 @@ Nesse caso, a partir da função ```air.onclick=function()```, o usuário conseg
 
 A partir de ```var xhttp = new XMLHttpRequest();```, acontece uma requisição do servidor ao cliente, que de forma assíncrona, atualiza as informações alteradas, sem que haja a necessidade de atualizar a página inteira.
 
-```js=330
+```c++
 slideAir.oninput = function() {
     console.log("Valor do ar mudado");
     var xhttp = new XMLHttpRequest();
