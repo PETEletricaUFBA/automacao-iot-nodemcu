@@ -8,7 +8,7 @@ O sensor PIR ou sensor de presença  é um componente eletrônico capaz de detec
 
 O PIR é utilizado em diversas aplicações, seja para segurança, economia de energia, entre outros. Este dispositivo é encontrado facilmente em corredores, estacionamentos e lobbies de condomínios, controlando a iluminação do local e assim economizando energia. Além disso ele pode ser utilizado para reforçar a segurança ao ser integrado a algum sistema de alarme.
 
-Durante a utilização do sensor PIR, muitas pessoas fazem relação ou se confundem com o sensor de distância ultrassônico, no entanto, são sensores que utilizam princípios de funcionamento diferentes e os seus usos, comumente, são em situações divergentes. Enquanto o sensor ultrassônico utiliza ondas mecânicas e detecta a distância de qualquer objeto -independente se emite calor ou não- ao seu emissor, o sensor PIR utiliza infravermelho, ou melhor, diferença de intensidade do infravermelho, de modo que o sensor PIR consegue detectar qualquer corpo que emita calor e esteja dentro do seu raio de ação. 
+Durante a utilização do sensor PIR, muitas pessoas fazem relação ou se confundem com o sensor de distância ultrassônico, no entanto, são sensores que utilizam princípios de funcionamento diferentes e os seus usos, comumente, são em situações divergentes. Enquanto o sensor ultrassônico utiliza ondas mecânicas e detecta a distância de qualquer objeto -independente se emite calor ou não- ao seu emissor, o sensor PIR utiliza infravermelho, ou melhor, diferença de intensidade do infravermelho, de modo que o sensor PIR consegue detectar qualquer corpo que emita calor e esteja dentro do seu raio de ação.
 
 O circuito envolvendo o PIR possibilita o aprendizado da seguinte competência trabalhada no módulo 1:
 
@@ -16,12 +16,15 @@ O circuito envolvendo o PIR possibilita o aprendizado da seguinte competência t
 - [x] Escrita Digital
 
 > Nesse projeto você irá aprender a utilizar o PIR, juntamente com o processo de leitura digital com a função  ```digitalWrite```, bem como o de escrita digital usando a função  ```digitalRead```
+
 ## Conteúdo
+
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
 - [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
+
 1. NodeMCU
 2. 1 Sensor PIR
 3. 1 LED
@@ -30,27 +33,25 @@ O circuito envolvendo o PIR possibilita o aprendizado da seguinte competência t
 6. Jumpers
 
 ## Montagem do Circuito
+
 O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
- <p align="center">
+<p align="center">
   <img src="assets/protoboard.png" alt="Protoboard"/>
 </p>
 
-
-É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando).
-
-
+É necessário conectar um terminal do LED em um pino digital do NODEMCU, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 3.3V ou 0V para o LED (ligando/desligando).
 
 O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
 
 O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo motivo o terminal XXX do sensor deve ser conectado a um pino digital do ESP. Os outros terminais devem ser conectados no VCC e no GND.
 
-**É importante saber que o Sensor PIR só funciona quando o seu VCC está conectado a uma fonte de 4,5V a 20V, por esse motivo, é necessário conectar o seu VCC ao terminal de 5V disponível no ESP ou arduíno**
+**É importante saber que o Sensor PIR só funciona quando o seu VCC está conectado a uma fonte de 4,5V a 20V, por esse motivo, é necessário conectar o seu VCC ao terminal de 5V disponível no ESP ou arduíno, se necessario em caso de não haver saidas 5V usar alimentação externa.**
 
 ## O código do Circuito
 
 Use o código que está em [code](code/code.ino) ou copie o código abaixo:
- 
+
 ```C++
 #define led 12 //D6
 #define pir 5  //D1
@@ -74,15 +75,15 @@ void loop(){
 }
   
 ```
+
 O código acima começa com a declaração e associação das saídas e entradas utilizadas. O LED foi associado à constante 12 (D6) e o PIR à constante 5 (D1). Feito isso, partimos para o ```void setup``` onde é necessário iniciar a comunicação serial através do comando "Serial.begin" e declarar as entradas e saídas por meio do pinMode.
 
 Posteriormente, no ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```digitalRead```  que obterá informação digital através da leitura da variável pir(sensor de presença). A informação será armazenada na variável ```presenca```  
 
 Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável presenca estiver com um nível lógico 1, então liga-se o LED, e com o nível lógico 0, o LED é desligado. Você deve ter percebido o uso da função ```digitalWrite``` que tem a seguinte sintaxe: ```digitalWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre ligado e desligado(HIGH/LOW).
 
-
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
 ![Circuit](assets/circuit.gif)
 
-> Pense na utilização do PIR na sua casa ou em outras aplicações do seu cotidiano. 
+> Pense na utilização do PIR na sua casa ou em outras aplicações do seu cotidiano.
