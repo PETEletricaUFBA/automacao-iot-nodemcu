@@ -54,7 +54,7 @@ const char* password = "SENHA DA SUA REDE";
 
 E por último, você deve editar essas linhas. Os parâmetros da segunda e da terceira linha se referem ao gateway padrão e máscara de sub-rede que podem ser encontradas seguindo este [tutorial](https://www.sony.com.br/electronics/support/laptop-pc-sve-series/sve15111ebs/articles/00022321). Os três primeiros parâmetros do _ip_ você deve mantê-los iguais aos do _gateway_, já no último parâmetro você coloca um número entre 100 e 255. Escolhemos, de forma pessoal, o número 234
 
-```c++=9
+```c++
 IPAddress ip(192,168,100,234); 
 IPAddress gateway(192,168,100,0); 
 IPAddress subnet(255,255,255,0);
