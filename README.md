@@ -110,20 +110,20 @@ Dividiremos o conteúdo em alguns módulos:
 
 **Descrição:** Apresentação de outras habilidades utilizando diversos sensores e atuadores, a partir de aplicações práticas.
 
-#### **[Sensores](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores):**
+#### **[Sensores](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%202/1.%20Sensores):**
 
-1. [Sensor de presença PIR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/1.%20Sensor%20de%20presen%C3%A7a%20PIR): Utilizar o estado atual do sensor de presença (HIGH ou LOW) para alterar o estado de uma saída
-1. [Sensor de luminosidade LDR](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/2.%20Sensor%20de%20luminosidade%20LDR): Mudando o estado de uma saída de acordo com os níveis de luminosidade do ambiente
-1. [Sensor de distância](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/3.%20Sensor%20de%20dist%C3%A2ncia): Realizando medições com o sensor de distância
+1. [Sensor de presença PIR](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%202/1.%20Sensores/1.%20Sensor%20de%20presen%C3%A7a%20PIR): Utilizar o estado atual do sensor de presença (HIGH ou LOW) para alterar o estado de uma saída
+1. [Sensor de luminosidade LDR](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%202/1.%20Sensores/2.%20Sensor%20de%20luminosidade%20LDR): Mudando o estado de uma saída de acordo com os níveis de luminosidade do ambiente
+1. [Sensor de distância](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%202/1.%20Sensores/3.%20Sensor%20de%20dist%C3%A2ncia): Realizando medições com o sensor de distância
 1. Sensor de temperatura; (Em construção)  
-1. [Sensor de umidade](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Sensores/5.%20Sensor%20de%20umidade); Aprendendo a utilizar o sensor de umidade e configurá-lo para realizar leitura digital ou analógica
+1. [Sensor de umidade](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%202/1.%20Sensores/5.%20Sensor%20de%20umidade); Aprendendo a utilizar o sensor de umidade e configurá-lo para realizar leitura digital ou analógica
 1. Sensor de infra vermelho. (Breve)
 
-#### **[Atuadores](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores):**
+#### **[Atuadores](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%202/2.%20Atuadores):**
 
-1. [Relé controlado por sensor](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/1.%20Rel%C3%A9%20controlado%20por%20sensor): Compreendendo o funcionamento de um relé ativado por um sensor qualquer e o seu para controlar o estado de uma lâmpada residencial
-1. [Buzzer controlado por botões ou potênciômetro](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/2.%20Buzzer%20controlado%20por%20bot%C3%B5es%20e%20pot%C3%AAnci%C3%AAmtro): Aprendendo sobre o funcionamento de um buzzer e o controle desse atuador através de um sensor digital ou analógico.
-1. [Servo motor controlado por um potenciômetro](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%202/Atuadores/3.%20Servo%20motor%20controlado%20por%20um%20potenci%C3%B4metro): Compreendendo o que é um servomotor e aprendendo como controlar o sentido de giro através de um sensor analógico
+1. [Relé controlado por sensor](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%202/2.%20Atuadores/1.%20Rel%C3%A9%20controlado%20por%20sensor): Compreendendo o funcionamento de um relé ativado por um sensor qualquer e o seu para controlar o estado de uma lâmpada residencial
+1. [Buzzer controlado por botões ou potênciômetro](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%202/2.%20Atuadores/2.%20Buzzer%20controlado%20por%20bot%C3%B5es%20e%20pot%C3%AAnci%C3%AAmtro): Aprendendo sobre o funcionamento de um buzzer e o controle desse atuador através de um sensor digital ou analógico.
+1. [Servo motor controlado por um potenciômetro](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%202/2.%20Atuadores/3.%20Servo%20motor%20controlado%20por%20um%20potenci%C3%B4metro): Compreendendo o que é um servomotor e aprendendo como controlar o sentido de giro através de um sensor analógico
 1. Motor usando Ponte H e controle através de potenciômetro ou outro sensor; (Breve)
 1. Escrita em um display LCD com o protocolo I2C. (Breve)
 
@@ -135,13 +135,13 @@ Dividiremos o conteúdo em alguns módulos:
 
 #### **Criação de Bots:**
 
-1. [Criação de um BOT no Telegram](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Cria%C3%A7%C3%A3o%20de%20Bots/1.%20Cria%C3%A7%C3%A3o%20de%20um%20BOT%20pelo%20Telegram): Aprendendo a criar e configurar o seu próprio BOT através do Telegram
-1. [Integração do Bot em um projeto físico](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Cria%C3%A7%C3%A3o%20de%20Bots/2.%20Integra%C3%A7%C3%A3o%20do%20BOT%20em%20um%20projeto%20f%C3%ADsico): Aprendendo a controlar projetos físicos por meio do BOT no Telegram e através de um celular, computador ou notebook.
+1. [Criação de um BOT no Telegram](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%203/1.%20Cria%C3%A7%C3%A3o%20de%20Bots/1.%20Cria%C3%A7%C3%A3o%20de%20um%20BOT%20pelo%20Telegram): Aprendendo a criar e configurar o seu próprio BOT através do Telegram
+1. [Integração do Bot em um projeto físico](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%203/1.%20Cria%C3%A7%C3%A3o%20de%20Bots/2.%20Integra%C3%A7%C3%A3o%20do%20BOT%20em%20um%20projeto%20f%C3%ADsico): Aprendendo a controlar projetos físicos por meio do BOT no Telegram e através de um celular, computador ou notebook.
 
 #### **Webserver:**
 
-1. [Webserver com página estática](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/tree/master/M%C3%B3dulo%203/Webserver/1.%20Webserver%20com%20p%C3%A1gina%20est%C3%A1tica): Aprendendo a criar o seu primeiro Webserver com página estática. Por meio desse projeto, você criará uma pequena página capaz de controlar e monitorar seu projeto físico.
-1. [Webserver com página dinâmica, usando AJAX](https://github.com/PETEletricaUFBA/automacao-iot-nodemcu/blob/master/M%C3%B3dulo%203/Webserver/2.%20Webserver%20com%20p%C3%A1gina%20din%C3%A2mica,%20usando%20AJAX/README.md): Desenvolvendo um webserver dinâmico capaz de oferecer o controle e monitoramento em tempo real do seu projeto.
+1. [Webserver com página estática](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%203/2.%20Webserver/1.%20Webserver%20com%20p%C3%A1gina%20est%C3%A1tica): Aprendendo a criar o seu primeiro Webserver com página estática. Por meio desse projeto, você criará uma pequena página capaz de controlar e monitorar seu projeto físico.
+1. [Webserver com página dinâmica, usando AJAX](https://github.dev/PETEletricaUFBA/automacao-iot-nodemcu/blob/c0cb7662ad3256ac622143a97bc0dc16e95f8d1a/M%C3%B3dulo%203/2.%20Webserver/2.%20Webserver%20com%20p%C3%A1gina%20din%C3%A2mica%2C%20usando%20AJAX): Desenvolvendo um webserver dinâmico capaz de oferecer o controle e monitoramento em tempo real do seu projeto.
 1. Webserver com o uso da memória flash e ponto de acesso
 1. Acessar um Webserver através da Internet
 
