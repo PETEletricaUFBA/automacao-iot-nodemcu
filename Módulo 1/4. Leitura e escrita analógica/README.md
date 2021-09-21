@@ -28,6 +28,7 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 ![Protoboard](assets/pinout.png)
 
 É necessário conectar um terminal do LED em um pino digital do NODEMCU com capacidade para gerar PWM, pois através dessa conexão, é possível, por conta do pino ser digital, controlar o envio de 5V ou 0V para o LED (ligando/desligando) e além disso, pela capacidade de gerar PWM, controla-se o valor intermediário de tensão enviado para a saída. 
+
 Mas o que é um sinal PWM? PWM significa Pulse Width Modulation ou Modulação de Largura de Pulso em português e é utilizado quando queremos simular um sinal analógico a partir de um sinal digital. Esse artifício é possível quando modulamos a largura do pulso de um sinal digital, ou seja, nós controlamos quanto tempo a cada período o sinal digital vai ficar em nível alto e por quanto vai ficar em nível baixo. Por exemplo, se tínhamos um sinal digital de 5V que ficava em nível alto o tempo todo e fazemos com que a corrente só seja transmitida por metade do período, fazendo com que ele fique metade do tempo em 5V e a outra metade em 0V, então, para a potência média do dispositivo que recebe o sinal, é como se o sinal recebido tivesse 2,5V. Vale ressaltar que só obtemos uma boa aproximação para efeitos práticos quando a frequência do sinal é elevada.
 
 Essas são os pinos dísponúveis para o uso do PWM:
