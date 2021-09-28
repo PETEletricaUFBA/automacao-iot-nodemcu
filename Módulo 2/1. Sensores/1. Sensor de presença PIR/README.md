@@ -44,7 +44,7 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 
 O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
 
-O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo motivo o terminal XXX do sensor deve ser conectado a um pino digital do ESP. Os outros terminais devem ser conectados no VCC e no GND.
+O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo motivo o terminal de saída do sensor (terminal central) deve ser conectado a um pino digital do ESP. Os outros terminais devem ser conectados no VCC e no GND.
 
 **É importante saber que o Sensor PIR só funciona quando o seu VCC está conectado a uma fonte de 4,5V a 20V, por esse motivo, é necessário conectar o seu VCC ao terminal de 5V disponível no ESP ou arduíno, se necessario em caso de não haver saidas 5V usar alimentação externa.**
 
@@ -78,7 +78,7 @@ void loop(){
 
 O código acima começa com a declaração e associação das saídas e entradas utilizadas. O LED foi associado à constante 12 (D6) e o PIR à constante 5 (D1). Feito isso, partimos para o ```void setup``` onde é necessário iniciar a comunicação serial através do comando "Serial.begin" e declarar as entradas e saídas por meio do pinMode.
 
-Posteriormente, no ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```digitalRead```  que obterá informação digital através da leitura da variável pir(sensor de presença). A informação será armazenada na variável ```presenca```  
+Posteriormente, no ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```digitalRead```  que obterá informação digital através da leitura da variável pir (sensor de presença). A informação será armazenada na variável ```presenca```  
 
 Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável presenca estiver com um nível lógico 1, então liga-se o LED, e com o nível lógico 0, o LED é desligado. Você deve ter percebido o uso da função ```digitalWrite``` que tem a seguinte sintaxe: ```digitalWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre ligado e desligado(HIGH/LOW).
 
