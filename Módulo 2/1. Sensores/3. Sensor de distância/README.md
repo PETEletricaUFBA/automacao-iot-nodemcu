@@ -48,7 +48,7 @@ O circuito deve ser montado como mostra a figura abaixo, representado na protobo
 
 O outro terminal, deve ser conectado a um resistor de 220Ω limitador de corrente e, em seguida, ir direto para o GND.
 
-O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo motivo o terminal XXX do sensor deve ser conectado a um pino digital do ESP. Os outros terminais devem ser conectados no VCC e no GND.
+O sensor de presença é uma entrada que gera um sinal digital e por esse mesmo motivo os terminais _Trig_ e _Echo_ do sensor devem ser conectados cada um a um pino digital do ESP. Os outros terminais devem ser conectados no VCC e no GND.
 
 **Nota: Na montagem do circuito é importante ter atenção em relação à vinculação de terras. Todos os GNDs devem estar conectados, para que o circuito tenha uma única referência. Caso os GNDs não estejam vinculados, haverá um erro de medição do sensor!**
 
