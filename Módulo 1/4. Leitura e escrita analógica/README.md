@@ -67,7 +67,7 @@ O código acima começa com a declaração e associação das saídas e entradas
 
 Posteriormente, no ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```analogRead```  que obterá informação analógica através da leitura da variável pot e armazenará essa informação na variável potenciometro de forma analógica quantizada com uma resolução de 10 bits.
 
-Além disso, utiliza-se a função ```analogWrite``` que tem a seguinte sintaxe: ```analogWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre um valor entre 0 (sempre desligado) e 255 (sempre ligado).
+Além disso, utiliza-se a função ```analogWrite``` que tem a seguinte sintaxe: ```analogWrite(pin,value)```. O ```pin``` é justamente a entrada ou saída declarada no ```void setup```, enquanto que ```value``` é um parâmetro que varia entre entre 0 (sempre desligado) e 255 (sempre ligado).
 
 Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
 
