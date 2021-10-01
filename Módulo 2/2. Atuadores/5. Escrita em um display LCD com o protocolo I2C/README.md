@@ -40,7 +40,7 @@ No módulo I2C em um dos lados, temos 4 pinos: VCC, GND, SDA, conectado ao D2, e
 
 Para escrita em um display LCD com o protocolo I2C use o código que está em [code](code/code1.ino) ou copie o código abaixo:
  
-```
+```C++
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
