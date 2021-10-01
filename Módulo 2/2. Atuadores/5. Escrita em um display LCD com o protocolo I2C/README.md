@@ -44,11 +44,11 @@ Para escrita em um display LCD com o protocolo I2C use o código que está em [c
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
-LiquidCrystal_I2C lcd(0x27,20,4);
-
 //Aqui, temos três parâmetros, sendo:
 //0x27 o endereço do display para que seja identificado através do protocolo I2C;
 //20 e 4, que indicam respectivamente a quantidade de caracteres por linha e a quantidade de linhas do display.
+
+LiquidCrystal_I2C lcd(0x27,20,4);
 
 void setup()
 {
