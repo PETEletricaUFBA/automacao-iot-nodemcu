@@ -78,4 +78,4 @@ O resultado final é mostrado no *gif* abaixo:
 
 Caso tenha tido algum problema, abra uma *issue* clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new).
 
-![Circuit](assets/circuit.gif)
+![GifFuncionamento](code/i2cDisplay.gif)
