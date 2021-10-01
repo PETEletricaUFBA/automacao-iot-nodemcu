@@ -1,12 +1,17 @@
 # 5. Escrita em um display LCD com o protocolo I2C
 
-O projeto consiste em realizar o processo de escrita em um display LCD 20x4 com o auxílio do módulo I2C. Este módulo permite utilizar o display LCD 16x2 ou 20x4 com o uso de apenas dois pinos do NodeMCU: o pino analógico D2 (Serial Data - SDA) e o pino analógico D1 (Serial Clock - SCL). 
+O projeto consiste em realizar o processo de escrita em um display LCD 20x4 com o auxílio do módulo I2C. Este módulo permite utilizar o display LCD 16x2 ou 20x4 com o uso de apenas dois pinos do NodeMCU: o pino analógico D2 (Serial Data - SDA) e o pino analógico D1 (Serial Clock - SCL). Módulos de display LCD de caracteres alfanuméricos são interfaces de comunicação visual que se encontram em quase todos os eletrônicos. São caracterizados por sua capacidade gráfica (número de caracteres por linha x número de linhas), por exemplo, 16x2 ou 20x4. Mas afinal, o que é o protocolo I2C?
 
-Módulos de display LCD de caracteres alfanuméricos são interfaces de comunicação visual que se encontram em quase todos os eletrônicos. São caracterizados por sua capacidade gráfica (número de caracteres por linha x número de linhas), por exemplo, 16x2 ou 20x4.
+![I2CDisplay](https://user-images.githubusercontent.com/84883028/135614314-6532be82-aa7f-4bb7-9cb8-0d39fac929e2.png)
 
-O I2C é um protocolo de barramento, que conecta todos os dispositivos do setup com os mesmos fios, reduzindo o números de pinos utilizados no NodeMCU. Além dos pinos utilizados para relacionar o NodeMCU ao display, possui ainda um potenciômetro para ajustar o contraste do display e o Jumper Backlight, que pode ser usado para controlar a luz de fundo.
+
+Inventado pela Philips no início da década de 90, o I2C é um protocolo de barramento que conecta todos os dispositivos do setup com os mesmos dois fios (SDA e SCL), reduzindo o números de pinos utilizados do NodeMCU. O I2C é implementado no display através de um circuito chamado de I2C bus, que interpreta os sinais recebidos e envia adequadamente sinais de retorno, permitindo essa comunicação. Perceba que o ESP não necessita de um bus, visto que possui suporte a esse protocolo.
 
 ![I2C](assets/I2C.png)
+
+Além das conexões que relacionam o NodeMCU ao display, possui ainda um potenciômetro para ajustar o contraste do display e o Jumper Backlight, que pode ser usado para controlar a luz de fundo. Sua peculiaridade é a comunicação serial de um controlador com um grande número de dispositivos (que varia de 1 a mais de 100, normalmente), e no nosso caso isso se configura como uma vantagem pelo fato de, apesar de o display possuir 16 portas, o que ocuparia a maioria das portas do NodeMCU, fazendo uso do protocolo I2C é possível conectá-lo usando apenas duas. Ao NodeMCU damos o nome de "master", o dispositivo que manda sinais de leitura e escrita, e aos demais periféricos conectados que recebem os sinais (no nosso caso, apenas o display LCD), damos o nome de "slave".
+
+![I2Cmasterslave](https://user-images.githubusercontent.com/84883028/135614138-7ac6d134-1cff-47d1-acac-33c8218a618b.png)
 
 O circuito e código para a escrita em display LCD com o protocolo I2C possibilita o aprendizado das seguintes competência trabalhadas no Módulo 1:
 
@@ -40,6 +45,10 @@ Para escrita em um display LCD com o protocolo I2C use o código que está em [c
 #include <LiquidCrystal_I2C.h>
 
 LiquidCrystal_I2C lcd(0x27,20,4);
+
+//Aqui, temos três parâmetros, sendo:
+//0x27 o endereço do display para que seja identificado através do protocolo I2C;
+//20 e 4, que indicam respectivamente a quantidade de caracteres por linha e a quantidade de linhas do display.
 
 void setup()
 {
