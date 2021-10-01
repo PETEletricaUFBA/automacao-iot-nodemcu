@@ -1,110 +1,139 @@
-# 4. Sensor de Temperatura
+# 4. Circuito e programa com sensor de temperatura
 
-Esse projeto consiste na utilização da função ```analogRead``` com o Sensor de Temperatura, possivelmente o TMP36, visando aplicações do mundo real.
+Esse projeto consiste na utilização da função ```analogRead```  juntamente com o sensor de temperatura visando aplicações do mundo real.
 
-O sensor de temperatura  é um módulo eletrônico que, como o próprio nome indica, é capaz de detectar as variações na temperatura ambiente. É importante salientar ainda que esse medidor utiliza a medição analógica. Portanto, ele deve ser conectado a uma porta do Arduino que faça essa leitura e retornará variados valores dentro da faixa de leitura.
+O sensor de temperatura  é um componente eletrônico capaz de medir a temperatura ao seu redor. Este dispositivo é composto por diodos sensíveis à temperatura. Assim, quando há uma mudança nessa grandeza, a tensão que passa pelo sensor é modificada. Com isso, é possível criar uma escala para converter a tensão que o NodeMCU recebe em uma escala de temperatura, como Celsius, Fahrenheit e Kelvin. O sensor LM35, por exemplo, apresenta uma taxa de variação conhecida de 10mV/°C e lê valores de -55°C até 150°C, com uma precisão de ± 0.5°C a 25°C.
 
-O sensor pode ser visto na imagem abaixo e seu princípio de funcionamento é bem simples. O módulo eletrônico utiliza duas pontas de prova e através deles, circula uma corrente pelo solo de modo que a sua leitura é baseada na resistência elétrica resultante do solo, uma vez que quanto maior for a quantidade de água no solo, mais baixa é a resistência do solo e mais fácil fica a condução entre as pontas de prova. De forma contrária, quando o solo está seco, a condutividade é baixa, logo a resistência é alta.
+A seguir, temos algumas das principais aplicações do sensor:
+* Regulação da temperatura de um ar-condicionado;
+* Medição da temperatura corpórea nos termômetros;
+* Auxílio em processos industriais dependentes de temperatura;
+* Regulação da temperatura de _freezers_;
 
-![Sensor](assets/sensor.png)
 
-Sensores de Umidade do Solo são amplamentes utilizados em plantações e jardins em geral, permitindo ter conhecimento de quando a sua planta necessita de água e quando está integrado com uma válvula solenoide é possível a criação de um sistema de irrigação automático.
+Seja criativo para pensar em outras aplicações!
 
-O circuito envolvendo o Sensor de Umidade do Solo possibilita o aprendizado da seguinte competência trabalhada no Módulo 1:
+O circuito envolvendo o sensor de temperatura envolve as seguintes competências trabalhadas no módulo 1:
 
-- [x] Leitura Digital
 - [x] Leitura Analógica
+- [x] Escrita Analógica
 
-> Nesse projeto você irá aprender a utilizar o higrômetro utilizando o processo de leitura digital com a função  ```digitalRead```, bem como o de leitura analógica por meio da função  ```analogRead```
->
+> Nesse projeto você irá aprender a utilizar o sensor de temperatura, juntamente com o processo de leitura analógica com a função  ```analogRead``` associada à função ```map```.
+
 ## Conteúdo
-
 - [Materiais Necessários](#materiais-necessários)
 - [Montagem do Circuito](#montagem-do-circuito)
 - [O Código do Circuito](#o-c&oacute;digo-do-circuito)
 
 ## Materiais Necessários
-
 1. NodeMCU
-2. 1 Sensor de Umidade do Solo
-3. Protoboard
-4. Jumpers
+2. 1 Sensor de temperatura LM35
+3. 1 LED RGB
+4. 3 Resistores de 220Ω
+5. Protoboard
+6. Jumpers
 
 ## Montagem do Circuito
+O circuito deve ser montado como mostra a figura abaixo, representado na protoboard.
 
-O circuito deve ser montado como mostra a figura abaixo, representado na protoboard. É importante destacar que na primeira imagem temos a montagem usando leitura digital e, na segunda, leitura analógica.
+![Protoboard](https://i.imgur.com/XPTSixc.png)
 
-![Protoboard](assets/circuito-digital.png)
-![Protoboard](assets/circuito-analogico.png)
+É necessário conectar os 3 terminais menores do LED em saídas PWM do NODEMCU, com um resistor de 220Ω entre as conexões (para limitar a corrente), pois através dessa conexão é possível, por conta do pino ser PWM, controlar o envio de diferentes valores de tensão para os terminais do LED, assim modificando sua cor.
 
-Como visualizado na imagem acima, é necessário conectar os dois fios dos eletrodos do medidor de umidade do solo no drive (não tem polaridade nesse caso). A saída do drive do higrômetro apresenta quatro terminais distintos: VCC, GND, A0 e D0.
+Já o terminal maior, deve ser conectado ao VCC caso o LED seja ânodo comum, ou ao GND caso seja cátodo comum (nesse caso conectado ao GND).
 
-Como o sensor funciona com uma tensão de operação de 3,3V - 5V, então a saída VCC pode ir para um terminal com uma tensão de 3,3V ou 5V do NODEMCU e o GND, naturalmente, irá no GND do microcontrolador. Por fim, é preciso conectar o A0 (pino analógico) ou o D0 (pino digital), terminais essenciais para o funcionamento do seu circuito, de acordo com o uso escolhido.
+O sensor de temperatura é uma entrada que gera um sinal analógico e por esse mesmo motivo o terminal do meio do sensor deve ser conectado a um pino analógico do NodeMCU. Os outros terminais devem ser conectados no VCC e no GND, conforme a figura abaixo:
 
-Como o sensor de umidade do solo representa uma entrada que possibilita a geração de um sinal tanto digital quanto analógico, então realize a conexão do D0 a um terminal digital e o A0 em um terminal analógico do seu NodeMCU.
+![terminals](https://i.imgur.com/Cn9wVTX.png)
 
-Com isso, você deve ter percebido a presença de um trimpot (pequeno potenciômetro de giro) no drive do sensor. Esse trimpot é utilizado quando se deseja empregar o sensor em seu modo digital. Através do giro do trimpot pode-se regular a sensibilidade e por consequência quando o sensor vai mudar de nível lógico HIGH/LOW no circuito.
+
+
+
 
 ## O código do Circuito
 
-Use o código que está em [code1](code1/code1.ino) ou copie o código abaixo:
-
+Use o código que está em [code](code/code.ino) ou copie o código abaixo:
+ 
 ```C++
-#define sensor 14 //D5
+//Pino do sensor de temperatura
+const int LM35 = 17;      //A0
 
-void setup() {
-  pinMode(sensor, INPUT);
-  Serial.begin(115200);
-}
+//Pinos das cores
+const int redPin    = 4;  //D2
+const int greenPin  = 5;  //D1
+const int bluePin   = 16; //D0
 
-void loop() {
-  int sensorState=digitalRead(sensor);
-  if (sensorState) {
-     Serial.println("O SOLO NÃO ESTÁ ÚMIDO ");
-  } else {
-     Serial.println("O SOLO ESTÁ ÚMIDO ");
+
+float temperatura;
+
+void ledColor(int temperatura) {
+  if(temperatura < 20){
+    digitalWrite(redPin, 0);
+    digitalWrite(greenPin, 0);
+    digitalWrite(bluePin, 255);
+  }else if(temperatura >= 20 and temperatura <= 70){
+    digitalWrite(redPin, 0);
+    digitalWrite(greenPin, 255);
+    digitalWrite(bluePin, 0);
+  }else if(temperatura > 70){
+    digitalWrite(redPin, 255);
+    digitalWrite(greenPin, 0);
+    digitalWrite(bluePin, 0);
   }
-  delay(1000);
 }
-  
-```
 
->Desde o início da explicação evidenciamos que o módulo sensor pode ser utilizado tanto de forma digital quanto analógica. O código apresentado acima empregará o sensor em seu modo digital.
 
-O código acima começa com a declaração e associação da entrada  utilizada. O sensor foi associado ao terminal D5 do NODEMCU. Feito isso, partimos para o ```void setup```  onde é necessário iniciar a comunicação serial através do comando ```Serial.begin``` definindo a taxa de transmissão de dados e declarar as entradas e saídas por meio do ```pinMode```.
-
-Após isso, dentro do ```void loop```, declaramos uma variável denominada "sensorState", que lê o valor digital da entrada do sensor na váriavel ```sensor```, utilizando a função ```digitalRead``` e a armazena .
-
-Além disso, utiliza-se uma estrutura condicional ```if```, de modo que se a variável estiver com um nível lógico 1, então mostra-se no monitor serial a mensagem "O SOLO NÃO ESTÁ ÚMIDO", e com o nível lógico 0, aparece a mensagem "O SOLO ESTÁ ÚMIDO".
-
->Depois de utilizar o sensor em seu modo digital, vamos explorar o seu funcionamento analógico:
-
-Use o código que está em [code2](code2/code2.ino) ou copie o código abaixo:
-
-```C++
-#define sensor 17 //A0
 void setup() {
-  pinMode(sensor, INPUT);
+  pinMode(redPin,OUTPUT);
+  pinMode(greenPin,OUTPUT);
+  pinMode(bluePin,OUTPUT);
+
+  pinMode(LM35, INPUT);
+  
   Serial.begin(115200);
 }
 
+ 
 void loop() {
-  int analogSensor= analogRead(sensor);
-  Serial.println(analogSensor); 
-  delay(10);
+  temperatura = map(analogRead(LM35), 0, 1023, -55, 150);
+
+  ledColor(temperatura);
+  
+  Serial.print("Temperatura: ");
+  Serial.println(temperatura);
+  
+  delay(2000);
 }
 ```
 
-O código acima começa com a declaração e associação das saídas e entradas utilizadas. O sensor foi associado à porta analógica A0. Posteriormente, no ```void setup```, é necessário iniciar a comunicação serial através do comando ```Serial.begin``` e declarar as entradas e saídas por meio do ```pinMode```.
 
-No ```void loop``` iniciamos com a declaração de uma variável e o uso da função ```analogRead``` que obterá informação analógica através da leitura da variável sensor e armazenará essa informação na variável analogSensor de forma analógica quantizada com uma resolução de 10 bits.
+O código acima começa com a declaração e associação das saídas e entradas utilizadas. O pino de leitura do sensor foi associado à constante 17 (A0) e os pinos de controle da luz foram associados às constantes 4, 5 e 16 (D2, D1 e D0). Declara-se também a variável, no formato ```float```, que irá armazenar a temperatura.
 
-Para efeitos de visualização e posterior calibração, abra o monitor serial e visualize a variação da variável analogSensor. Por meio de valores previamente definidos, pode-se calibrar o sensor a partir de um determinado valor.
+Depois, temos uma função denominada:
+```C++
+void ledColor (int temperatura)
+```
+Com o valor da temperatura, ela define a cor do Led, segundo esta regra:
+* Azul para menor que 20°C
+* Verde para maior que 20°C e menor que 70°C
+* Vermelho para maior que 70°C e menor que 150°C
 
-Caso tenha tido algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
+Tendo em vista que o sensor é um aparelho eletrônico que trabalha no alcance de -55°C a 150°C, optamos por medir temperaturas que sejam fáceis de reproduzir em casa, ou seja, de 0°C a 150°C, não incluindo os valores negativos, embora qualquer valor abaixo de 0°C também resulte na cor azul.
 
-Os LEDs foram adicionados para melhor visualização das leituras dos sensores.
-![Digital Circuit](assets/digitalcircuit.gif)
-![Analog Circuit](assets/analogcircuit.gif)
+Feito isso, partimos para o ```void setup``` onde é necessário iniciar a comunicação serial através do comando ``Serial.begin`` e declarar as entradas e saídas por meio do ``pinMode``.
 
-> Pense na utilização do Sensor de Umidade do Solo na sua casa ou em outras aplicações do seu cotidiano.
+**Nota:** O pino A0 é o único input, visto que ele recebe o sinal do sensor de temperatura.
+
+Posteriormente no ```void loop```, usamos a função:
+
+```temperatura = map(analogRead(LM35), 0, 1023, -55, 150);```
+
+Ela faz com que a leitura analógica do sensor (que varia de 0 a 1023) seja recebida pela variável ```temperatura``` numa escala de -55 a 150, variando proporcionalmente e representando a temperatura real. Então, declaramos a função ```ledColor(temperatura)``` que vai ser responsável por obter a leitura do sensor e a partir disso definir a cor do Led. Além disso, configuramos o monitor serial para mostrar a temperatura obtida, a fim de ter conhecimento da leitura exata e conferir o bom funcionamento do circuito.
+
+
+
+
+Caso tenha encontrado algum problema abra uma _issue_ clicando [aqui](https://github.com/PETEletricaUFBA/IoT/issues/new)
+
+
+> Pense na utilização do sensor de temperatura Lm35 na sua casa ou em outras aplicações do seu cotidiano. 
